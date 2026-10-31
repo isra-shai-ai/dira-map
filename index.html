@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="only light">
+<meta name="theme-color" content="#ffffff">
+<meta name="robots" content="noindex, nofollow">
+<title>מפת דירות – צפון תל אביב</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<style>
+:root{color-scheme:only light;--ink:#1a1a1a;--mute:#5b5b5b;--line:#e3e3e3;--acc:#0b63c5;--b0:#1b9e77;--b1:#d95f02;--b2:#7570b3}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#fff!important;color:var(--ink)!important;font-family:Rubik,Arimo,"Segoe UI",Arial,sans-serif;-webkit-text-size-adjust:100%}
+body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
+header{flex:0 0 auto;background:#fff;border-bottom:1px solid var(--line);padding:6px 10px calc(6px) 10px;padding-top:max(6px,env(safe-area-inset-top));display:flex;align-items:center;gap:8px;z-index:1000}
+header .t{flex:1;min-width:0}
+header h1{font-size:15px;margin:0;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+header .u{font-size:12px;color:var(--mute)}
+button{font:inherit;color:var(--ink);background:#fff;border:1px solid #cfcfcf;border-radius:8px;padding:6px 10px;cursor:pointer}
+button.on{background:var(--acc);border-color:var(--acc);color:#fff}
+#map{flex:1 1 auto;min-height:0;background:#fff;direction:ltr}
+.legend,.lbl,.leaflet-tooltip{direction:rtl}
+.leaflet-container{background:#fff;font-family:inherit}
+.legend{background:#fff;color:var(--ink);padding:6px 8px;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.25);font-size:12px;line-height:1.6}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-left:5px;vertical-align:-1px;border:1px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.3)}
+.pin{width:26px;height:26px;border-radius:50%;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.45);color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;position:relative}
+.pin.sel{outline:3px solid #111;outline-offset:1px}
+.pin .nw{position:absolute;top:-9px;left:-12px;background:#e11d48;color:#fff;font-size:9px;padding:0 4px;border-radius:6px;border:1px solid #fff}
+.pin.uv{border-style:dashed}
+.lbl{background:#fff;border:1px solid #333;border-radius:6px;padding:1px 6px;font-size:12px;font-weight:700;white-space:nowrap;box-shadow:0 1px 3px rgba(0,0,0,.3);color:#111}
+.lbl.school{background:#111;color:#fff}
+/* list panel */
+#panel{position:fixed;inset:auto 0 0 0;max-height:62dvh;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(0,0,0,.18);border-radius:14px 14px 0 0;z-index:1100;display:none;flex-direction:column;padding-bottom:env(safe-area-inset-bottom)}
+#panel.open{display:flex}
+#panel .bar{display:flex;flex-wrap:wrap;gap:6px;padding:8px 10px;border-bottom:1px solid var(--line);align-items:center}
+#panel select{font:inherit;padding:5px;border:1px solid #cfcfcf;border-radius:8px;background:#fff;color:var(--ink)}
+#rows{overflow:auto;-webkit-overflow-scrolling:touch}
+.row{display:flex;gap:8px;align-items:center;padding:8px 10px;border-bottom:1px solid #f0f0f0;cursor:pointer;background:#fff}
+.row:active,.row.sel{background:#eef5ff}
+.row .a{flex:1;min-width:0}
+.row .a b{font-size:14px}
+.row .a div{font-size:12px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .p{font-weight:700;font-size:14px;white-space:nowrap}
+.badge{background:#e11d48;color:#fff;font-size:10px;border-radius:6px;padding:0 5px;margin-right:4px;vertical-align:1px}
+/* card */
+#card{position:fixed;inset:auto 0 0 0;z-index:1200;background:#fff;color:var(--ink);border-top:1px solid var(--line);border-radius:14px 14px 0 0;box-shadow:0 -4px 16px rgba(0,0,0,.22);padding:12px 14px calc(12px + env(safe-area-inset-bottom));max-height:70dvh;overflow:auto;display:none}
+#card.open{display:block}
+#card h2{margin:0 0 2px;font-size:17px}
+#card .sub{color:var(--mute);font-size:13px;margin-bottom:8px}
+#card table{border-collapse:collapse;width:100%;font-size:14px}
+#card td{padding:3px 0;vertical-align:top}
+#card td:first-child{color:var(--mute);width:96px;white-space:nowrap}
+#card .links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+#card .links a{display:inline-block;padding:7px 12px;border-radius:8px;background:var(--acc);color:#fff;text-decoration:none;font-size:14px}
+#card .links a.g{background:#fff;color:var(--acc);border:1px solid var(--acc)}
+#card .x{position:absolute;left:10px;top:8px;border:none;font-size:22px;padding:2px 8px;background:#fff}
+#card .warn{font-size:12px;color:#9a3412;margin-top:6px}
+@media (orientation:landscape) and (max-height:500px){
+  header{padding-top:4px;padding-bottom:4px} header h1{font-size:14px}
+  #panel{inset:0 auto 0 0;width:min(380px,48vw);max-height:none;border-radius:0 14px 14px 0;border-top:none;box-shadow:4px 0 16px rgba(0,0,0,.18)}
+  #card{inset:auto auto 0 0;width:min(400px,55vw);max-height:calc(100dvh - 50px);border-radius:0 14px 0 0}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="t"><h1>דירות 3 חד׳ עד 7,000 ₪ · צפון ת״א</h1><div class="u" id="upd">טוען…</div></div>
+  <button id="btnList">☰ רשימה</button>
+</header>
+<div id="map"></div>
+<div id="panel">
+  <div class="bar">
+    <select id="fArea"><option value="all">כל האזורים</option><option value="north">צפון חדש וסביבה</option><option value="aviv">רמת אביב ואפקה</option><option value="ne">צפון-מזרח</option></select>
+    <button id="fWalk">עד 15 דקות הליכה</button>
+    <select id="fSort"><option value="price">מיון: מחיר</option><option value="dist">מיון: מרחק לבית הספר</option></select>
+    <span id="cnt" style="font-size:12px;color:var(--mute)"></span>
+    <button id="btnClose" style="margin-inline-start:auto">✕</button>
+  </div>
+  <div id="rows"></div>
+</div>
+<div id="card"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+(async function(){
+  const res = await fetch('listings.json?v=' + Date.now(), {cache:'no-store'});
+  const data = await res.json();
+  const M = data.meta, all = data.listings.filter(l => l.status !== 'removed');
+  const COL = ['#1b9e77','#d95f02','#7570b3'];
+  const band = p => p <= 5500 ? 0 : p <= 6500 ? 1 : 2;
+  const fmt = n => n.toLocaleString('en-US');
+  const km = m => m < 1000 ? m + " מ'" : (m/1000).toFixed(1) + ' ק"מ';
+  const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const isNew = l => M.prev_updated_at ? l.first_seen > M.prev_updated_at.slice(0,10) : false;
+  const arnona = l => { const m = (l.notes||'').match(/ארנונה\s*([\d,]+)/); return m ? m[1] + ' ₪' : 'לא צוין'; };
+  const gmaps = l => 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(/\(/.test(l.addr) ? l.lat + ',' + l.lon : l.addr + ', תל אביב');
+  const d = new Date(M.updated_at);
+  document.getElementById('upd').textContent = 'עודכן לאחרונה: ' + d.toLocaleString('he-IL', {timeZone:'Asia/Jerusalem', day:'numeric', month:'numeric', year:'numeric', hour:'2-digit', minute:'2-digit'}) + ' (שעון ישראל) · ' + all.length + ' מודעות';
+
+  const map = L.map('map', {zoomControl:true, zoomSnap:0.25});
+  const fitAll = () => map.fitBounds(L.latLngBounds(all.map(l => [l.lat,l.lon]).concat([[M.school.lat,M.school.lon]])), {padding:[22,22], animate:false});
+  fitAll();
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+  L.circle([M.school.lat, M.school.lon], {radius:1000, color:'#111', weight:1.5, dashArray:'6 6', fill:true, fillOpacity:.04}).addTo(map);
+  L.marker([M.school.lat, M.school.lon], {icon:L.divIcon({className:'', html:'<div class="lbl school">🏫 בית הספר</div>', iconSize:null, iconAnchor:[30,-6]}), zIndexOffset:900}).addTo(map).bindTooltip(M.school.name);
+  const lg = L.control({position:'bottomright'});
+  lg.onAdd = () => { const e = L.DomUtil.create('div','legend'); e.innerHTML = '<span class="dot" style="background:'+COL[0]+'"></span>עד 5,500 ₪<br><span class="dot" style="background:'+COL[1]+'"></span>5,501–6,500 ₪<br><span class="dot" style="background:'+COL[2]+'"></span>6,501–7,000 ₪<br><span style="color:#555">- - </span>1 ק"מ מבית הספר'; return e; };
+  lg.addTo(map);
+
+  const marks = {}; let sel = null;
+  function pinHtml(l, s){ return '<div class="pin'+(s?' sel':'')+(l.coord_unverified?' uv':'')+'" style="background:'+COL[band(l.price)]+'">'+(l.price/1000).toFixed(1).replace(/\.0$/,'')+(isNew(l)?'<span class="nw">חדש</span>':'')+'</div>'; }
+  const icon = (l, s) => L.divIcon({className:'', html:pinHtml(l,s), iconSize:[26,26], iconAnchor:[13,13]});
+  for (const l of all){
+    marks[l.id] = L.marker([l.lat, l.lon], {icon:icon(l,false), title:l.addr, riseOnHover:true}).addTo(map).on('click', () => select(l.id, false));
+  }
+
+  const card = document.getElementById('card');
+  function select(id, fly){
+    if (sel && marks[sel]) marks[sel].setIcon(icon(all.find(x=>x.id===sel), false));
+    sel = id; const l = all.find(x => x.id === id);
+    marks[id].setIcon(icon(l, true)); marks[id].setZIndexOffset(1000);
+    if (fly) { panel.classList.remove('open'); map.flyTo([l.lat, l.lon], 16, {duration:.8}); }
+    if (fly) map.once('moveend', () => keepVisible(l));
+    const links = '<a href="'+esc(l.url)+'" target="_blank" rel="noopener">למודעה ב'+esc(l.site)+'</a>' + (l.extra_url ? '<a href="'+esc(l.extra_url)+'" target="_blank" rel="noopener">מודעה נוספת</a>' : '') + '<a class="g" href="'+gmaps(l)+'" target="_blank" rel="noopener">Google Maps</a>';
+    card.innerHTML = '<button class="x" aria-label="סגור">×</button><h2>'+(isNew(l)?'<span class="badge">חדש</span>':'')+esc(l.addr)+'</h2><div class="sub">'+esc(l.hood)+'</div>'+
+      '<table>'+
+      '<tr><td>מחיר</td><td><b>'+fmt(l.price)+' ₪</b> לחודש</td></tr>'+
+      '<tr><td>חדרים · מ"ר</td><td>'+l.rooms+' חד׳ · '+esc(l.sqm)+' מ"ר</td></tr>'+
+      '<tr><td>קומה</td><td>'+esc(l.floor)+'</td></tr>'+
+      '<tr><td>ארנונה</td><td>'+arnona(l)+'</td></tr>'+
+      '<tr><td>מצב / תוספות</td><td>'+esc(l.cond||'—')+'</td></tr>'+
+      '<tr><td>הערות</td><td>'+esc(l.notes||'—')+'</td></tr>'+
+      '<tr><td>מפרסם</td><td>'+esc(l.ad)+'</td></tr>'+
+      '<tr><td>פורסם</td><td>'+esc(l.posted)+'</td></tr>'+
+      '<tr><td>לבית הספר</td><td>🚶 '+l.walk_min+' דק׳ הליכה ('+km(l.walk_m)+')</td></tr>'+
+      '</table>'+(l.coord_unverified?'<div class="warn">⚠ המיקום על המפה משוער ('+esc(l.coord_source)+')</div>':'')+
+      '<div class="links">'+links+'</div>';
+    card.classList.add('open');
+    if (!fly) keepVisible(l);
+    card.querySelector('.x').onclick = closeCard;
+    renderRows();
+  }
+  function keepVisible(l){
+    const land = matchMedia('(orientation:landscape) and (max-height:500px)').matches;
+    const pt = map.latLngToContainerPoint([l.lat, l.lon]), sz = map.getSize(); let dx = 0, dy = 0;
+    if (land) { const minX = card.offsetWidth + 30; if (pt.x < minX) dx = pt.x - minX; else if (pt.x > sz.x - 30) dx = pt.x - (sz.x - 30); }
+    else { const maxY = sz.y - card.offsetHeight - 30; if (pt.y > maxY) dy = pt.y - maxY; else if (pt.y < 30) dy = pt.y - 30; }
+    if (dx || dy) map.panBy([dx, dy]);
+  }
+  function closeCard(){ card.classList.remove('open'); if (sel){ marks[sel].setIcon(icon(all.find(x=>x.id===sel), false)); sel = null; renderRows(); } }
+  map.on('click', closeCard);
+
+  const panel = document.getElementById('panel'), rows = document.getElementById('rows');
+  const fArea = document.getElementById('fArea'), fWalk = document.getElementById('fWalk'), fSort = document.getElementById('fSort');
+  let walk15 = false;
+  function visible(l){ return (fArea.value === 'all' || l.area === fArea.value) && (!walk15 || l.walk_min <= 15); }
+  function renderRows(){
+    const v = all.filter(visible).sort((a,b) => fSort.value === 'price' ? a.price - b.price || a.walk_m - b.walk_m : a.walk_m - b.walk_m);
+    document.getElementById('cnt').textContent = v.length + ' מתוך ' + all.length;
+    rows.innerHTML = v.map(l => '<div class="row'+(l.id===sel?' sel':'')+'" data-id="'+l.id+'"><span class="dot" style="background:'+COL[band(l.price)]+'"></span><div class="a"><b>'+(isNew(l)?'<span class="badge">חדש</span>':'')+esc(l.addr)+'</b><div>'+esc(l.hood)+' · '+esc(l.sqm)+' מ"ר · 🚶 '+l.walk_min+' דק׳</div></div><div class="p">'+fmt(l.price)+' ₪</div></div>').join('');
+    for (const l of all){ const m = marks[l.id]; const on = visible(l); if (on && !map.hasLayer(m)) m.addTo(map); if (!on && map.hasLayer(m)) map.removeLayer(m); }
+  }
+  rows.addEventListener('click', e => { const r = e.target.closest('.row'); if (r) select(r.dataset.id, true); });
+  fArea.onchange = renderRows; fSort.onchange = renderRows;
+  fWalk.onclick = () => { walk15 = !walk15; fWalk.classList.toggle('on', walk15); renderRows(); };
+  document.getElementById('btnList').onclick = () => { card.classList.remove('open'); panel.classList.toggle('open'); };
+  document.getElementById('btnClose').onclick = () => panel.classList.remove('open');
+  renderRows();
+  window.__dira = {select, map, all};
+  const q = new URLSearchParams(location.search);
+  if (q.get('sel')) select(q.get('sel'), false);
+  if (q.get('debug')) { const e=document.createElement('pre'); e.id='dbg'; e.textContent=JSON.stringify({size:map.getSize(),b:map.getBounds(),z:map.getZoom(),mapEl:document.getElementById('map').getBoundingClientRect()}); document.body.appendChild(e); }
+  if (q.get('list')) panel.classList.add('open');
+})();
+</script>
+</body>
+</html>
