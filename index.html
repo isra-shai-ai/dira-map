@@ -2,6 +2,7 @@
 <html lang="he" dir="rtl">
 <head>
 <meta charset="utf-8">
+<link rel="icon" href="data:,">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="only light">
 <meta name="theme-color" content="#ffffff">
@@ -12,7 +13,7 @@
 :root{color-scheme:only light;--ink:#1a1a1a;--mute:#5b5b5b;--line:#e3e3e3;--acc:#0b63c5;--b0:#1b9e77;--b1:#d95f02;--b2:#7570b3}
 *{box-sizing:border-box}
 html,body{margin:0;height:100%;background:#fff!important;color:var(--ink)!important;font-family:Rubik,Arimo,"Segoe UI",Arial,sans-serif;-webkit-text-size-adjust:100%}
-body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
+body{display:flex;flex-direction:column;height:100dvh;overflow:hidden;overscroll-behavior:none}
 header{flex:0 0 auto;background:#fff;border-bottom:1px solid var(--line);padding:6px 10px calc(6px) 10px;padding-top:max(6px,env(safe-area-inset-top));display:flex;align-items:center;gap:8px;z-index:1000}
 header .t{flex:1;min-width:0}
 header h1{font-size:15px;margin:0;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -24,10 +25,12 @@ button.on{background:var(--acc);border-color:var(--acc);color:#fff}
 .leaflet-container{background:#fff;font-family:inherit}
 .legend{background:#fff;color:var(--ink);padding:6px 8px;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.25);font-size:12px;line-height:1.6}
 .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-left:5px;vertical-align:-1px;border:1px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.3)}
-.pin{width:26px;height:26px;border-radius:50%;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.45);color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;position:relative}
-.pin.sel{outline:3px solid #111;outline-offset:1px}
-.pin .nw{position:absolute;top:-9px;left:-12px;background:#e11d48;color:#fff;font-size:9px;padding:0 4px;border-radius:6px;border:1px solid #fff}
-.pin.uv{border-style:dashed}
+.pin{position:absolute;left:0;top:0;transform:translate(-50%,-50%);background:#fff;color:#222;border:1px solid rgba(0,0,0,.14);border-radius:999px;box-shadow:0 1px 3px rgba(0,0,0,.18);font-size:12px;font-weight:600;line-height:1;padding:5px 8px;white-space:nowrap;direction:ltr;transition:transform .15s,opacity .15s,background .15s}
+.pin.sel{background:#222;color:#fff;border-color:#222;transform:translate(-50%,-50%) scale(1.18);box-shadow:0 2px 8px rgba(0,0,0,.35)}
+.has-sel .pin:not(.sel){opacity:.4}
+.leaflet-tile-pane{filter:grayscale(1) brightness(1.06) contrast(.9)}
+.pin .nw{position:absolute;top:-6px;left:-4px;background:#fff;color:#777;font-size:9px;font-weight:500;padding:1px 4px;border-radius:6px;border:1px solid #ddd}
+.pin.uv{border-style:dashed;border-color:#999}
 .lbl{background:#fff;border:1px solid #333;border-radius:6px;padding:1px 6px;font-size:12px;font-weight:700;white-space:nowrap;box-shadow:0 1px 3px rgba(0,0,0,.3);color:#111}
 .lbl.school{background:#111;color:#fff}
 /* list panel */
@@ -41,21 +44,66 @@ button.on{background:var(--acc);border-color:var(--acc);color:#fff}
 .row .a{flex:1;min-width:0}
 .row .a b{font-size:14px}
 .row .a div{font-size:12px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.row .p{font-weight:700;font-size:14px;white-space:nowrap}
+.row .p{font-weight:600;font-size:14px;white-space:nowrap}
+.th{flex:0 0 auto;width:56px;height:56px;border-radius:8px;background:#ececec;object-fit:cover;display:block}
+#card .hd{display:flex;gap:12px;align-items:flex-start}
+#card .hd .th{width:64px;height:64px}
+#card .hd .tt{flex:1;min-width:0}
+#card .nav{position:absolute;left:44px;top:10px;display:flex;gap:2px;align-items:center;color:#999;font-size:12px}
+#card .nav button{border:none;background:transparent;color:#888;font-size:20px;line-height:1;padding:2px 8px}
+#card .nav button:disabled{opacity:.3}
 .badge{background:#e11d48;color:#fff;font-size:10px;border-radius:6px;padding:0 5px;margin-right:4px;vertical-align:1px}
-/* card */
-#card{position:fixed;inset:auto 0 0 0;z-index:1200;background:#fff;color:var(--ink);border-top:1px solid var(--line);border-radius:14px 14px 0 0;box-shadow:0 -4px 16px rgba(0,0,0,.22);padding:12px 14px calc(12px + env(safe-area-inset-bottom));max-height:70dvh;overflow:auto;display:none}
+/* card – calm */
+#card{position:fixed;inset:auto 0 0 0;z-index:1200;background:#fff;color:var(--ink);border-top:1px solid var(--line);border-radius:16px 16px 0 0;box-shadow:0 -2px 14px rgba(0,0,0,.12);padding:18px 18px calc(16px + env(safe-area-inset-bottom));max-height:80dvh;overflow:auto;display:none;font-size:14px;line-height:1.45;touch-action:pan-y;overscroll-behavior:contain}
 #card.open{display:block}
-#card h2{margin:0 0 2px;font-size:17px}
-#card .sub{color:var(--mute);font-size:13px;margin-bottom:8px}
-#card table{border-collapse:collapse;width:100%;font-size:14px}
-#card td{padding:3px 0;vertical-align:top}
-#card td:first-child{color:var(--mute);width:96px;white-space:nowrap}
-#card .links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-#card .links a{display:inline-block;padding:7px 12px;border-radius:8px;background:var(--acc);color:#fff;text-decoration:none;font-size:14px}
-#card .links a.g{background:#fff;color:var(--acc);border:1px solid var(--acc)}
-#card .x{position:absolute;left:10px;top:8px;border:none;font-size:22px;padding:2px 8px;background:#fff}
-#card .warn{font-size:12px;color:#9a3412;margin-top:6px}
+#card .x{position:absolute;left:10px;top:10px;border:none;font-size:22px;line-height:1;padding:4px 8px;background:transparent;color:#888}
+#card h2{margin:0 0 2px;font-size:16px;font-weight:600;padding-left:120px}
+#card .hood{color:#777;font-size:13px}
+#card .price{margin-top:12px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+#card .price b{font-size:26px;font-weight:600;letter-spacing:-.3px}
+#card .meta{color:#777;font-size:14px;font-weight:400}
+#card .tags{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+#card .tag{font-size:12px;background:#f6eedf;color:#7a5418;border-radius:999px;padding:2px 10px}
+#card .stb{display:flex;gap:6px;margin-top:14px}
+#card .stb button{flex:1 1 auto;font-size:13px;padding:6px 4px;border:1px solid #d6d6d6;color:#555;background:#fff;border-radius:999px;white-space:nowrap}
+#card .stb button.on{color:#fff;border-color:transparent}
+#card details{margin-top:12px;border-top:1px solid #eee}
+#card summary{list-style:none;cursor:pointer;padding:10px 0 4px;color:#555;font-size:13px}
+#card summary::-webkit-details-marker{display:none}
+#card summary::after{content:'+';float:left;color:#999}
+#card details[open] summary::after{content:'−'}
+#card dl{margin:4px 0 0;display:grid;grid-template-columns:96px 1fr}
+#card dt,#card dd{margin:0;padding:8px 0;border-bottom:1px solid #f1f1f1}
+#card dt{color:#888;font-size:13px}
+#card dd{color:#333}
+#card dd .sm{display:block;color:#888;font-size:12px;margin-top:2px}
+#card dd a{color:inherit}
+#card .links{display:flex;gap:8px;margin-top:14px}
+#card .links a{flex:1;text-align:center;padding:9px 10px;border-radius:10px;background:#222;color:#fff;text-decoration:none;font-size:14px}
+#card .links a.g{background:#fff;color:#222;border:1px solid #d6d6d6}
+.pin .st{position:absolute;top:-3px;right:-3px;width:9px;height:9px;border-radius:50%;border:1.5px solid #fff}
+.sd{display:inline-block;width:8px;height:8px;border-radius:50%;margin-left:6px;vertical-align:1px}
+.pin.no{opacity:.5}
+.kid{width:18px;height:18px;border-radius:50%;background:#fff;border:1px solid #888;font-size:11px;line-height:16px;text-align:center;box-shadow:0 1px 2px rgba(0,0,0,.25)}
+#panel .bar2{display:flex;flex-wrap:wrap;gap:6px;padding:6px 10px;border-bottom:1px solid var(--line);align-items:center;font-size:13px}
+#panel .bar2 button,#panel .bar2 select{font-size:13px;padding:4px 8px}
+#wts{display:none;padding:6px 10px 8px;border-bottom:1px solid var(--line);font-size:13px}
+#wts.open{display:block}
+#wts label{display:flex;align-items:center;gap:8px;margin:2px 0}
+#wts label span{width:128px;flex:0 0 auto;white-space:nowrap;font-size:12px}
+#wts input[type=range]{flex:1;min-width:0;accent-color:var(--acc)}
+#wts label b{width:28px;text-align:left;flex:0 0 auto}
+#wts .io{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+.row .s{font-size:11px;font-weight:700;border:1px solid #bbb;border-radius:6px;padding:0 4px;color:#111;background:#fff}
+.chip{display:inline-block;font-size:12px;border-radius:6px;padding:0 6px;margin-left:4px}
+.mk0{background:#dcfce7;color:#14532d}.mk1{background:#f3f4f6;color:#374151}.mk2{background:#fee2e2;color:#7f1d1d}
+.bc-pb{background:#fee2e2;color:#7f1d1d}.bc-t{background:#fef3c7;color:#78350f}.bc-n{background:#f3f4f6;color:#374151}
+.drop{background:#15803d;color:#fff;font-size:11px;border-radius:6px;padding:0 5px;margin-right:4px}
+#card .stb{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 6px}
+#card .stb button{font-size:13px;padding:5px 9px}
+#card .small{font-size:12px;color:var(--mute)}
+#card .scbar{display:inline-block;height:7px;border-radius:4px;background:#e5e7eb;width:70px;vertical-align:1px;margin-right:6px;overflow:hidden}
+#card .scbar i{display:block;height:100%;background:var(--acc)}
 @media (orientation:landscape) and (max-height:500px){
   header{padding-top:4px;padding-bottom:4px} header h1{font-size:14px}
   #panel{inset:0 auto 0 0;width:min(380px,48vw);max-height:none;border-radius:0 14px 14px 0;border-top:none;box-shadow:4px 0 16px rgba(0,0,0,.18)}
@@ -73,9 +121,24 @@ button.on{background:var(--acc);border-color:var(--acc);color:#fff}
   <div class="bar">
     <select id="fArea"><option value="all">כל האזורים</option><option value="north">צפון חדש וסביבה</option><option value="aviv">רמת אביב ואפקה</option><option value="ne">צפון-מזרח</option></select>
     <button id="fWalk">עד 15 דקות הליכה</button>
-    <select id="fSort"><option value="price">מיון: מחיר</option><option value="dist">מיון: מרחק לבית הספר</option></select>
+    <select id="fSort"><option value="price">מיון: מחיר</option><option value="dist">מיון: מרחק לבית הספר</option><option value="score">מיון: ציון התאמה</option></select>
     <span id="cnt" style="font-size:12px;color:var(--mute)"></span>
     <button id="btnClose" style="margin-inline-start:auto">✕</button>
+  </div>
+  <div class="bar2">
+    <button id="fDrop">⬇ רק ירידות מחיר</button>
+    <button id="fHideNo" class="on">הסתר לא רלוונטי</button>
+    <select id="fStat"><option value="all">כל הסטטוסים</option><option value="none">ללא סטטוס</option><option value="int">מעניין</option><option value="contact">פניתי</option><option value="seen">ראיתי</option><option value="no">לא רלוונטי</option></select>
+    <button id="fKids">🛝 שכבת ילדים</button>
+    <button id="btnW">⚙ משקלות</button>
+  </div>
+  <div id="wts">
+    <div class="small" style="color:var(--mute);margin-bottom:2px">משקל כל רכיב בציון ההתאמה (0–100). נשמר במכשיר הזה.</div>
+    <label><span>💰 מחיר</span><input type="range" min="0" max="100" step="5" data-w="price"><b></b></label>
+    <label><span>🛠 מצב הדירה</span><input type="range" min="0" max="100" step="5" data-w="cond"><b></b></label>
+    <label><span>🚶 הליכה לבית הספר</span><input type="range" min="0" max="100" step="5" data-w="walk"><b></b></label>
+    <label><span>🏢 ממ"ד/מעלית/חניה</span><input type="range" min="0" max="100" step="5" data-w="amen"><b></b></label>
+    <div class="io"><button id="btnWReset">איפוס משקלות</button><button id="btnExp">⤓ ייצוא סטטוסים</button><button id="btnImp">⤒ ייבוא</button><input type="file" id="impFile" accept="application/json,.json" hidden></div>
   </div>
   <div id="rows"></div>
 </div>
@@ -94,8 +157,60 @@ button.on{background:var(--acc);border-color:var(--acc);color:#fff}
   const isNew = l => M.prev_updated_at ? l.first_seen > M.prev_updated_at.slice(0,10) : false;
   const arnona = l => { const m = (l.notes||'').match(/ארנונה\s*([\d,]+)/); return m ? m[1] + ' ₪' : 'לא צוין'; };
   const gmaps = l => 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(/\(/.test(l.addr) ? l.lat + ',' + l.lon : l.addr + ', תל אביב');
+  const dmy = s => { const [y,m,d] = String(s).slice(0,10).split('-'); return +d + '.' + +m + '.' + y; };
+  const median = a => { const b = [...a].sort((x,y)=>x-y), n = b.length; return n ? (n % 2 ? b[(n-1)/2] : (b[n/2-1] + b[n/2]) / 2) : null; };
+  const LS = { get(k, d){ try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch(e){ return d; } }, set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} } };
   const d = new Date(M.updated_at);
   document.getElementById('upd').textContent = 'עודכן לאחרונה: ' + d.toLocaleString('he-IL', {timeZone:'Asia/Jerusalem', day:'numeric', month:'numeric', year:'numeric', hour:'2-digit', minute:'2-digit'}) + ' (שעון ישראל) · ' + all.length + ' מודעות';
+
+  /* ---------- 1. price vs market ---------- */
+  const MK = M.market || {}, RULE = M.market_rule || {below:.9, above:1.1};
+  const mapMedian = median(all.map(l => l.price));
+  function market(l){
+    const m = MK[l.hood];
+    const real = m && m.median;
+    const ref = real ? m.median : mapMedian;
+    const r = l.price / ref, cls = r < RULE.below ? 0 : r > RULE.above ? 2 : 1;
+    return {cls, pct: Math.round((r - 1) * 100), ref, real: !!real, m,
+      label: ['מתחת לשוק','סביב השוק','מעל השוק'][cls] + (real ? '' : ' (ביחס לדירות במפה)')};
+  }
+  /* ---------- 2. price history ---------- */
+  const hist = l => (l.price_history && l.price_history.length) ? l.price_history : [{date:l.first_seen, price:l.price}];
+  function drop(l){ const h = hist(l); if (h.length < 2) return 0; const a = h[h.length-2].price, b = h[h.length-1].price; return b < a ? a - b : 0; }
+  /* ---------- 3. match score ---------- */
+  const WDEF = {price:30, cond:20, walk:35, amen:15};
+  let W = Object.assign({}, WDEF, LS.get('dira.weights.v1', {}));
+  const txt = l => (l.cond || '') + ' · ' + (l.notes || '');
+  function condScore(l){ const t = txt(l);
+    if (/משופצת|שופצה|חדשה|בניין חדש|חדש מקבלן|כחדשה/.test(t.replace(/מטבח חדש/g,''))) return 1;
+    if (/לשיפוץ|ישנה|מוזנחת|דורשת שיפוץ/.test(t)) return .2;
+    if (/מטבח חדש|שמורה|מתוחזקת/.test(t)) return .75;
+    return .5; }
+  function amenScore(l){ const t = txt(l);
+    const sh = /ממ"ד|ממ״ד|ממד/.test(t) ? 1 : /מקלט/.test(t) ? .75 : /ללא מקלט|אין מקלט/.test(t) ? 0 : .5;
+    const el = /ללא מעלית|אין מעלית/.test(t) ? 0 : /מעלית/.test(t) ? 1 : .5;
+    const pk = /ללא חניה|אין חניה/.test(t) ? 0 : /חניה בכפוף|חניה .*בכפוף/.test(t) ? .6 : /חני(ה|ות|יה)/.test(t) ? 1 : .5;
+    return (sh + el + pk) / 3; }
+  const pmin = 4500, pmax = 7000;
+  function parts(l){ return {
+    price: Math.max(0, Math.min(1, (pmax - l.price) / (pmax - pmin))),
+    cond: condScore(l),
+    walk: Math.max(0, Math.min(1, (60 - l.walk_min) / 50)),
+    amen: amenScore(l) }; }
+  function score(l){ const p = parts(l); let s = 0, t = 0; for (const k in WDEF){ s += W[k] * p[k]; t += W[k]; } return t ? Math.round(100 * s / t) : 0; }
+  /* ---------- 4. building check ---------- */
+  const bcCls = s => s === 'פינוי-בינוי' ? 'bc-pb' : s === 'תמ"א 38' ? 'bc-t' : 'bc-n';
+  /* ---------- 5. user status (localStorage only) ---------- */
+  const ST = {int:{t:'מעניין', c:'#c0892b'}, contact:{t:'פניתי', c:'#4a74a8'}, seen:{t:'ראיתי', c:'#5e8a6e'}, no:{t:'לא רלוונטי', c:'#9a9a9a'}};
+  let STAT = LS.get('dira.status.v1', {});
+  const setStat = (id, v) => { if (v) STAT[id] = v; else delete STAT[id]; LS.set('dira.status.v1', STAT); };
+  /* ---------- 6. kids layer ---------- */
+  let kids = null, kidsLayer = null;
+  try { const kr = await fetch('kids.geojson', {cache:'no-store'}); kids = await kr.json(); } catch(e){ kids = null; }
+  const KI = {playground:['🛝','גן שעשועים'], park:['🌳','פארק / גינה'], community:['🏛','מרכז קהילתי'], kindergarten:['🧸','גן ילדים']};
+  const hav = (a, b, c, e) => { const R = 6371000, r = Math.PI/180, x = (e - b) * r * Math.cos((a + c) / 2 * r), y = (c - a) * r; return Math.sqrt(x*x + y*y) * R; };
+  const play400 = {};
+  if (kids) for (const l of all) play400[l.id] = kids.features.filter(f => f.properties.k === 'playground' && hav(l.lat, l.lon, f.geometry.coordinates[1], f.geometry.coordinates[0]) <= 400).length;
 
   const map = L.map('map', {zoomControl:true, zoomSnap:0.25});
   const fitAll = () => map.fitBounds(L.latLngBounds(all.map(l => [l.lat,l.lon]).concat([[M.school.lat,M.school.lon]])), {padding:[22,22], animate:false});
@@ -106,74 +221,179 @@ button.on{background:var(--acc);border-color:var(--acc);color:#fff}
   }).addTo(map);
   L.circle([M.school.lat, M.school.lon], {radius:1000, color:'#111', weight:1.5, dashArray:'6 6', fill:true, fillOpacity:.04}).addTo(map);
   L.marker([M.school.lat, M.school.lon], {icon:L.divIcon({className:'', html:'<div class="lbl school">🏫 בית הספר</div>', iconSize:null, iconAnchor:[30,-6]}), zIndexOffset:900}).addTo(map).bindTooltip(M.school.name);
-  const lg = L.control({position:'bottomright'});
-  lg.onAdd = () => { const e = L.DomUtil.create('div','legend'); e.innerHTML = '<span class="dot" style="background:'+COL[0]+'"></span>עד 5,500 ₪<br><span class="dot" style="background:'+COL[1]+'"></span>5,501–6,500 ₪<br><span class="dot" style="background:'+COL[2]+'"></span>6,501–7,000 ₪<br><span style="color:#555">- - </span>1 ק"מ מבית הספר'; return e; };
-  lg.addTo(map);
 
   const marks = {}; let sel = null;
-  function pinHtml(l, s){ return '<div class="pin'+(s?' sel':'')+(l.coord_unverified?' uv':'')+'" style="background:'+COL[band(l.price)]+'">'+(l.price/1000).toFixed(1).replace(/\.0$/,'')+(isNew(l)?'<span class="nw">חדש</span>':'')+'</div>'; }
-  const icon = (l, s) => L.divIcon({className:'', html:pinHtml(l,s), iconSize:[26,26], iconAnchor:[13,13]});
+  function pinHtml(l, s){ const st = STAT[l.id];
+    return '<div class="pin'+(s?' sel':'')+(l.coord_unverified?' uv':'')+(st==='no'?' no':'')+'">'+fmt(l.price)+' ₪'+
+      (isNew(l)?'<span class="nw">חדש</span>':'')+
+      (st?'<span class="st" style="background:'+ST[st].c+'"></span>':'')+'</div>'; }
+  const icon = (l, s) => L.divIcon({className:'', html:pinHtml(l,s), iconSize:[0,0], iconAnchor:[0,0]});
   for (const l of all){
     marks[l.id] = L.marker([l.lat, l.lon], {icon:icon(l,false), title:l.addr, riseOnHover:true}).addTo(map).on('click', () => select(l.id, false));
   }
+  const refreshIcons = () => { for (const l of all) marks[l.id].setIcon(icon(l, l.id === sel)); };
 
-  const card = document.getElementById('card');
-  function select(id, fly){
-    if (sel && marks[sel]) marks[sel].setIcon(icon(all.find(x=>x.id===sel), false));
+  const card = document.getElementById('card'), mapEl = document.getElementById('map');
+  let detOpen = false;
+  const A = (u, t) => '<a href="'+esc(u)+'" target="_blank" rel="noopener">'+t+'</a>';
+  function tags(l){
+    const t = [], bc = l.building_check || {}, dr = drop(l);
+    if (bc.status === 'תמ"א 38') t.push('תמ"א 38 בבניין – לברר לוח זמנים');
+    else if (bc.nearby_plan) t.push('תכנית פינוי-בינוי סמוכה – לברר');
+    if (dr) t.push('המחיר ירד ב-'+fmt(dr)+' ₪');
+    return t.slice(0, 2);
+  }
+  function cardHtml(l){
+    const mk = market(l), m = mk.m, h = hist(l), sc = score(l), pp = parts(l), st = STAT[l.id], bc = l.building_check || {status:'לא נבדק'};
+    const tg = tags(l);
+    const row = (k, v) => '<dt>'+k+'</dt><dd>'+v+'</dd>';
+    const mkTxt = (mk.pct===0 ? 'כמו ' : Math.abs(mk.pct)+'% '+(mk.pct<0?'מתחת ל':'מעל ל')) + 'חציון ' + fmt(Math.round(mk.ref)) + ' ₪' + (mk.real ? '' : ' (ביחס לדירות במפה)') +
+      '<span class="sm">'+(mk.real ? 'חציון '+m.n+' מודעות 3 חד׳ ב'+A(m.url,'Realta')+(m.alias?' ('+esc(m.alias)+')':'')+', '+dmy(m.fetched)+
+        (m.refs||[]).filter(r=>r.url).map(r => '<br>עוד: '+A(r.url, esc(r.label))+(r.value?' – '+fmt(r.value)+' ₪':'')).join('')
+        : 'אין נתון שכונתי אמין'+(m && m.note ? ' ('+esc(m.note)+')' : '')+' – חציון '+all.length+' הדירות במפה')+'</span>';
+    const hTxt = h.map(x => '<bdi>'+fmt(x.price)+' ₪</bdi> ('+dmy(x.date)+')').join(' ← ');
+    const scTxt = sc + ' מתוך 100<span class="sm">מחיר '+Math.round(pp.price*100)+' · מצב '+Math.round(pp.cond*100)+' · הליכה '+Math.round(pp.walk*100)+' · ממ"ד/מעלית/חניה '+Math.round(pp.amen*100)+'</span>';
+    const bcTxt = esc(bc.status) + (bc.status==='לא נמצא' ? ' (לא אומת שאין)' : '') + (bc.nearby_plan ? '<span class="sm">תכנית סמוכה: '+esc(bc.nearby_plan)+'</span>' : '') +
+      (bc.note ? '<span class="sm">'+esc(bc.note)+'</span>' : '') + '<span class="sm">'+(bc.source_url ? A(bc.source_url,'מקור')+' · ' : '')+(bc.checked_at ? 'נבדק '+dmy(bc.checked_at) : '')+'</span>';
+    const stb = '<div class="stb">'+Object.entries(ST).map(([k,v]) => '<button data-st="'+k+'"'+(st===k?' class="on" style="background:'+v.c+'"':'')+' aria-pressed="'+(st===k)+'">'+v.t+'</button>').join('')+'</div>';
+    const links = A(l.url, 'למודעה ב'+esc(l.site)) + (l.extra_url ? A(l.extra_url, 'מודעה נוספת') : '') + '<a class="g" href="'+gmaps(l)+'" target="_blank" rel="noopener">Google Maps</a>';
+    const ord = order(), i = ord.findIndex(x => x.id === l.id);
+    return '<button class="x" aria-label="סגור">×</button>'+
+      (ord.length > 1 && i >= 0 ? '<div class="nav" dir="ltr"><button data-nav="1" aria-label="הבאה"'+(i===ord.length-1?' disabled':'')+'>‹</button><span>'+(i+1)+'/'+ord.length+'</span><button data-nav="-1" aria-label="הקודמת"'+(i===0?' disabled':'')+'>›</button></div>' : '')+
+      '<div class="hd">'+(l.image ? '<img class="th" src="'+esc(l.image)+'" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">' : '')+
+      '<div class="tt"><h2>'+esc(l.addr)+'</h2><div class="hood">'+esc(l.hood)+'</div></div></div>'+
+      '<div class="price"><b>'+fmt(l.price)+' ₪</b><span class="meta">ציון '+sc+' · '+l.walk_min+' דק׳ הליכה · '+esc(l.sqm)+' מ"ר</span></div>'+
+      (tg.length ? '<div class="tags">'+tg.map(x => '<span class="tag">'+x+'</span>').join('')+'</div>' : '')+
+      stb+
+      '<details'+(detOpen?' open':'')+'><summary>פרטים נוספים</summary><dl>'+
+        row('מול השוק', mkTxt)+
+        row('היסטוריית מחיר', hTxt)+
+        row('ציון התאמה', scTxt)+
+        row('בדיקת בניין', bcTxt)+
+        row('חדרים', l.rooms+' חד׳ · '+esc(l.sqm)+' מ"ר')+
+        row('קומה', esc(l.floor))+
+        row('ארנונה', arnona(l))+
+        row('מצב', esc(l.cond||'—'))+
+        row('הערות', esc(l.notes||'—'))+
+        row('לבית הספר', l.walk_min+' דק׳ הליכה ('+km(l.walk_m)+')')+
+        (kids ? row('גני שעשועים', play400[l.id]+' במרחק עד 400 מ\'') : '')+
+        row('מפרסם', esc(l.ad))+
+        row('פורסם', esc(l.posted))+
+        (l.coord_unverified ? row('מיקום', 'משוער ('+esc(l.coord_source)+')') : '')+
+      '</dl></details>'+
+      '<div class="links">'+links+'</div>';
+  }
+  function select(id, fly, noPan){
+    if (sel && marks[sel]) { marks[sel].setIcon(icon(all.find(x=>x.id===sel), false)); marks[sel].setZIndexOffset(0); }
     sel = id; const l = all.find(x => x.id === id);
-    marks[id].setIcon(icon(l, true)); marks[id].setZIndexOffset(1000);
+    if (!l) return;
+    marks[id].setIcon(icon(l, true)); marks[id].setZIndexOffset(1000); mapEl.classList.add('has-sel');
     if (fly) { panel.classList.remove('open'); map.flyTo([l.lat, l.lon], 16, {duration:.8}); }
     if (fly) map.once('moveend', () => keepVisible(l));
-    const links = '<a href="'+esc(l.url)+'" target="_blank" rel="noopener">למודעה ב'+esc(l.site)+'</a>' + (l.extra_url ? '<a href="'+esc(l.extra_url)+'" target="_blank" rel="noopener">מודעה נוספת</a>' : '') + '<a class="g" href="'+gmaps(l)+'" target="_blank" rel="noopener">Google Maps</a>';
-    card.innerHTML = '<button class="x" aria-label="סגור">×</button><h2>'+(isNew(l)?'<span class="badge">חדש</span>':'')+esc(l.addr)+'</h2><div class="sub">'+esc(l.hood)+'</div>'+
-      '<table>'+
-      '<tr><td>מחיר</td><td><b>'+fmt(l.price)+' ₪</b> לחודש</td></tr>'+
-      '<tr><td>חדרים · מ"ר</td><td>'+l.rooms+' חד׳ · '+esc(l.sqm)+' מ"ר</td></tr>'+
-      '<tr><td>קומה</td><td>'+esc(l.floor)+'</td></tr>'+
-      '<tr><td>ארנונה</td><td>'+arnona(l)+'</td></tr>'+
-      '<tr><td>מצב / תוספות</td><td>'+esc(l.cond||'—')+'</td></tr>'+
-      '<tr><td>הערות</td><td>'+esc(l.notes||'—')+'</td></tr>'+
-      '<tr><td>מפרסם</td><td>'+esc(l.ad)+'</td></tr>'+
-      '<tr><td>פורסם</td><td>'+esc(l.posted)+'</td></tr>'+
-      '<tr><td>לבית הספר</td><td>🚶 '+l.walk_min+' דק׳ הליכה ('+km(l.walk_m)+')</td></tr>'+
-      '</table>'+(l.coord_unverified?'<div class="warn">⚠ המיקום על המפה משוער ('+esc(l.coord_source)+')</div>':'')+
-      '<div class="links">'+links+'</div>';
+    detOpen = false;
+    card.innerHTML = cardHtml(l);
     card.classList.add('open');
-    if (!fly) keepVisible(l);
-    card.querySelector('.x').onclick = closeCard;
+    if (!fly && !noPan) keepVisible(l);
     renderRows();
   }
+  card.addEventListener('toggle', e => { if (e.target.tagName === 'DETAILS') { detOpen = e.target.open; if (sel) keepVisible(all.find(x => x.id === sel)); } }, true);
+  card.addEventListener('click', e => {
+    if (e.target.closest('.x')) return closeCard();
+    const nb = e.target.closest('button[data-nav]'); if (nb) return go(+nb.dataset.nav);
+    const b = e.target.closest('button[data-st]'); if (!b || !sel) return;
+    setStat(sel, STAT[sel] === b.dataset.st ? '' : b.dataset.st); const l = all.find(x => x.id === sel);
+    const top = card.scrollTop; card.innerHTML = cardHtml(l); card.scrollTop = top;
+    marks[sel].setIcon(icon(l, true)); renderRows(true);
+  });
   function keepVisible(l){
     const land = matchMedia('(orientation:landscape) and (max-height:500px)').matches;
     const pt = map.latLngToContainerPoint([l.lat, l.lon]), sz = map.getSize(); let dx = 0, dy = 0;
     if (land) { const minX = card.offsetWidth + 30; if (pt.x < minX) dx = pt.x - minX; else if (pt.x > sz.x - 30) dx = pt.x - (sz.x - 30); }
-    else { const maxY = sz.y - card.offsetHeight - 30; if (pt.y > maxY) dy = pt.y - maxY; else if (pt.y < 30) dy = pt.y - 30; }
+    else { const maxY = sz.y - card.offsetHeight - 30; if (pt.y > maxY) dy = pt.y - maxY; else if (pt.y < 30) dy = pt.y - 30; if (pt.x < 60) dx = pt.x - 60; else if (pt.x > sz.x - 60) dx = pt.x - (sz.x - 60); }
     if (dx || dy) map.panBy([dx, dy]);
   }
-  function closeCard(){ card.classList.remove('open'); if (sel){ marks[sel].setIcon(icon(all.find(x=>x.id===sel), false)); sel = null; renderRows(); } }
+  function go(dir){
+    const ord = order(), i = ord.findIndex(x => x.id === sel); if (i < 0) return;
+    const n = ord[i + dir]; if (!n) return;
+    select(n.id, false, true);
+    const sz = map.getSize(), land = matchMedia('(orientation:landscape) and (max-height:500px)').matches;
+    const target = land ? L.point(card.offsetWidth + (sz.x - card.offsetWidth) / 2, sz.y / 2) : L.point(sz.x / 2, (sz.y - card.offsetHeight) / 2);
+    const pt = map.latLngToContainerPoint([n.lat, n.lon]);
+    map.panBy(pt.subtract(target), {animate:true, duration:.35});
+  }
+  let tx = null, ty = 0;
+  card.addEventListener('touchstart', e => { if (e.touches.length !== 1) { tx = null; return; } tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, {passive:true});
+  card.addEventListener('touchend', e => {
+    if (tx === null) return; const t = e.changedTouches[0], dx = t.clientX - tx, dy = t.clientY - ty; tx = null;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > 1.5 * Math.abs(dy)) go(dx > 0 ? 1 : -1);   // RTL: finger moving right brings the next listing (which sits to the left)
+  }, {passive:true});
+  function closeCard(){ card.classList.remove('open'); mapEl.classList.remove('has-sel'); if (sel){ marks[sel].setIcon(icon(all.find(x=>x.id===sel), false)); sel = null; renderRows(); } }
   map.on('click', closeCard);
 
   const panel = document.getElementById('panel'), rows = document.getElementById('rows');
-  const fArea = document.getElementById('fArea'), fWalk = document.getElementById('fWalk'), fSort = document.getElementById('fSort');
-  let walk15 = false;
-  function visible(l){ return (fArea.value === 'all' || l.area === fArea.value) && (!walk15 || l.walk_min <= 15); }
-  function renderRows(){
-    const v = all.filter(visible).sort((a,b) => fSort.value === 'price' ? a.price - b.price || a.walk_m - b.walk_m : a.walk_m - b.walk_m);
-    document.getElementById('cnt').textContent = v.length + ' מתוך ' + all.length;
-    rows.innerHTML = v.map(l => '<div class="row'+(l.id===sel?' sel':'')+'" data-id="'+l.id+'"><span class="dot" style="background:'+COL[band(l.price)]+'"></span><div class="a"><b>'+(isNew(l)?'<span class="badge">חדש</span>':'')+esc(l.addr)+'</b><div>'+esc(l.hood)+' · '+esc(l.sqm)+' מ"ר · 🚶 '+l.walk_min+' דק׳</div></div><div class="p">'+fmt(l.price)+' ₪</div></div>').join('');
-    for (const l of all){ const m = marks[l.id]; const on = visible(l); if (on && !map.hasLayer(m)) m.addTo(map); if (!on && map.hasLayer(m)) map.removeLayer(m); }
+  const $ = id => document.getElementById(id);
+  const fArea = $('fArea'), fWalk = $('fWalk'), fSort = $('fSort'), fDrop = $('fDrop'), fHideNo = $('fHideNo'), fStat = $('fStat'), fKids = $('fKids');
+  let walk15 = false, onlyDrop = false, hideNo = LS.get('dira.hideNo', true);
+  fHideNo.classList.toggle('on', hideNo);
+  function visible(l){
+    const st = STAT[l.id] || 'none';
+    if (fStat.value !== 'all' && fStat.value !== st) return false;
+    if (hideNo && st === 'no' && fStat.value !== 'no') return false;
+    return (fArea.value === 'all' || l.area === fArea.value) && (!walk15 || l.walk_min <= 15) && (!onlyDrop || drop(l) > 0);
   }
-  rows.addEventListener('click', e => { const r = e.target.closest('.row'); if (r) select(r.dataset.id, true); });
-  fArea.onchange = renderRows; fSort.onchange = renderRows;
+  function order(){
+    const by = {price:(a,b) => a.price - b.price || a.walk_m - b.walk_m, dist:(a,b) => a.walk_m - b.walk_m, score:(a,b) => score(b) - score(a) || a.price - b.price}[fSort.value];
+    return all.filter(visible).sort(by);
+  }
+  function renderRows(keepSel){
+    const v = order();
+    $('cnt').textContent = v.length + ' מתוך ' + all.length;
+    rows.innerHTML = v.length ? v.map(l => { const st = STAT[l.id], dr = drop(l), mk = market(l);
+      return '<div class="row'+(l.id===sel?' sel':'')+'" data-id="'+l.id+'">'+(l.image ? '<img class="th" src="'+esc(l.image)+'" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),{className:\'th\'}))">' : '<span class="th"></span>')+'<div class="a"><b>'+(isNew(l)?'<span class="badge">חדש</span>':'')+(dr?'<span class="drop">ירד '+fmt(dr)+'</span>':'')+(st?'<span class="sd" style="background:'+ST[st].c+'"></span>':'')+esc(l.addr)+'</b><div>'+esc(l.hood)+' · '+l.walk_min+' דק׳ הליכה · '+['מתחת לשוק','סביב השוק','מעל השוק'][mk.cls]+(l.building_check&&l.building_check.status==='תמ"א 38'?' · תמ"א 38':'')+'</div></div><span class="s" title="ציון התאמה">'+score(l)+'</span><div class="p">'+fmt(l.price)+' ₪</div></div>'; }).join('')
+      : '<div class="row" style="color:var(--mute)">אין דירות שמתאימות לסינון</div>';
+    for (const l of all){ const m = marks[l.id]; const on = visible(l) || l.id === sel; if (on && !map.hasLayer(m)) m.addTo(map); if (!on && map.hasLayer(m)) map.removeLayer(m); }
+  }
+  rows.addEventListener('click', e => { const r = e.target.closest('.row[data-id]'); if (r) select(r.dataset.id, true); });
+  fArea.onchange = () => renderRows(); fSort.onchange = () => renderRows(); fStat.onchange = () => renderRows();
   fWalk.onclick = () => { walk15 = !walk15; fWalk.classList.toggle('on', walk15); renderRows(); };
-  document.getElementById('btnList').onclick = () => { card.classList.remove('open'); panel.classList.toggle('open'); };
-  document.getElementById('btnClose').onclick = () => panel.classList.remove('open');
+  fDrop.onclick = () => { onlyDrop = !onlyDrop; fDrop.classList.toggle('on', onlyDrop); renderRows(); };
+  fHideNo.onclick = () => { hideNo = !hideNo; LS.set('dira.hideNo', hideNo); fHideNo.classList.toggle('on', hideNo); renderRows(); };
+  fKids.onclick = () => toggleKids();
+  function toggleKids(force){
+    const on = force ?? !(kidsLayer && map.hasLayer(kidsLayer));
+    if (on && kids && !kidsLayer){
+      kidsLayer = L.layerGroup(kids.features.map(f => { const [e, n] = KI[f.properties.k] || ['•','']; const c = f.geometry.coordinates;
+        return L.marker([c[1], c[0]], {icon:L.divIcon({className:'', html:'<div class="kid">'+e+'</div>', iconSize:[18,18], iconAnchor:[9,9]}), zIndexOffset:-500, keyboard:false})
+          .bindPopup('<div dir="rtl" style="font-size:13px"><b>'+esc(f.properties.n || n)+'</b>'+(f.properties.n?'<br><span style="color:#666">'+n+'</span>':'')+'</div>', {closeButton:false}); }));
+    }
+    if (!kidsLayer) { fKids.disabled = !kids; return; }
+    if (on) kidsLayer.addTo(map); else map.removeLayer(kidsLayer);
+    fKids.classList.toggle('on', on);
+  }
+  /* weights */
+  const wts = $('wts');
+  $('btnW').onclick = () => { wts.classList.toggle('open'); $('btnW').classList.toggle('on', wts.classList.contains('open')); };
+  const sliders = [...wts.querySelectorAll('input[data-w]')];
+  const syncW = () => sliders.forEach(s => { s.value = W[s.dataset.w]; s.nextElementSibling.textContent = W[s.dataset.w]; });
+  const onW = () => { LS.set('dira.weights.v1', W); refreshIcons(); renderRows(); if (sel) { const t = card.scrollTop; card.innerHTML = cardHtml(all.find(x=>x.id===sel)); card.scrollTop = t; } };
+  sliders.forEach(s => s.oninput = () => { W[s.dataset.w] = +s.value; s.nextElementSibling.textContent = s.value; onW(); });
+  $('btnWReset').onclick = () => { W = Object.assign({}, WDEF); syncW(); onW(); };
+  syncW();
+  /* export / import of statuses (local file only) */
+  $('btnExp').onclick = () => { const b = new Blob([JSON.stringify({dira_status:1, exported_at:new Date().toISOString(), status:STAT}, null, 1)], {type:'application/json'}); const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = 'dira-status.json'; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000); };
+  $('btnImp').onclick = () => $('impFile').click();
+  $('impFile').onchange = async e => { const f = e.target.files[0]; if (!f) return; try { const j = JSON.parse(await f.text()); const s = j.status || j; for (const [k, v] of Object.entries(s)) if (ST[v]) STAT[k] = v; LS.set('dira.status.v1', STAT); refreshIcons(); renderRows(); alert('יובאו ' + Object.keys(s).length + ' סטטוסים'); } catch(err){ alert('קובץ לא תקין'); } e.target.value = ''; };
+
+  $('btnList').onclick = () => { card.classList.remove('open'); panel.classList.toggle('open'); };
+  $('btnClose').onclick = () => panel.classList.remove('open');
   renderRows();
-  window.__dira = {select, map, all};
+  window.__dira = {select, go, order, map, all, score, market, setStat:(id,v)=>{ setStat(id,v); refreshIcons(); renderRows(); }, toggleKids};
   const q = new URLSearchParams(location.search);
+  if (q.get('kids')) toggleKids(true);
   if (q.get('sel')) select(q.get('sel'), false);
   if (q.get('debug')) { const e=document.createElement('pre'); e.id='dbg'; e.textContent=JSON.stringify({size:map.getSize(),b:map.getBounds(),z:map.getZoom(),mapEl:document.getElementById('map').getBoundingClientRect()}); document.body.appendChild(e); }
   if (q.get('list')) panel.classList.add('open');
+  if (q.get('w')) { panel.classList.add('open'); wts.classList.add('open'); $('btnW').classList.add('on'); }
 })();
 </script>
 </body>
