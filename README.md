@@ -47,3 +47,8 @@ The tap card is calm: address, then price with score, walk time and sqm, then st
 - **Basemap:** OSM tiles rendered in soft grayscale via a CSS filter (stays light even in forced dark mode).
 - **Swipe / arrows:** with a card open, swipe horizontally (RTL: finger right → next) or use ‹ › in the card header to move through listings in the current filter + sort order; the map pans and the highlight follows. Horizontal overscroll/back-gesture is disabled on the card.
 - **Photos:** `image` in listings.json is the first photo of the ad on the Yad2 CDN (img.yad2.co.il, hotlinked, checked HTTP 200 image/jpeg). If it is missing or fails to load, a gray placeholder is shown. Listings whose ad has no photos have no `image` field.
+
+## Round 4 – search area update (31.10.2026)
+- **Expanded:** Lev HaIr (לב העיר) and the whole Old North (הצפון הישן) are now part of the search. The area filter has new groups for them: `area: "oldnorth"` (הצפון הישן) and `area: "center"` (לב העיר).
+- **Excluded:** HaMeshtela (המשתלה) and Hadar Yosef (הדר יוסף) are too far. Their listings (sas, shal) are marked `status: "removed"` and their `meta.market` entries were dropped. Neve Sharet (נווה שרת) stays for now.
+- **New-listing tags:** `meta.prev_updated_at` holds the previous update time, so listings first seen after it get the "חדש" tag.
