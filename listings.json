@@ -1,1452 +1,1478 @@
 {
- "meta": {
-  "updated_at": "2026-11-01T08:27:00+02:00",
-  "prev_updated_at": "2026-10-31T21:47:00+02:00",
-  "search": "3 חדרים עד 7,000 ₪ בצפון תל אביב, הצפון הישן ולב העיר",
-  "school": {
-   "name": "בית הספר",
-   "lat": 32.08849,
-   "lon": 34.785039
+  "meta": {
+    "updated_at": "2026-11-01T08:27:00+02:00",
+    "prev_updated_at": "2026-10-31T21:47:00+02:00",
+    "search": "3 חדרים עד 7,000 ₪ בצפון תל אביב, הצפון הישן ולב העיר",
+    "school": {
+      "name": "בית הספר",
+      "lat": 32.08849,
+      "lon": 34.785039
+    },
+    "walk_source": "OSRM (מסלול הליכה ב-OpenStreetMap)",
+    "market": {
+      "כיכר המדינה": {
+        "source": "Realta – חציון מחיר מבוקש במודעות 3 חד׳ פעילות",
+        "url": "https://realta.co.il/he/tel-aviv-yafo/new-north-kikar-hamedina-area/3-rooms/",
+        "fetched": "2026-10-31",
+        "n": 70,
+        "basis": "מודעות פעילות (כולל אולי מודעות שבמפה)",
+        "median": 12000,
+        "refs": [
+          {
+            "label": "yadata (יד2) – ממוצע 3 חד׳ בחודש האחרון",
+            "value": 9900,
+            "url": "https://yadata.yad2.co.il/market/rent?area=1&city=5000&neighborhood=1516&region=3"
+          }
+        ]
+      },
+      "צפון ישן צפוני": {
+        "source": "Realta – חציון מחיר מבוקש במודעות 3 חד׳ פעילות",
+        "url": "https://realta.co.il/he/tel-aviv-yafo/old-north-northern-part/3-rooms/",
+        "fetched": "2026-10-31",
+        "n": 63,
+        "basis": "מודעות פעילות (כולל אולי מודעות שבמפה)",
+        "median": 10000,
+        "refs": [
+          {
+            "label": "yadata (יד2) – ממוצע 3 חד׳ בחודש האחרון",
+            "value": 9200,
+            "url": "https://yadata.yad2.co.il/market/rent?area=1&city=5000&neighborhood=1483&region=3"
+          }
+        ]
+      },
+      "צפון חדש צפוני": {
+        "source": "Realta – חציון מחיר מבוקש במודעות 3 חד׳ פעילות",
+        "url": "https://realta.co.il/he/tel-aviv-yafo/new-north-northern-part/3-rooms/",
+        "fetched": "2026-10-31",
+        "n": 19,
+        "basis": "מודעות פעילות (כולל אולי מודעות שבמפה)",
+        "median": 10000,
+        "refs": [
+          {
+            "label": "מדלן – ממוצע שכירות 3 חד׳ (עודכן 15.6.2026)",
+            "value": 10200,
+            "url": "https://www.madlan.co.il/area-info/%D7%A9%D7%9B%D7%95%D7%A0%D7%94-%D7%94%D7%A6%D7%A4%D7%95%D7%9F-%D7%94%D7%97%D7%93%D7%A9-%D7%94%D7%97%D7%9C%D7%A7-%D7%94%D7%A6%D7%A4%D7%95%D7%A0%D7%99-%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95-%D7%99%D7%A9%D7%A8%D7%90%D7%9C"
+          }
+        ]
+      },
+      "צמרות איילון": {
+        "source": "Realta – חציון מחיר מבוקש במודעות 3 חד׳ פעילות",
+        "url": "https://realta.co.il/he/tel-aviv-yafo/tzameret-park/3-rooms/",
+        "fetched": "2026-10-31",
+        "n": 13,
+        "basis": "מודעות פעילות (כולל אולי מודעות שבמפה)",
+        "median": 12000,
+        "alias": "Realta: פארק צמרת (אותו אזור מגדלים)"
+      },
+      "בבלי": {
+        "source": "Realta – חציון מחיר מבוקש במודעות 3 חד׳ פעילות",
+        "url": "https://realta.co.il/he/tel-aviv-yafo/shikun-bavli/3-rooms/",
+        "fetched": "2026-10-31",
+        "n": 37,
+        "basis": "מודעות פעילות (כולל אולי מודעות שבמפה)",
+        "median": 12500,
+        "refs": [
+          {
+            "label": "ביזפורטל – 3 חד׳ בבניין ישן 7,500–9,000; במגדלים 12,000–16,000",
+            "value": null,
+            "url": "https://www.bizportal.co.il/realestates/news/article/20038123"
+          }
+        ]
+      },
+      "כוכב הצפון": {
+        "source": "Realta – חציון מחיר מבוקש במודעות 3 חד׳ פעילות",
+        "url": "https://realta.co.il/he/tel-aviv-yafo/northern-star/3-rooms/",
+        "fetched": "2026-10-31",
+        "n": 8,
+        "basis": "מודעות פעילות (כולל אולי מודעות שבמפה)",
+        "median": 13500
+      },
+      "רמת אביב": {
+        "source": "Realta – חציון מחיר מבוקש במודעות 3 חד׳ פעילות",
+        "url": "https://realta.co.il/he/tel-aviv-yafo/ramat-aviv/3-rooms/",
+        "fetched": "2026-10-31",
+        "n": 6,
+        "basis": "מודעות פעילות (כולל אולי מודעות שבמפה)",
+        "median": 7050
+      },
+      "נווה שרת": {
+        "source": "Realta – חציון מחיר מבוקש במודעות 3 חד׳ פעילות",
+        "url": "https://realta.co.il/he/tel-aviv-yafo/neve-sharet/3-rooms/",
+        "fetched": "2026-10-31",
+        "n": 17,
+        "basis": "מודעות פעילות (כולל אולי מודעות שבמפה)",
+        "median": 5770
+      }
+    },
+    "market_rule": {
+      "below": 0.9,
+      "above": 1.1,
+      "text": "מתחת לשוק < 90% מהחציון; סביב השוק 90–110%; מעל > 110%. בלי נתון שכונתי – השוואה לחציון הדירות במפה."
+    },
+    "image_note": "image = first photo of the ad on Yad2 (img.yad2.co.il), hotlinked; verified HTTP 200 image/jpeg on 2026-10-31. Missing = the ad has no photos (gray placeholder)."
   },
-  "walk_source": "OSRM (מסלול הליכה ב-OpenStreetMap)",
-  "market": {
-   "כיכר המדינה": {
-    "source": "Realta – חציון מחיר מבוקש במודעות 3 חד׳ פעילות",
-    "url": "https://realta.co.il/he/tel-aviv-yafo/new-north-kikar-hamedina-area/3-rooms/",
-    "fetched": "2026-10-31",
-    "n": 70,
-    "basis": "מודעות פעילות (כולל אולי מודעות שבמפה)",
-    "median": 12000,
-    "refs": [
-     {
-      "label": "yadata (יד2) – ממוצע 3 חד׳ בחודש האחרון",
-      "value": 9900,
-      "url": "https://yadata.yad2.co.il/market/rent?area=1&city=5000&neighborhood=1516&region=3"
-     }
-    ]
-   },
-   "צפון ישן צפוני": {
-    "source": "Realta – חציון מחיר מבוקש במודעות 3 חד׳ פעילות",
-    "url": "https://realta.co.il/he/tel-aviv-yafo/old-north-northern-part/3-rooms/",
-    "fetched": "2026-10-31",
-    "n": 63,
-    "basis": "מודעות פעילות (כולל אולי מודעות שבמפה)",
-    "median": 10000,
-    "refs": [
-     {
-      "label": "yadata (יד2) – ממוצע 3 חד׳ בחודש האחרון",
-      "value": 9200,
-      "url": "https://yadata.yad2.co.il/market/rent?area=1&city=5000&neighborhood=1483&region=3"
-     }
-    ]
-   },
-   "צפון חדש צפוני": {
-    "source": "Realta – חציון מחיר מבוקש במודעות 3 חד׳ פעילות",
-    "url": "https://realta.co.il/he/tel-aviv-yafo/new-north-northern-part/3-rooms/",
-    "fetched": "2026-10-31",
-    "n": 19,
-    "basis": "מודעות פעילות (כולל אולי מודעות שבמפה)",
-    "median": 10000,
-    "refs": [
-     {
-      "label": "מדלן – ממוצע שכירות 3 חד׳ (עודכן 15.6.2026)",
-      "value": 10200,
-      "url": "https://www.madlan.co.il/area-info/%D7%A9%D7%9B%D7%95%D7%A0%D7%94-%D7%94%D7%A6%D7%A4%D7%95%D7%9F-%D7%94%D7%97%D7%93%D7%A9-%D7%94%D7%97%D7%9C%D7%A7-%D7%94%D7%A6%D7%A4%D7%95%D7%A0%D7%99-%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95-%D7%99%D7%A9%D7%A8%D7%90%D7%9C"
-     }
-    ]
-   },
-   "צמרות איילון": {
-    "source": "Realta – חציון מחיר מבוקש במודעות 3 חד׳ פעילות",
-    "url": "https://realta.co.il/he/tel-aviv-yafo/tzameret-park/3-rooms/",
-    "fetched": "2026-10-31",
-    "n": 13,
-    "basis": "מודעות פעילות (כולל אולי מודעות שבמפה)",
-    "median": 12000,
-    "alias": "Realta: פארק צמרת (אותו אזור מגדלים)"
-   },
-   "בבלי": {
-    "source": "Realta – חציון מחיר מבוקש במודעות 3 חד׳ פעילות",
-    "url": "https://realta.co.il/he/tel-aviv-yafo/shikun-bavli/3-rooms/",
-    "fetched": "2026-10-31",
-    "n": 37,
-    "basis": "מודעות פעילות (כולל אולי מודעות שבמפה)",
-    "median": 12500,
-    "refs": [
-     {
-      "label": "ביזפורטל – 3 חד׳ בבניין ישן 7,500–9,000; במגדלים 12,000–16,000",
-      "value": null,
-      "url": "https://www.bizportal.co.il/realestates/news/article/20038123"
-     }
-    ]
-   },
-   "כוכב הצפון": {
-    "source": "Realta – חציון מחיר מבוקש במודעות 3 חד׳ פעילות",
-    "url": "https://realta.co.il/he/tel-aviv-yafo/northern-star/3-rooms/",
-    "fetched": "2026-10-31",
-    "n": 8,
-    "basis": "מודעות פעילות (כולל אולי מודעות שבמפה)",
-    "median": 13500
-   },
-   "רמת אביב": {
-    "source": "Realta – חציון מחיר מבוקש במודעות 3 חד׳ פעילות",
-    "url": "https://realta.co.il/he/tel-aviv-yafo/ramat-aviv/3-rooms/",
-    "fetched": "2026-10-31",
-    "n": 6,
-    "basis": "מודעות פעילות (כולל אולי מודעות שבמפה)",
-    "median": 7050
-   },
-   "נווה שרת": {
-    "source": "Realta – חציון מחיר מבוקש במודעות 3 חד׳ פעילות",
-    "url": "https://realta.co.il/he/tel-aviv-yafo/neve-sharet/3-rooms/",
-    "fetched": "2026-10-31",
-    "n": 17,
-    "basis": "מודעות פעילות (כולל אולי מודעות שבמפה)",
-    "median": 5770
-   }
-  },
-  "market_rule": {
-   "below": 0.9,
-   "above": 1.1,
-   "text": "מתחת לשוק < 90% מהחציון; סביב השוק 90–110%; מעל > 110%. בלי נתון שכונתי – השוואה לחציון הדירות במפה."
-  },
-  "image_note": "image = first photo of the ad on Yad2 (img.yad2.co.il), hotlinked; verified HTTP 200 image/jpeg on 2026-10-31. Missing = the ad has no photos (gray placeholder)."
- },
- "listings": [
-  {
-   "id": "lis",
-   "addr": "ליסין (מספר לא פורסם)",
-   "hood": "כיכר המדינה",
-   "area": "north",
-   "price": 7000,
-   "rooms": 3,
-   "sqm": "80",
-   "floor": "קרקע מוגבהת מתוך 3",
-   "ad": "תיווך",
-   "posted": "10.9",
-   "cond": "2 מרפסות · מקלט",
-   "notes": "חיות מחמד מותרות, ארנונה 700. תמ\"א 38 צפויה בבניין הסמוך בעוד כשנה",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/tbophx70",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.086923,
-   "lon": 34.788672,
-   "coord_source": "מיקום מתוך מודעת יד2",
-   "coord_unverified": false,
-   "walk_m": 431,
-   "walk_min": 6,
-   "line_m": 384,
-   "first_seen": "2026-10-31",
-   "status": "active",
-   "price_history": [
+  "listings": [
     {
-     "date": "2026-10-31",
-     "price": 7000
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-10-31",
-    "note": "אין בקשה/היתר או תכנית התחדשות במיקום (מספר הבית לא פורסם – נבדק לפי מיקום משוער). במודעה: תמ\"א 38 צפויה בבניין הסמוך."
-   },
-   "image": "https://img.yad2.co.il/Pic/202609/24/2_6/o/y2_1_U_S591jIce_20260924.jpg"
-  },
-  {
-   "id": "sok",
-   "addr": "נחום סוקולוב 59",
-   "hood": "צפון ישן צפוני",
-   "area": "oldnorth",
-   "price": 6200,
-   "rooms": 3,
-   "sqm": "56",
-   "floor": "2 מתוך 4",
-   "ad": "פרטי",
-   "posted": "21.8",
-   "cond": "מזגן",
-   "notes": "מתאימה לשותפים",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/qxrebn30",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.090712,
-   "lon": 34.777822,
-   "coord_source": "מיקום מתוך מודעת יד2",
-   "coord_unverified": false,
-   "walk_m": 1006,
-   "walk_min": 13,
-   "line_m": 723,
-   "first_seen": "2026-10-31",
-   "status": "active",
-   "price_history": [
+      "id": "lis",
+      "addr": "ליסין (מספר לא פורסם)",
+      "hood": "כיכר המדינה",
+      "area": "north",
+      "price": 7000,
+      "rooms": 3,
+      "sqm": "80",
+      "floor": "קרקע מוגבהת מתוך 3",
+      "ad": "תיווך",
+      "posted": "10.9",
+      "cond": "2 מרפסות · מקלט",
+      "notes": "חיות מחמד מותרות, ארנונה 700. תמ\"א 38 צפויה בבניין הסמוך בעוד כשנה",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/tbophx70",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.086923,
+      "lon": 34.788672,
+      "coord_source": "מיקום מתוך מודעת יד2",
+      "coord_unverified": false,
+      "walk_m": 431,
+      "walk_min": 6,
+      "line_m": 384,
+      "first_seen": "2026-10-31",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-10-31",
+          "price": 7000
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-10-31",
+        "note": "אין בקשה/היתר או תכנית התחדשות במיקום (מספר הבית לא פורסם – נבדק לפי מיקום משוער). במודעה: תמ\"א 38 צפויה בבניין הסמוך."
+      },
+      "image": "https://img.yad2.co.il/Pic/202609/24/2_6/o/y2_1_U_S591jIce_20260924.jpg"
+    },
     {
-     "date": "2026-10-31",
-     "price": 6200
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/772",
-    "checked_at": "2026-10-31",
-    "note": "לא נמצאו בקשות היתר או תכניות התחדשות לכתובת (GIS עירייה + חיפוש חדשות)."
-   },
-   "image": "https://img.yad2.co.il/Pic/202608/21/2_2/o/y2_1pa_010445_20260821103111.jpeg"
-  },
-  {
-   "id": "tz",
-   "addr": "הרב צירלסון 4",
-   "hood": "צפון חדש צפוני",
-   "area": "north",
-   "price": 6750,
-   "rooms": 3,
-   "sqm": "73",
-   "floor": "1 מתוך 4",
-   "ad": "פרטי",
-   "posted": "29.10",
-   "cond": "מקלט בבניין · מזגן",
-   "notes": "כניסה מיידית, ארנונה 900",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/kbx3f1t4",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.092751,
-   "lon": 34.794021,
-   "coord_source": "מיקום מתוך מודעת יד2",
-   "coord_unverified": false,
-   "walk_m": 1302,
-   "walk_min": 17,
-   "line_m": 970,
-   "first_seen": "2026-10-31",
-   "status": "active",
-   "price_history": [
+      "id": "sok",
+      "addr": "נחום סוקולוב 59",
+      "hood": "צפון ישן צפוני",
+      "area": "oldnorth",
+      "price": 6200,
+      "rooms": 3,
+      "sqm": "56",
+      "floor": "2 מתוך 4",
+      "ad": "פרטי",
+      "posted": "21.8",
+      "cond": "מזגן",
+      "notes": "מתאימה לשותפים",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/qxrebn30",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.090712,
+      "lon": 34.777822,
+      "coord_source": "מיקום מתוך מודעת יד2",
+      "coord_unverified": false,
+      "walk_m": 1006,
+      "walk_min": 13,
+      "line_m": 723,
+      "first_seen": "2026-10-31",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-10-31",
+          "price": 6200
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/772",
+        "checked_at": "2026-10-31",
+        "note": "לא נמצאו בקשות היתר או תכניות התחדשות לכתובת (GIS עירייה + חיפוש חדשות)."
+      },
+      "image": "https://img.yad2.co.il/Pic/202608/21/2_2/o/y2_1pa_010445_20260821103111.jpeg"
+    },
     {
-     "date": "2026-10-31",
-     "price": 6750
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/772",
-    "checked_at": "2026-10-31",
-    "note": "לא נמצאו בקשות היתר או תכניות התחדשות לכתובת (GIS עירייה + חיפוש חדשות)."
-   },
-   "image": "https://img.yad2.co.il/Pic/202610/29/2_2/o/y2_1pa_010283_20261029235621.jpeg"
-  },
-  {
-   "id": "nam",
-   "addr": "דרך נמיר 115",
-   "hood": "צפון חדש צפוני",
-   "area": "north",
-   "price": 5000,
-   "rooms": 3,
-   "sqm": "80",
-   "floor": "קרקע מתוך 3",
-   "ad": "תיווך",
-   "posted": "28.10",
-   "cond": "חצר גדולה · מקלט צמוד",
-   "notes": "קומת קרקע, ארנונה 1,600. שתי מודעות לאותה דירה אוחדו לנקודה אחת",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/bfvw22b3",
-   "site": "יד2",
-   "extra_url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/21guilzk",
-   "lat": 32.094075,
-   "lon": 34.794303,
-   "coord_source": "מיקום מתוך מודעת יד2",
-   "coord_unverified": false,
-   "walk_m": 1550,
-   "walk_min": 21,
-   "line_m": 1071,
-   "first_seen": "2026-10-31",
-   "status": "active",
-   "price_history": [
+      "id": "tz",
+      "addr": "הרב צירלסון 4",
+      "hood": "צפון חדש צפוני",
+      "area": "north",
+      "price": 6750,
+      "rooms": 3,
+      "sqm": "73",
+      "floor": "1 מתוך 4",
+      "ad": "פרטי",
+      "posted": "29.10",
+      "cond": "מקלט בבניין · מזגן",
+      "notes": "כניסה מיידית, ארנונה 900",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/kbx3f1t4",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.092751,
+      "lon": 34.794021,
+      "coord_source": "מיקום מתוך מודעת יד2",
+      "coord_unverified": false,
+      "walk_m": 1302,
+      "walk_min": 17,
+      "line_m": 970,
+      "first_seen": "2026-10-31",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-10-31",
+          "price": 6750
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/772",
+        "checked_at": "2026-10-31",
+        "note": "לא נמצאו בקשות היתר או תכניות התחדשות לכתובת (GIS עירייה + חיפוש חדשות)."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/29/2_2/o/y2_1pa_010283_20261029235621.jpeg"
+    },
     {
-     "date": "2026-10-31",
-     "price": 5000
-    }
-   ],
-   "building_check": {
-    "status": "תמ\"א 38",
-    "source_url": "https://archive-binyan.tel-aviv.gov.il/pages/results.aspx?owstikid=08001150&owsdoctikbakashanummekuvenet=26682&owsdocumenttype=%d7%94%d7%93%d7%9e%d7%99%d7%95%d7%aa",
-    "checked_at": "2026-10-31",
-    "note": "בקשה 20260426 (נפתחה 26.5.2026): הריסת בניין 6 קומות ובנייה חדשה מכוח תמ\"א 38 – בתהליך היתר."
-   },
-   "image": "https://img.yad2.co.il/Pic/202610/28/2_6/o/y2_1pa_010908_20261028164804.jpeg"
-  },
-  {
-   "id": "tza",
-   "addr": "צמרות איילון (רחוב לא פורסם)",
-   "hood": "צמרות איילון",
-   "area": "north",
-   "price": 5500,
-   "rooms": 3,
-   "sqm": "75",
-   "floor": "1",
-   "ad": "תיווך",
-   "posted": "11.8, הוקפצה היום",
-   "cond": "בניין חדש · ממ\"ד לפי הטקסט · מרפסת",
-   "notes": "מרוהטת, מחסן, חיות. מחיר נמוך מאוד לאזור, כדאי לוודא שהמודעה אמיתית",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/z7t4ll3n",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.087668,
-   "lon": 34.797372,
-   "coord_source": "מיקום מתוך מודעת יד2 (שוחזר מהמפה הקודמת)",
-   "coord_unverified": false,
-   "walk_m": 1687,
-   "walk_min": 22,
-   "line_m": 1194,
-   "first_seen": "2026-10-31",
-   "status": "active",
-   "price_history": [
+      "id": "nam",
+      "addr": "דרך נמיר 115",
+      "hood": "צפון חדש צפוני",
+      "area": "north",
+      "price": 5000,
+      "rooms": 3,
+      "sqm": "80",
+      "floor": "קרקע מתוך 3",
+      "ad": "תיווך",
+      "posted": "28.10",
+      "cond": "חצר גדולה · מקלט צמוד",
+      "notes": "קומת קרקע, ארנונה 1,600. שתי מודעות לאותה דירה אוחדו לנקודה אחת",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/bfvw22b3",
+      "site": "יד2",
+      "extra_url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/21guilzk",
+      "lat": 32.094075,
+      "lon": 34.794303,
+      "coord_source": "מיקום מתוך מודעת יד2",
+      "coord_unverified": false,
+      "walk_m": 1550,
+      "walk_min": 21,
+      "line_m": 1071,
+      "first_seen": "2026-10-31",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-10-31",
+          "price": 5000
+        }
+      ],
+      "building_check": {
+        "status": "תמ\"א 38",
+        "source_url": "https://archive-binyan.tel-aviv.gov.il/pages/results.aspx?owstikid=08001150&owsdoctikbakashanummekuvenet=26682&owsdocumenttype=%d7%94%d7%93%d7%9e%d7%99%d7%95%d7%aa",
+        "checked_at": "2026-10-31",
+        "note": "בקשה 20260426 (נפתחה 26.5.2026): הריסת בניין 6 קומות ובנייה חדשה מכוח תמ\"א 38 – בתהליך היתר."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/28/2_6/o/y2_1pa_010908_20261028164804.jpeg"
+    },
     {
-     "date": "2026-10-31",
-     "price": 5500
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-10-31",
-    "note": "הרחוב לא פורסם – נבדק לפי מיקום משוער בלבד."
-   }
-  },
-  {
-   "id": "tos",
-   "addr": "תוספתא 6",
-   "hood": "בבלי",
-   "area": "north",
-   "price": 6800,
-   "rooms": 3,
-   "sqm": "70",
-   "floor": "1 מתוך 4",
-   "ad": "תיווך",
-   "posted": "17.10",
-   "cond": "משופצת · מעלית · מקלט",
-   "notes": "חניה בבניין בכפוף למקום, מחסן, חיות. מודעה נוספת לאותה כתובת: 6,790 ₪, 68 מ\"ר, מרוהטת",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/ktiyqu0g",
-   "site": "יד2",
-   "extra_url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/9cko4qr6",
-   "lat": 32.096684,
-   "lon": 34.799245,
-   "coord_source": "מיקום מתוך מודעת יד2",
-   "coord_unverified": false,
-   "walk_m": 2118,
-   "walk_min": 28,
-   "line_m": 1619,
-   "first_seen": "2026-10-31",
-   "status": "active",
-   "price_history": [
+      "id": "tza",
+      "addr": "צמרות איילון (רחוב לא פורסם)",
+      "hood": "צמרות איילון",
+      "area": "north",
+      "price": 5500,
+      "rooms": 3,
+      "sqm": "75",
+      "floor": "1",
+      "ad": "תיווך",
+      "posted": "11.8, הוקפצה היום",
+      "cond": "בניין חדש · ממ\"ד לפי הטקסט · מרפסת",
+      "notes": "מרוהטת, מחסן, חיות. מחיר נמוך מאוד לאזור, כדאי לוודא שהמודעה אמיתית",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/z7t4ll3n",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.087668,
+      "lon": 34.797372,
+      "coord_source": "מיקום מתוך מודעת יד2 (שוחזר מהמפה הקודמת)",
+      "coord_unverified": false,
+      "walk_m": 1687,
+      "walk_min": 22,
+      "line_m": 1194,
+      "first_seen": "2026-10-31",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-10-31",
+          "price": 5500
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-10-31",
+        "note": "הרחוב לא פורסם – נבדק לפי מיקום משוער בלבד."
+      }
+    },
     {
-     "date": "2026-10-31",
-     "price": 6800
-    }
-   ],
-   "building_check": {
-    "status": "תמ\"א 38",
-    "source_url": "https://archive-binyan.tel-aviv.gov.il/pages/results.aspx?owstikid=06010060&owsdoctikbakashanummekuvenet=30665&owsdocumenttype=%d7%94%d7%93%d7%9e%d7%99%d7%95%d7%aa",
-    "checked_at": "2026-10-31",
-    "note": "בקשה 20240929 (נפתחה 3.7.2024): הריסה ובנייה חדשה מכוח תמ\"א 38 – בתהליך היתר."
-   },
-   "image": "https://img.yad2.co.il/Pic/202610/17/2_6/o/y2_1pa_010493_20261017230307.jpeg"
-  },
-  {
-   "id": "agn",
-   "addr": "ש\"י עגנון (מספר לא פורסם)",
-   "hood": "כוכב הצפון",
-   "area": "aviv",
-   "price": 7000,
-   "rooms": 3,
-   "sqm": "90",
-   "floor": "6 מתוך 9",
-   "ad": "תיווך",
-   "posted": "23.9",
-   "cond": "מעלית · מקלט",
-   "notes": "חניה בכפוף למקום",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/hx2knw63",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.1023014,
-   "lon": 34.7865511,
-   "coord_source": "מיקום מתוך מודעת יד2",
-   "coord_unverified": false,
-   "walk_m": 2211,
-   "walk_min": 29,
-   "line_m": 1542,
-   "first_seen": "2026-10-31",
-   "status": "active",
-   "price_history": [
+      "id": "tos",
+      "addr": "תוספתא 6",
+      "hood": "בבלי",
+      "area": "north",
+      "price": 6800,
+      "rooms": 3,
+      "sqm": "70",
+      "floor": "1 מתוך 4",
+      "ad": "תיווך",
+      "posted": "17.10",
+      "cond": "משופצת · מעלית · מקלט",
+      "notes": "חניה בבניין בכפוף למקום, מחסן, חיות. מודעה נוספת לאותה כתובת: 6,790 ₪, 68 מ\"ר, מרוהטת",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/ktiyqu0g",
+      "site": "יד2",
+      "extra_url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/9cko4qr6",
+      "lat": 32.096684,
+      "lon": 34.799245,
+      "coord_source": "מיקום מתוך מודעת יד2",
+      "coord_unverified": false,
+      "walk_m": 2118,
+      "walk_min": 28,
+      "line_m": 1619,
+      "first_seen": "2026-10-31",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-10-31",
+          "price": 6800
+        }
+      ],
+      "building_check": {
+        "status": "תמ\"א 38",
+        "source_url": "https://archive-binyan.tel-aviv.gov.il/pages/results.aspx?owstikid=06010060&owsdoctikbakashanummekuvenet=30665&owsdocumenttype=%d7%94%d7%93%d7%9e%d7%99%d7%95%d7%aa",
+        "checked_at": "2026-10-31",
+        "note": "בקשה 20240929 (נפתחה 3.7.2024): הריסה ובנייה חדשה מכוח תמ\"א 38 – בתהליך היתר."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/17/2_6/o/y2_1pa_010493_20261017230307.jpeg"
+    },
     {
-     "date": "2026-10-31",
-     "price": 7000
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-10-31",
-    "note": "מספר הבית לא פורסם – נבדק לפי מיקום משוער בלבד."
-   },
-   "image": "https://img.yad2.co.il/Pic/202609/23/2_6/o/y2_1pa_010424_20260923194630.jpeg"
-  },
-  {
-   "id": "bro",
-   "addr": "ברודצקי 16",
-   "hood": "רמת אביב",
-   "area": "aviv",
-   "price": 5000,
-   "rooms": 3,
-   "sqm": "60",
-   "floor": "3 מתוך 3",
-   "ad": "פרטי",
-   "posted": "22.10",
-   "cond": "מרוהטת",
-   "notes": "עבודות תמ\"א 38 בבניין למשך כשנתיים",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/pvaazh23",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.105747,
-   "lon": 34.797081,
-   "coord_source": "מיקום מתוך מודעת יד2",
-   "coord_unverified": false,
-   "walk_m": 2904,
-   "walk_min": 38,
-   "line_m": 2229,
-   "first_seen": "2026-10-31",
-   "status": "active",
-   "price_history": [
+      "id": "agn",
+      "addr": "ש\"י עגנון (מספר לא פורסם)",
+      "hood": "כוכב הצפון",
+      "area": "aviv",
+      "price": 7000,
+      "rooms": 3,
+      "sqm": "90",
+      "floor": "6 מתוך 9",
+      "ad": "תיווך",
+      "posted": "23.9",
+      "cond": "מעלית · מקלט",
+      "notes": "חניה בכפוף למקום",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/hx2knw63",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.1023014,
+      "lon": 34.7865511,
+      "coord_source": "מיקום מתוך מודעת יד2",
+      "coord_unverified": false,
+      "walk_m": 2211,
+      "walk_min": 29,
+      "line_m": 1542,
+      "first_seen": "2026-10-31",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-10-31",
+          "price": 7000
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-10-31",
+        "note": "מספר הבית לא פורסם – נבדק לפי מיקום משוער בלבד."
+      },
+      "image": "https://img.yad2.co.il/Pic/202609/23/2_6/o/y2_1pa_010424_20260923194630.jpeg"
+    },
     {
-     "date": "2026-10-31",
-     "price": 5000
-    }
-   ],
-   "building_check": {
-    "status": "תמ\"א 38",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/772",
-    "checked_at": "2026-10-31",
-    "note": "לפי המודעה: עבודות תמ\"א 38 בבניין (כשנתיים). ב-GIS: היתר שינויים במהלך ביצוע 20230764 (12.6.2023), סטטוס 'בבניה'."
-   },
-   "image": "https://img.yad2.co.il/Pic/202610/26/2_2/o/y2_1_08567_20261026193710.jpeg"
-  },
-  {
-   "id": "poz",
-   "addr": "קהילת פוזנן 6",
-   "hood": "נאות אפקה א'",
-   "area": "aviv",
-   "price": 6500,
-   "rooms": 3,
-   "sqm": "60",
-   "floor": "1 מתוך 3",
-   "ad": "ללא תיווך",
-   "posted": "12.10",
-   "cond": "מקלט",
-   "notes": "חיות מחמד, ארנונה 670",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/vlhjx0bu",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.113898,
-   "lon": 34.819874,
-   "coord_source": "Nominatim לא מצא את הכתובת; המיקום לקוח ממודעת יד2",
-   "coord_unverified": false,
-   "walk_m": 5440,
-   "walk_min": 71,
-   "line_m": 4330,
-   "first_seen": "2026-10-31",
-   "status": "removed",
-   "price_history": [
+      "id": "bro",
+      "addr": "ברודצקי 16",
+      "hood": "רמת אביב",
+      "area": "aviv",
+      "price": 5000,
+      "rooms": 3,
+      "sqm": "60",
+      "floor": "3 מתוך 3",
+      "ad": "פרטי",
+      "posted": "22.10",
+      "cond": "מרוהטת",
+      "notes": "עבודות תמ\"א 38 בבניין למשך כשנתיים",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/pvaazh23",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.105747,
+      "lon": 34.797081,
+      "coord_source": "מיקום מתוך מודעת יד2",
+      "coord_unverified": false,
+      "walk_m": 2904,
+      "walk_min": 38,
+      "line_m": 2229,
+      "first_seen": "2026-10-31",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-10-31",
+          "price": 5000
+        }
+      ],
+      "building_check": {
+        "status": "תמ\"א 38",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/772",
+        "checked_at": "2026-10-31",
+        "note": "לפי המודעה: עבודות תמ\"א 38 בבניין (כשנתיים). ב-GIS: היתר שינויים במהלך ביצוע 20230764 (12.6.2023), סטטוס 'בבניה'."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/26/2_2/o/y2_1_08567_20261026193710.jpeg"
+    },
     {
-     "date": "2026-10-31",
-     "price": 6500
-    }
-   ],
-   "building_check": {
-    "status": "פינוי-בינוי",
-    "source_url": "https://mavat.iplan.gov.il/SV4/1/5000928369/310",
-    "checked_at": "2026-10-31",
-    "note": "תכנית תא/מק/4668 'התחדשות עירונית מבצע קדש–קהילת פוזנן' בתוקף (פורסמה 19.3.2026): פינוי והריסה של 8 בניינים בחלקות 863–864 גוש 6625. מיקום המודעה נמצא על חלקה 6625/863 ובתוך קו התכנית."
-   },
-   "removed_reason": "בניין בתכנית פינוי-בינוי מאושרת",
-   "removed_at": "2026-10-31"
-  },
-  {
-   "id": "shal",
-   "addr": "שלום אש 17",
-   "hood": "הדר יוסף",
-   "area": "ne",
-   "price": 6500,
-   "rooms": 3,
-   "sqm": "70",
-   "floor": "3 מתוך 8",
-   "ad": "פרטי",
-   "posted": "24.10",
-   "cond": "מעלית · חניה · מקלט",
-   "notes": "מטבח חדש",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/2ytl3crj",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.10724,
-   "lon": 34.82329,
-   "coord_source": "מיקום מתוך מודעת יד2",
-   "coord_unverified": false,
-   "walk_m": 5462,
-   "walk_min": 71,
-   "line_m": 4163,
-   "first_seen": "2026-10-31",
-   "status": "removed",
-   "price_history": [
+      "id": "poz",
+      "addr": "קהילת פוזנן 6",
+      "hood": "נאות אפקה א'",
+      "area": "aviv",
+      "price": 6500,
+      "rooms": 3,
+      "sqm": "60",
+      "floor": "1 מתוך 3",
+      "ad": "ללא תיווך",
+      "posted": "12.10",
+      "cond": "מקלט",
+      "notes": "חיות מחמד, ארנונה 670",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/vlhjx0bu",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.113898,
+      "lon": 34.819874,
+      "coord_source": "Nominatim לא מצא את הכתובת; המיקום לקוח ממודעת יד2",
+      "coord_unverified": false,
+      "walk_m": 5440,
+      "walk_min": 71,
+      "line_m": 4330,
+      "first_seen": "2026-10-31",
+      "status": "removed",
+      "price_history": [
+        {
+          "date": "2026-10-31",
+          "price": 6500
+        }
+      ],
+      "building_check": {
+        "status": "פינוי-בינוי",
+        "source_url": "https://mavat.iplan.gov.il/SV4/1/5000928369/310",
+        "checked_at": "2026-10-31",
+        "note": "תכנית תא/מק/4668 'התחדשות עירונית מבצע קדש–קהילת פוזנן' בתוקף (פורסמה 19.3.2026): פינוי והריסה של 8 בניינים בחלקות 863–864 גוש 6625. מיקום המודעה נמצא על חלקה 6625/863 ובתוך קו התכנית."
+      },
+      "removed_reason": "בניין בתכנית פינוי-בינוי מאושרת",
+      "removed_at": "2026-10-31"
+    },
     {
-     "date": "2026-10-31",
-     "price": 6500
-    }
-   ],
-   "building_check": {
-    "status": "תמ\"א 38",
-    "source_url": "https://archive-binyan.tel-aviv.gov.il/pages/results.aspx?owstikid=21640170&owsdoctikbakashanummekuvenet=25008&owsdocumenttype=%d7%94%d7%93%d7%9e%d7%99%d7%95%d7%aa",
-    "checked_at": "2026-10-31",
-    "note": "בקשה 20251710 (נפתחה 2.12.2025): הריסת 10 קומות ובניית בניין רב קומות מכוח תמ\"א 38 – בתהליך היתר."
-   },
-   "image": "https://img.yad2.co.il/Pic/202610/25/2_2/o/y2_1_07606_20261025192549.jpeg",
-   "removed_reason": "מחוץ לאזור החיפוש (רחוק מדי)"
-  },
-  {
-   "id": "sas",
-   "addr": "סשה ארגוב 13",
-   "hood": "המשתלה",
-   "area": "ne",
-   "price": 7000,
-   "rooms": 3,
-   "sqm": "70",
-   "floor": "4 מתוך 7",
-   "ad": "תיווך (בלעדיות)",
-   "posted": "2.5, עודכנה היום",
-   "cond": "ממ\"ד · מעלית · 2 חניות · מרפסת",
-   "notes": "מחסן, ארנונה 1,437",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/wsguzt4e",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.126523,
-   "lon": 34.82998,
-   "coord_source": "מיקום מתוך מודעת יד2",
-   "coord_unverified": false,
-   "walk_m": 7957,
-   "walk_min": 105,
-   "line_m": 5984,
-   "first_seen": "2026-10-31",
-   "status": "removed",
-   "price_history": [
+      "id": "shal",
+      "addr": "שלום אש 17",
+      "hood": "הדר יוסף",
+      "area": "ne",
+      "price": 6500,
+      "rooms": 3,
+      "sqm": "70",
+      "floor": "3 מתוך 8",
+      "ad": "פרטי",
+      "posted": "24.10",
+      "cond": "מעלית · חניה · מקלט",
+      "notes": "מטבח חדש",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/2ytl3crj",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.10724,
+      "lon": 34.82329,
+      "coord_source": "מיקום מתוך מודעת יד2",
+      "coord_unverified": false,
+      "walk_m": 5462,
+      "walk_min": 71,
+      "line_m": 4163,
+      "first_seen": "2026-10-31",
+      "status": "removed",
+      "price_history": [
+        {
+          "date": "2026-10-31",
+          "price": 6500
+        }
+      ],
+      "building_check": {
+        "status": "תמ\"א 38",
+        "source_url": "https://archive-binyan.tel-aviv.gov.il/pages/results.aspx?owstikid=21640170&owsdoctikbakashanummekuvenet=25008&owsdocumenttype=%d7%94%d7%93%d7%9e%d7%99%d7%95%d7%aa",
+        "checked_at": "2026-10-31",
+        "note": "בקשה 20251710 (נפתחה 2.12.2025): הריסת 10 קומות ובניית בניין רב קומות מכוח תמ\"א 38 – בתהליך היתר."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/25/2_2/o/y2_1_07606_20261025192549.jpeg",
+      "removed_reason": "מחוץ לאזור החיפוש (רחוק מדי)"
+    },
     {
-     "date": "2026-10-31",
-     "price": 7000
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-10-31",
-    "note": "התכנית היחידה לכתובת (תא/מק/2069ז, 2002) עוסקת בעיצוב אדריכלי, לא בהתחדשות."
-   },
-   "image": "https://img.yad2.co.il/Pic/202605/02/2_6/o/y2_1pa_010525_20260502175313.jpeg",
-   "removed_reason": "מחוץ לאזור החיפוש (רחוק מדי)"
-  },
-  {
-   "id": "dak",
-   "addr": "אח\"י דקר 12",
-   "hood": "נווה שרת",
-   "area": "ne",
-   "price": 6400,
-   "rooms": 3,
-   "sqm": "50",
-   "floor": "2",
-   "ad": "לא ידוע",
-   "posted": "לא ידוע",
-   "cond": "לא אומת",
-   "notes": "מודעת מדלן שלא אומתה: הדף חסם גישה (403)",
-   "url": "https://www.madlan.co.il/listings/4519NU1lgIQ",
-   "site": "מדלן",
-   "extra_url": null,
-   "lat": 32.119418,
-   "lon": 34.839413,
-   "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
-   "coord_unverified": true,
-   "walk_m": 7689,
-   "walk_min": 100,
-   "line_m": 6169,
-   "first_seen": "2026-10-31",
-   "status": "removed",
-   "price_history": [
+      "id": "sas",
+      "addr": "סשה ארגוב 13",
+      "hood": "המשתלה",
+      "area": "ne",
+      "price": 7000,
+      "rooms": 3,
+      "sqm": "70",
+      "floor": "4 מתוך 7",
+      "ad": "תיווך (בלעדיות)",
+      "posted": "2.5, עודכנה היום",
+      "cond": "ממ\"ד · מעלית · 2 חניות · מרפסת",
+      "notes": "מחסן, ארנונה 1,437",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/wsguzt4e",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.126523,
+      "lon": 34.82998,
+      "coord_source": "מיקום מתוך מודעת יד2",
+      "coord_unverified": false,
+      "walk_m": 7957,
+      "walk_min": 105,
+      "line_m": 5984,
+      "first_seen": "2026-10-31",
+      "status": "removed",
+      "price_history": [
+        {
+          "date": "2026-10-31",
+          "price": 7000
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-10-31",
+        "note": "התכנית היחידה לכתובת (תא/מק/2069ז, 2002) עוסקת בעיצוב אדריכלי, לא בהתחדשות."
+      },
+      "image": "https://img.yad2.co.il/Pic/202605/02/2_6/o/y2_1pa_010525_20260502175313.jpeg",
+      "removed_reason": "מחוץ לאזור החיפוש (רחוק מדי)"
+    },
     {
-     "date": "2026-10-31",
-     "price": 6400
-    }
-   ],
-   "building_check": {
-    "status": "פינוי-בינוי",
-    "source_url": "https://mavat.iplan.gov.il/SV4/1/5000822871/310",
-    "checked_at": "2026-10-31",
-    "note": "תכנית תא/4242 'פינוי בינוי אח\"י דקר' בתוקף; אח\"י דקר 12 ברשימת הבניינים לפינוי (451 יח\"ד)."
-   },
-   "removed_reason": "בניין בתכנית פינוי-בינוי מאושרת",
-   "removed_at": "2026-10-31"
-  },
-  {
-   "id": "rama",
-   "addr": "רמה 26",
-   "hood": "נווה שרת",
-   "area": "ne",
-   "price": 5800,
-   "rooms": 3,
-   "sqm": "70",
-   "floor": "1 מתוך 7",
-   "ad": "ללא תיווך",
-   "posted": "1.9, עודכנה היום",
-   "cond": "מעלית · מקלט",
-   "notes": "חיות מחמד",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/8qdvf40w",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.120837,
-   "lon": 34.842182,
-   "coord_source": "מיקום מתוך מודעת יד2",
-   "coord_unverified": false,
-   "walk_m": 8007,
-   "walk_min": 104,
-   "line_m": 6474,
-   "first_seen": "2026-10-31",
-   "status": "active",
-   "price_history": [
+      "id": "dak",
+      "addr": "אח\"י דקר 12",
+      "hood": "נווה שרת",
+      "area": "ne",
+      "price": 6400,
+      "rooms": 3,
+      "sqm": "50",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא אומת",
+      "notes": "מודעת מדלן שלא אומתה: הדף חסם גישה (403)",
+      "url": "https://www.madlan.co.il/listings/4519NU1lgIQ",
+      "site": "מדלן",
+      "extra_url": null,
+      "lat": 32.119418,
+      "lon": 34.839413,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": true,
+      "walk_m": 7689,
+      "walk_min": 100,
+      "line_m": 6169,
+      "first_seen": "2026-10-31",
+      "status": "removed",
+      "price_history": [
+        {
+          "date": "2026-10-31",
+          "price": 6400
+        }
+      ],
+      "building_check": {
+        "status": "פינוי-בינוי",
+        "source_url": "https://mavat.iplan.gov.il/SV4/1/5000822871/310",
+        "checked_at": "2026-10-31",
+        "note": "תכנית תא/4242 'פינוי בינוי אח\"י דקר' בתוקף; אח\"י דקר 12 ברשימת הבניינים לפינוי (451 יח\"ד)."
+      },
+      "removed_reason": "בניין בתכנית פינוי-בינוי מאושרת",
+      "removed_at": "2026-10-31"
+    },
     {
-     "date": "2026-10-31",
-     "price": 5800
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-10-31",
-    "note": "הבניין מחוץ לקו התכנית, אבל תכנית פינוי-בינוי תא/מק/4669 'רמה–אדירים' (בהפקדה) נמצאת כ-35 מ' ממנו. כדאי לברר.",
-    "nearby_plan": "תא/מק/4669 (בהפקדה)"
-   },
-   "image": "https://img.yad2.co.il/Pic/202609/01/2_2/o/y2_1pa_010593_20260901143107.jpeg"
-  },
-  {
-   "id": "alm",
-   "addr": "אלמגור 5",
-   "hood": "נווה שרת",
-   "area": "ne",
-   "price": 6200,
-   "rooms": 3,
-   "sqm": "65",
-   "floor": "2 מתוך 4",
-   "ad": "ללא תיווך",
-   "posted": "25.10",
-   "cond": "משופצת מהיסוד",
-   "notes": "כניסה 15.11, ללא חיות, לא לשותפים. בטקסט המודעה מופיע מספר 10",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/w442oq45",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.119835,
-   "lon": 34.843283,
-   "coord_source": "מיקום מתוך מודעת יד2",
-   "coord_unverified": false,
-   "walk_m": 8275,
-   "walk_min": 103,
-   "line_m": 6500,
-   "first_seen": "2026-10-31",
-   "status": "active",
-   "price_history": [
+      "id": "rama",
+      "addr": "רמה 26",
+      "hood": "נווה שרת",
+      "area": "ne",
+      "price": 5800,
+      "rooms": 3,
+      "sqm": "70",
+      "floor": "1 מתוך 7",
+      "ad": "ללא תיווך",
+      "posted": "1.9, עודכנה היום",
+      "cond": "מעלית · מקלט",
+      "notes": "חיות מחמד",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/8qdvf40w",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.120837,
+      "lon": 34.842182,
+      "coord_source": "מיקום מתוך מודעת יד2",
+      "coord_unverified": false,
+      "walk_m": 8007,
+      "walk_min": 104,
+      "line_m": 6474,
+      "first_seen": "2026-10-31",
+      "status": "removed",
+      "price_history": [
+        {
+          "date": "2026-10-31",
+          "price": 5800
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-10-31",
+        "note": "הבניין מחוץ לקו התכנית, אבל תכנית פינוי-בינוי תא/מק/4669 'רמה–אדירים' (בהפקדה) נמצאת כ-35 מ' ממנו. כדאי לברר.",
+        "nearby_plan": "תא/מק/4669 (בהפקדה)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202609/01/2_2/o/y2_1pa_010593_20260901143107.jpeg",
+      "removed_reason": "מחוץ לאזור החיפוש (רחוק מדי)",
+      "removed_at": "2026-11-01"
+    },
     {
-     "date": "2026-10-31",
-     "price": 6200
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-10-31",
-    "note": "תכנית פינוי-בינוי תא/מק/5058 'מתחם אלמגור' בתוקף, אבל היא חלה על אלמגור 8–16 ולא על מס' 5. התכנית במרחק כ-23 מ'.",
-    "nearby_plan": "תא/מק/5058 (בתוקף)"
-   },
-   "image": "https://img.yad2.co.il/Pic/202610/26/2_2/o/y2_1_09744_20261026084402.jpeg"
-  },
-  {
-   "id": "bel",
-   "addr": "בית אל 43",
-   "hood": "נווה שרת",
-   "area": "ne",
-   "price": 5200,
-   "rooms": 3,
-   "sqm": "67",
-   "floor": "2 מתוך 2",
-   "ad": "לא ידוע",
-   "posted": "לא ידוע",
-   "cond": "משופצת · מרפסת · מקלט",
-   "notes": "כניסה מיידית, טווח ארוך, ארנונה 800. אותה דירה מופיעה גם במדלן",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/aat31404",
-   "site": "יד2",
-   "extra_url": "https://www.madlan.co.il/listings/yQoLjMQoiym",
-   "lat": 32.117772,
-   "lon": 34.841906,
-   "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
-   "coord_unverified": false,
-   "walk_m": 8028,
-   "walk_min": 100,
-   "line_m": 6268,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "alm",
+      "addr": "אלמגור 5",
+      "hood": "נווה שרת",
+      "area": "ne",
+      "price": 6200,
+      "rooms": 3,
+      "sqm": "65",
+      "floor": "2 מתוך 4",
+      "ad": "ללא תיווך",
+      "posted": "25.10",
+      "cond": "משופצת מהיסוד",
+      "notes": "כניסה 15.11, ללא חיות, לא לשותפים. בטקסט המודעה מופיע מספר 10",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/w442oq45",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.119835,
+      "lon": 34.843283,
+      "coord_source": "מיקום מתוך מודעת יד2",
+      "coord_unverified": false,
+      "walk_m": 8275,
+      "walk_min": 103,
+      "line_m": 6500,
+      "first_seen": "2026-10-31",
+      "status": "removed",
+      "price_history": [
+        {
+          "date": "2026-10-31",
+          "price": 6200
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-10-31",
+        "note": "תכנית פינוי-בינוי תא/מק/5058 'מתחם אלמגור' בתוקף, אבל היא חלה על אלמגור 8–16 ולא על מס' 5. התכנית במרחק כ-23 מ'.",
+        "nearby_plan": "תא/מק/5058 (בתוקף)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/26/2_2/o/y2_1_09744_20261026084402.jpeg",
+      "removed_reason": "מחוץ לאזור החיפוש (רחוק מדי)",
+      "removed_at": "2026-11-01"
+    },
     {
-     "date": "2026-11-01",
-     "price": 5200
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-11-01",
-    "note": "אין בקשת היתר או תכנית התחדשות פעילה לכתובת (רק תכנית גנוזה 4526). תכניות פינוי-בינוי מתחם הצנחנים (4370, 4789) בתוקף כ-100 מ' מהבניין."
-   }
-  },
-  {
-   "id": "pin",
-   "addr": "פינסקר (מספר לא פורסם)",
-   "hood": "צפון ישן דרומי",
-   "area": "oldnorth",
-   "price": 6150,
-   "rooms": 3,
-   "sqm": "57",
-   "floor": "קרקע מתוך 4",
-   "ad": "תיווך",
-   "posted": "31.8",
-   "cond": "משופצת · מקלט",
-   "notes": "ליד כיכר דיזנגוף, חניה בתוספת תשלום, ארנונה 740",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/qpx0xm0g",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.077824,
-   "lon": 34.7739,
-   "coord_source": "הכתובת ללא מספר בית: קצה רחוב פינסקר הסמוך לכיכר דיזנגוף (לפי המודעה), לפי Nominatim (OpenStreetMap) – משוער",
-   "coord_unverified": true,
-   "walk_m": 2059,
-   "walk_min": 27,
-   "line_m": 1584,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "bel",
+      "addr": "בית אל 43",
+      "hood": "נווה שרת",
+      "area": "ne",
+      "price": 5200,
+      "rooms": 3,
+      "sqm": "67",
+      "floor": "2 מתוך 2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "משופצת · מרפסת · מקלט",
+      "notes": "כניסה מיידית, טווח ארוך, ארנונה 800. אותה דירה מופיעה גם במדלן",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/aat31404",
+      "site": "יד2",
+      "extra_url": "https://www.madlan.co.il/listings/yQoLjMQoiym",
+      "lat": 32.117772,
+      "lon": 34.841906,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 8028,
+      "walk_min": 100,
+      "line_m": 6268,
+      "first_seen": "2026-11-01",
+      "status": "removed",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5200
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-11-01",
+        "note": "אין בקשת היתר או תכנית התחדשות פעילה לכתובת (רק תכנית גנוזה 4526). תכניות פינוי-בינוי מתחם הצנחנים (4370, 4789) בתוקף כ-100 מ' מהבניין."
+      },
+      "removed_reason": "מחוץ לאזור החיפוש (רחוק מדי)",
+      "removed_at": "2026-11-01"
+    },
     {
-     "date": "2026-11-01",
-     "price": 6150
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-11-01",
-    "note": "אף כתובת ברחוב פינסקר אינה בתכנית התחדשות. מספר הבית לא פורסם, לכן בקשות היתר לבניין עצמו לא נבדקו."
-   },
-   "image": "https://img.yad2.co.il/Pic/202608/31/2_6/o/y2_1_ncWWzlEdjM_20260831.jpg"
-  },
-  {
-   "id": "nah",
-   "addr": "נהריים (מספר לא פורסם)",
-   "hood": "נווה שרת",
-   "area": "ne",
-   "price": 5770,
-   "rooms": 3,
-   "sqm": "70",
-   "floor": "5 מתוך 7",
-   "ad": "תיווך",
-   "posted": "5.10",
-   "cond": "מרפסת שירות · מזגנים",
-   "notes": "מול פארק, אפשרות לריהוט, ארנונה 595",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/veqfmke0",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.120521,
-   "lon": 34.838583,
-   "coord_source": "הכתובת ללא מספר בית: מרכז רחוב נהריים לפי Nominatim (OpenStreetMap) – משוער",
-   "coord_unverified": true,
-   "walk_m": 7661,
-   "walk_min": 100,
-   "line_m": 6174,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "pin",
+      "addr": "פינסקר (מספר לא פורסם)",
+      "hood": "צפון ישן דרומי",
+      "area": "oldnorth",
+      "price": 6150,
+      "rooms": 3,
+      "sqm": "57",
+      "floor": "קרקע מתוך 4",
+      "ad": "תיווך",
+      "posted": "31.8",
+      "cond": "משופצת · מקלט",
+      "notes": "ליד כיכר דיזנגוף, חניה בתוספת תשלום, ארנונה 740",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/qpx0xm0g",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.077824,
+      "lon": 34.7739,
+      "coord_source": "הכתובת ללא מספר בית: קצה רחוב פינסקר הסמוך לכיכר דיזנגוף (לפי המודעה), לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 2059,
+      "walk_min": 27,
+      "line_m": 1584,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6150
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-11-01",
+        "note": "אף כתובת ברחוב פינסקר אינה בתכנית התחדשות. מספר הבית לא פורסם, לכן בקשות היתר לבניין עצמו לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202608/31/2_6/o/y2_1_ncWWzlEdjM_20260831.jpg"
+    },
     {
-     "date": "2026-11-01",
-     "price": 5770
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-11-01",
-    "note": "אף כתובת ברחוב נהריים אינה בתכנית התחדשות פעילה. תכנית פינוי-בינוי תא/4242 (אח\"י דקר, בתוקף) כ-50 מ' ממרכז הרחוב. מספר הבית לא פורסם – כדאי לברר.",
-    "nearby_plan": "תא/4242 (בתוקף)"
-   },
-   "image": "https://img.yad2.co.il/Pic/202610/05/2_6/o/y2_1pa_010138_20261005115212.jpeg"
-  },
-  {
-   "id": "nah2",
-   "addr": "נהריים (מספר לא פורסם)",
-   "hood": "נווה שרת",
-   "area": "ne",
-   "price": 5900,
-   "rooms": 3,
-   "sqm": "67",
-   "floor": "4 מתוך 4",
-   "ad": "תיווך",
-   "posted": "22.9",
-   "cond": "מקלט בבניין",
-   "notes": "מוארת, ארנונה 680",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/e08r5igx",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.120521,
-   "lon": 34.838583,
-   "coord_source": "הכתובת ללא מספר בית: מרכז רחוב נהריים לפי Nominatim (OpenStreetMap) – משוער",
-   "coord_unverified": true,
-   "walk_m": 7661,
-   "walk_min": 100,
-   "line_m": 6174,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "nah",
+      "addr": "נהריים (מספר לא פורסם)",
+      "hood": "נווה שרת",
+      "area": "ne",
+      "price": 5770,
+      "rooms": 3,
+      "sqm": "70",
+      "floor": "5 מתוך 7",
+      "ad": "תיווך",
+      "posted": "5.10",
+      "cond": "מרפסת שירות · מזגנים",
+      "notes": "מול פארק, אפשרות לריהוט, ארנונה 595",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/veqfmke0",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.120521,
+      "lon": 34.838583,
+      "coord_source": "הכתובת ללא מספר בית: מרכז רחוב נהריים לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 7661,
+      "walk_min": 100,
+      "line_m": 6174,
+      "first_seen": "2026-11-01",
+      "status": "removed",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5770
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-11-01",
+        "note": "אף כתובת ברחוב נהריים אינה בתכנית התחדשות פעילה. תכנית פינוי-בינוי תא/4242 (אח\"י דקר, בתוקף) כ-50 מ' ממרכז הרחוב. מספר הבית לא פורסם – כדאי לברר.",
+        "nearby_plan": "תא/4242 (בתוקף)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/05/2_6/o/y2_1pa_010138_20261005115212.jpeg",
+      "removed_reason": "מחוץ לאזור החיפוש (רחוק מדי)",
+      "removed_at": "2026-11-01"
+    },
     {
-     "date": "2026-11-01",
-     "price": 5900
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-11-01",
-    "note": "אף כתובת ברחוב נהריים אינה בתכנית התחדשות פעילה. תכנית פינוי-בינוי תא/4242 (אח\"י דקר, בתוקף) כ-50 מ' ממרכז הרחוב. מספר הבית לא פורסם – כדאי לברר.",
-    "nearby_plan": "תא/4242 (בתוקף)"
-   },
-   "image": "https://img.yad2.co.il/Pic/202609/22/2_6/o/y2_1pa_010740_20260922130932.jpeg"
-  },
-  {
-   "id": "mivk",
-   "addr": "מבצע קדש 47",
-   "hood": "נאות אפקה א'",
-   "area": "aviv",
-   "price": 6000,
-   "rooms": 3,
-   "sqm": "44",
-   "floor": "1 מתוך 3",
-   "ad": "פרטי",
-   "posted": "25.8",
-   "cond": "מקלט צמוד",
-   "notes": "דירה קטנה, כניסה 1.12, המחיר ירד ב-400",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/51675p32",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.113389,
-   "lon": 34.820151,
-   "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
-   "coord_unverified": false,
-   "walk_m": 5240,
-   "walk_min": 68,
-   "line_m": 4313,
-   "first_seen": "2026-11-01",
-   "status": "removed",
-   "price_history": [
+      "id": "nah2",
+      "addr": "נהריים (מספר לא פורסם)",
+      "hood": "נווה שרת",
+      "area": "ne",
+      "price": 5900,
+      "rooms": 3,
+      "sqm": "67",
+      "floor": "4 מתוך 4",
+      "ad": "תיווך",
+      "posted": "22.9",
+      "cond": "מקלט בבניין",
+      "notes": "מוארת, ארנונה 680",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/e08r5igx",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.120521,
+      "lon": 34.838583,
+      "coord_source": "הכתובת ללא מספר בית: מרכז רחוב נהריים לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 7661,
+      "walk_min": 100,
+      "line_m": 6174,
+      "first_seen": "2026-11-01",
+      "status": "removed",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5900
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-11-01",
+        "note": "אף כתובת ברחוב נהריים אינה בתכנית התחדשות פעילה. תכנית פינוי-בינוי תא/4242 (אח\"י דקר, בתוקף) כ-50 מ' ממרכז הרחוב. מספר הבית לא פורסם – כדאי לברר.",
+        "nearby_plan": "תא/4242 (בתוקף)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202609/22/2_6/o/y2_1pa_010740_20260922130932.jpeg",
+      "removed_reason": "מחוץ לאזור החיפוש (רחוק מדי)",
+      "removed_at": "2026-11-01"
+    },
     {
-     "date": "2026-11-01",
-     "price": 6000
-    }
-   ],
-   "building_check": {
-    "status": "פינוי-בינוי",
-    "source_url": "https://mavat.iplan.gov.il/SV4/1/5000928369/310",
-    "checked_at": "2026-11-01",
-    "note": "תכנית תא/מק/4668 'התחדשות עירונית מבצע קדש–קהילת פוזנן' בתוקף (19.3.2026): פינוי והריסה של 8 בניינים בחלקות 863–864 גוש 6625. לפי שכבת הכתובות של העירייה, מבצע קדש 47 נמצא על חלקה 6625/863 ובתוך קו התכנית."
-   },
-   "image": "https://img.yad2.co.il/Pic/202610/29/2_2/o/y2_1_07681_20261029123940.jpeg",
-   "removed_reason": "בניין בתכנית פינוי-בינוי מאושרת",
-   "removed_at": "2026-11-01"
-  },
-  {
-   "id": "not",
-   "addr": "הנוטר 29",
-   "hood": "רמת אביב ג'",
-   "area": "aviv",
-   "price": 6800,
-   "rooms": 3,
-   "sqm": "56",
-   "floor": "2 מתוך 2",
-   "ad": "פרטי",
-   "posted": "28.6",
-   "cond": "מקלט בבניין",
-   "notes": "חיות, מתאימה לשותפים, המחיר ירד ב-500",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/pcfl2kb1",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.123195,
-   "lon": 34.808441,
-   "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
-   "coord_unverified": false,
-   "walk_m": 5481,
-   "walk_min": 72,
-   "line_m": 4444,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "mivk",
+      "addr": "מבצע קדש 47",
+      "hood": "נאות אפקה א'",
+      "area": "aviv",
+      "price": 6000,
+      "rooms": 3,
+      "sqm": "44",
+      "floor": "1 מתוך 3",
+      "ad": "פרטי",
+      "posted": "25.8",
+      "cond": "מקלט צמוד",
+      "notes": "דירה קטנה, כניסה 1.12, המחיר ירד ב-400",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/51675p32",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.113389,
+      "lon": 34.820151,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 5240,
+      "walk_min": 68,
+      "line_m": 4313,
+      "first_seen": "2026-11-01",
+      "status": "removed",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6000
+        }
+      ],
+      "building_check": {
+        "status": "פינוי-בינוי",
+        "source_url": "https://mavat.iplan.gov.il/SV4/1/5000928369/310",
+        "checked_at": "2026-11-01",
+        "note": "תכנית תא/מק/4668 'התחדשות עירונית מבצע קדש–קהילת פוזנן' בתוקף (19.3.2026): פינוי והריסה של 8 בניינים בחלקות 863–864 גוש 6625. לפי שכבת הכתובות של העירייה, מבצע קדש 47 נמצא על חלקה 6625/863 ובתוך קו התכנית."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/29/2_2/o/y2_1_07681_20261029123940.jpeg",
+      "removed_reason": "בניין בתכנית פינוי-בינוי מאושרת",
+      "removed_at": "2026-11-01"
+    },
     {
-     "date": "2026-11-01",
-     "price": 6800
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/772",
-    "checked_at": "2026-11-01",
-    "note": "אין תכנית התחדשות או בקשת תמ\"א 38 לכתובת. בבניין הסמוך (29א) יש בקשה לשימוש חורג לגן ילדים."
-   },
-   "image": "https://img.yad2.co.il/Pic/202606/28/2_2/o/y2_1pa_010219_20260628230832.jpeg"
-  },
-  {
-   "id": "kor",
-   "addr": "כורזים (מספר לא פורסם)",
-   "hood": "נווה שרת",
-   "area": "ne",
-   "price": 6700,
-   "rooms": 3,
-   "sqm": "80",
-   "floor": "7 מתוך 8",
-   "ad": "תיווך",
-   "posted": "19.8",
-   "cond": "משופצת · מעלית · מקלט",
-   "notes": "נוף פתוח, מתאימה לשותפים, ארנונה 1,000",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/9fsz0tn9",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.120217,
-   "lon": 34.842956,
-   "coord_source": "הכתובת ללא מספר בית: מרכז רחוב כורזים לפי Nominatim (OpenStreetMap) – משוער",
-   "coord_unverified": true,
-   "walk_m": 8067,
-   "walk_min": 105,
-   "line_m": 6497,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "not",
+      "addr": "הנוטר 29",
+      "hood": "רמת אביב ג'",
+      "area": "aviv",
+      "price": 6800,
+      "rooms": 3,
+      "sqm": "56",
+      "floor": "2 מתוך 2",
+      "ad": "פרטי",
+      "posted": "28.6",
+      "cond": "מקלט בבניין",
+      "notes": "חיות, מתאימה לשותפים, המחיר ירד ב-500",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/pcfl2kb1",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.123195,
+      "lon": 34.808441,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 5481,
+      "walk_min": 72,
+      "line_m": 4444,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6800
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/772",
+        "checked_at": "2026-11-01",
+        "note": "אין תכנית התחדשות או בקשת תמ\"א 38 לכתובת. בבניין הסמוך (29א) יש בקשה לשימוש חורג לגן ילדים."
+      },
+      "image": "https://img.yad2.co.il/Pic/202606/28/2_2/o/y2_1pa_010219_20260628230832.jpeg"
+    },
     {
-     "date": "2026-11-01",
-     "price": 6700
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-11-01",
-    "note": "אף כתובת ברחוב כורזים אינה בתכנית התחדשות פעילה. תכנית פינוי-בינוי תא/מק/5058 (מתחם אלמגור, בתוקף) כ-60 מ' ממרכז הרחוב. מספר הבית לא פורסם.",
-    "nearby_plan": "תא/מק/5058 (בתוקף)"
-   },
-   "image": "https://img.yad2.co.il/Pic/202608/19/2_6/o/y2_1pa_010816_20260819205033.jpeg"
-  },
-  {
-   "id": "ns1",
-   "addr": "נווה שרת (רחוב לא פורסם)",
-   "hood": "נווה שרת",
-   "area": "ne",
-   "price": 4500,
-   "rooms": 3,
-   "sqm": "60",
-   "floor": "3 מתוך 4",
-   "ad": "תיווך",
-   "posted": "11.10",
-   "cond": "משופצת · מזגנים",
-   "notes": "ריהוט נשאר, כניסה 10.11",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/yrbbfqgp",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.118651,
-   "lon": 34.840409,
-   "coord_source": "הרחוב לא פורסם: מרכז שכונת נווה שרת לפי Nominatim (OpenStreetMap) – משוער",
-   "coord_unverified": true,
-   "walk_m": 7748,
-   "walk_min": 101,
-   "line_m": 6201,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "kor",
+      "addr": "כורזים (מספר לא פורסם)",
+      "hood": "נווה שרת",
+      "area": "ne",
+      "price": 6700,
+      "rooms": 3,
+      "sqm": "80",
+      "floor": "7 מתוך 8",
+      "ad": "תיווך",
+      "posted": "19.8",
+      "cond": "משופצת · מעלית · מקלט",
+      "notes": "נוף פתוח, מתאימה לשותפים, ארנונה 1,000",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/9fsz0tn9",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.120217,
+      "lon": 34.842956,
+      "coord_source": "הכתובת ללא מספר בית: מרכז רחוב כורזים לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 8067,
+      "walk_min": 105,
+      "line_m": 6497,
+      "first_seen": "2026-11-01",
+      "status": "removed",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6700
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-11-01",
+        "note": "אף כתובת ברחוב כורזים אינה בתכנית התחדשות פעילה. תכנית פינוי-בינוי תא/מק/5058 (מתחם אלמגור, בתוקף) כ-60 מ' ממרכז הרחוב. מספר הבית לא פורסם.",
+        "nearby_plan": "תא/מק/5058 (בתוקף)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202608/19/2_6/o/y2_1pa_010816_20260819205033.jpeg",
+      "removed_reason": "מחוץ לאזור החיפוש (רחוק מדי)",
+      "removed_at": "2026-11-01"
+    },
     {
-     "date": "2026-11-01",
-     "price": 4500
-    }
-   ],
-   "building_check": {
-    "status": "לא נבדק",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-11-01",
-    "note": "הרחוב לא פורסם, ולכן אי אפשר לבדוק את הבניין. בשכונה יש כמה תכניות פינוי-בינוי."
-   },
-   "image": "https://img.yad2.co.il/Pic/202610/11/2_6/o/y2_1pa_010661_20261011165546.jpeg"
-  },
-  {
-   "id": "rama2",
-   "addr": "רמה (מספר לא פורסם)",
-   "hood": "נווה שרת",
-   "area": "ne",
-   "price": 5000,
-   "rooms": 3,
-   "sqm": "70",
-   "floor": "3 מתוך 4",
-   "ad": "תיווך",
-   "posted": "17.11.2025",
-   "cond": "מרפסת · מזגנים",
-   "notes": "מודעה ישנה (נובמבר 2025)",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/tsoykq0n",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.120096,
-   "lon": 34.841719,
-   "coord_source": "הכתובת ללא מספר בית: מרכז רחוב רמה לפי Nominatim (OpenStreetMap) – משוער",
-   "coord_unverified": true,
-   "walk_m": 7919,
-   "walk_min": 103,
-   "line_m": 6392,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "ns1",
+      "addr": "נווה שרת (רחוב לא פורסם)",
+      "hood": "נווה שרת",
+      "area": "ne",
+      "price": 4500,
+      "rooms": 3,
+      "sqm": "60",
+      "floor": "3 מתוך 4",
+      "ad": "תיווך",
+      "posted": "11.10",
+      "cond": "משופצת · מזגנים",
+      "notes": "ריהוט נשאר, כניסה 10.11",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/yrbbfqgp",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.118651,
+      "lon": 34.840409,
+      "coord_source": "הרחוב לא פורסם: מרכז שכונת נווה שרת לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 7748,
+      "walk_min": 101,
+      "line_m": 6201,
+      "first_seen": "2026-11-01",
+      "status": "removed",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 4500
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-11-01",
+        "note": "הרחוב לא פורסם, ולכן אי אפשר לבדוק את הבניין. בשכונה יש כמה תכניות פינוי-בינוי."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/11/2_6/o/y2_1pa_010661_20261011165546.jpeg",
+      "removed_reason": "מחוץ לאזור החיפוש (רחוק מדי)",
+      "removed_at": "2026-11-01"
+    },
     {
-     "date": "2026-11-01",
-     "price": 5000
-    }
-   ],
-   "building_check": {
-    "status": "לא נבדק",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-11-01",
-    "note": "מספר הבית לא פורסם. רמה 7–19 נמצאים בתכנית פינוי-בינוי תא/מק/4669 'רמה–אדירים' (בהפקדה מ-27.4.2026), ולכן חשוב לברר את המספר.",
-    "nearby_plan": "תא/מק/4669 (בהפקדה)"
-   },
-   "image": "https://img.yad2.co.il/Pic/202511/17/2_6/o/y2_1pa_010233_20251117223137.jpeg"
-  },
-  {
-   "id": "ns2",
-   "addr": "נווה שרת (רחוב לא פורסם)",
-   "hood": "נווה שרת",
-   "area": "ne",
-   "price": 6000,
-   "rooms": 3,
-   "sqm": "70",
-   "floor": "2 מתוך 8",
-   "ad": "תיווך",
-   "posted": "26.7",
-   "cond": "משופצת · מעלית · מזגנים",
-   "notes": "כניסה 1.12",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/6o8uxt4i",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.118651,
-   "lon": 34.840409,
-   "coord_source": "הרחוב לא פורסם: מרכז שכונת נווה שרת לפי Nominatim (OpenStreetMap) – משוער",
-   "coord_unverified": true,
-   "walk_m": 7748,
-   "walk_min": 101,
-   "line_m": 6201,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "rama2",
+      "addr": "רמה (מספר לא פורסם)",
+      "hood": "נווה שרת",
+      "area": "ne",
+      "price": 5000,
+      "rooms": 3,
+      "sqm": "70",
+      "floor": "3 מתוך 4",
+      "ad": "תיווך",
+      "posted": "17.11.2025",
+      "cond": "מרפסת · מזגנים",
+      "notes": "מודעה ישנה (נובמבר 2025)",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/tsoykq0n",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.120096,
+      "lon": 34.841719,
+      "coord_source": "הכתובת ללא מספר בית: מרכז רחוב רמה לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 7919,
+      "walk_min": 103,
+      "line_m": 6392,
+      "first_seen": "2026-11-01",
+      "status": "removed",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5000
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-11-01",
+        "note": "מספר הבית לא פורסם. רמה 7–19 נמצאים בתכנית פינוי-בינוי תא/מק/4669 'רמה–אדירים' (בהפקדה מ-27.4.2026), ולכן חשוב לברר את המספר.",
+        "nearby_plan": "תא/מק/4669 (בהפקדה)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202511/17/2_6/o/y2_1pa_010233_20251117223137.jpeg",
+      "removed_reason": "מחוץ לאזור החיפוש (רחוק מדי)",
+      "removed_at": "2026-11-01"
+    },
     {
-     "date": "2026-11-01",
-     "price": 6000
-    }
-   ],
-   "building_check": {
-    "status": "לא נבדק",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-11-01",
-    "note": "הרחוב לא פורסם, ולכן אי אפשר לבדוק את הבניין. בשכונה יש כמה תכניות פינוי-בינוי."
-   },
-   "image": "https://img.yad2.co.il/Pic/202607/26/2_6/o/y2_1pa_010171_20260726182309.jpeg"
-  },
-  {
-   "id": "rama27",
-   "addr": "רמה 27",
-   "hood": "נווה שרת",
-   "area": "ne",
-   "price": 5200,
-   "rooms": 3,
-   "sqm": "90",
-   "floor": "3 מתוך 4",
-   "ad": "פרטי",
-   "posted": "11.10",
-   "cond": "מקלט · ללא מעלית",
-   "notes": "מקלחת ושירותים חדשים, חניה ברחוב. אותה דירה מופיעה גם במדלן",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/gokgwxqh",
-   "site": "יד2",
-   "extra_url": "https://www.madlan.co.il/listings/ncTGFN0z222",
-   "lat": 32.121745,
-   "lon": 34.841709,
-   "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
-   "coord_unverified": false,
-   "walk_m": 8043,
-   "walk_min": 105,
-   "line_m": 6493,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "ns2",
+      "addr": "נווה שרת (רחוב לא פורסם)",
+      "hood": "נווה שרת",
+      "area": "ne",
+      "price": 6000,
+      "rooms": 3,
+      "sqm": "70",
+      "floor": "2 מתוך 8",
+      "ad": "תיווך",
+      "posted": "26.7",
+      "cond": "משופצת · מעלית · מזגנים",
+      "notes": "כניסה 1.12",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/6o8uxt4i",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.118651,
+      "lon": 34.840409,
+      "coord_source": "הרחוב לא פורסם: מרכז שכונת נווה שרת לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 7748,
+      "walk_min": 101,
+      "line_m": 6201,
+      "first_seen": "2026-11-01",
+      "status": "removed",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6000
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-11-01",
+        "note": "הרחוב לא פורסם, ולכן אי אפשר לבדוק את הבניין. בשכונה יש כמה תכניות פינוי-בינוי."
+      },
+      "image": "https://img.yad2.co.il/Pic/202607/26/2_6/o/y2_1pa_010171_20260726182309.jpeg",
+      "removed_reason": "מחוץ לאזור החיפוש (רחוק מדי)",
+      "removed_at": "2026-11-01"
+    },
     {
-     "date": "2026-11-01",
-     "price": 5200
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-11-01",
-    "note": "אין בקשת היתר או תכנית התחדשות פעילה לכתובת (רק תכנית גנוזה 4526). תכנית פינוי-בינוי תא/מק/4669 'רמה–אדירים' (בהפקדה) כ-100 מ' מהבניין."
-   },
-   "image": "https://img.yad2.co.il/Pic/202610/19/2_2/o/y2_1_07316_20261019123010.jpeg"
-  },
-  {
-   "id": "rama15",
-   "addr": "רמה 15",
-   "hood": "נווה שרת",
-   "area": "ne",
-   "price": 6400,
-   "rooms": 3,
-   "sqm": "80",
-   "floor": "3 מתוך 4",
-   "ad": "ללא תיווך",
-   "posted": "3.10",
-   "cond": "משופצת",
-   "notes": "ללא חיות",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/pu1y0lbf",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.120679,
-   "lon": 34.841684,
-   "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
-   "coord_unverified": false,
-   "walk_m": 7983,
-   "walk_min": 104,
-   "line_m": 6425,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "rama27",
+      "addr": "רמה 27",
+      "hood": "נווה שרת",
+      "area": "ne",
+      "price": 5200,
+      "rooms": 3,
+      "sqm": "90",
+      "floor": "3 מתוך 4",
+      "ad": "פרטי",
+      "posted": "11.10",
+      "cond": "מקלט · ללא מעלית",
+      "notes": "מקלחת ושירותים חדשים, חניה ברחוב. אותה דירה מופיעה גם במדלן",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/gokgwxqh",
+      "site": "יד2",
+      "extra_url": "https://www.madlan.co.il/listings/ncTGFN0z222",
+      "lat": 32.121745,
+      "lon": 34.841709,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 8043,
+      "walk_min": 105,
+      "line_m": 6493,
+      "first_seen": "2026-11-01",
+      "status": "removed",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5200
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-11-01",
+        "note": "אין בקשת היתר או תכנית התחדשות פעילה לכתובת (רק תכנית גנוזה 4526). תכנית פינוי-בינוי תא/מק/4669 'רמה–אדירים' (בהפקדה) כ-100 מ' מהבניין."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/19/2_2/o/y2_1_07316_20261019123010.jpeg",
+      "removed_reason": "מחוץ לאזור החיפוש (רחוק מדי)",
+      "removed_at": "2026-11-01"
+    },
     {
-     "date": "2026-11-01",
-     "price": 6400
-    }
-   ],
-   "building_check": {
-    "status": "פינוי-בינוי",
-    "source_url": "https://mavat.iplan.gov.il/SV4/1/5000932951/310",
-    "checked_at": "2026-11-01",
-    "note": "הבניין בתוך קו תכנית פינוי-בינוי תא/מק/4669 'התחדשות עירונית רמה–אדירים' (272 יח\"ד). התכנית בהפקדה מ-27.4.2026 ועדיין לא אושרה."
-   },
-   "image": "https://img.yad2.co.il/Pic/202610/03/2_2/o/y2_1pa_010859_20261003175131.jpeg"
-  },
-  {
-   "id": "rama15b",
-   "addr": "רמה 15",
-   "hood": "נווה שרת",
-   "area": "ne",
-   "price": 4800,
-   "rooms": 3,
-   "sqm": "65",
-   "floor": "2 מתוך 4",
-   "ad": "פרטי",
-   "posted": "9.10",
-   "cond": "מקלט בבניין",
-   "notes": "כניסה מיידית",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/gd2a1lsv",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.120679,
-   "lon": 34.841684,
-   "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
-   "coord_unverified": false,
-   "walk_m": 7983,
-   "walk_min": 104,
-   "line_m": 6425,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "rama15",
+      "addr": "רמה 15",
+      "hood": "נווה שרת",
+      "area": "ne",
+      "price": 6400,
+      "rooms": 3,
+      "sqm": "80",
+      "floor": "3 מתוך 4",
+      "ad": "ללא תיווך",
+      "posted": "3.10",
+      "cond": "משופצת",
+      "notes": "ללא חיות",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/pu1y0lbf",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.120679,
+      "lon": 34.841684,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 7983,
+      "walk_min": 104,
+      "line_m": 6425,
+      "first_seen": "2026-11-01",
+      "status": "removed",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6400
+        }
+      ],
+      "building_check": {
+        "status": "פינוי-בינוי",
+        "source_url": "https://mavat.iplan.gov.il/SV4/1/5000932951/310",
+        "checked_at": "2026-11-01",
+        "note": "הבניין בתוך קו תכנית פינוי-בינוי תא/מק/4669 'התחדשות עירונית רמה–אדירים' (272 יח\"ד). התכנית בהפקדה מ-27.4.2026 ועדיין לא אושרה."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/03/2_2/o/y2_1pa_010859_20261003175131.jpeg",
+      "removed_reason": "מחוץ לאזור החיפוש (רחוק מדי)",
+      "removed_at": "2026-11-01"
+    },
     {
-     "date": "2026-11-01",
-     "price": 4800
-    }
-   ],
-   "building_check": {
-    "status": "פינוי-בינוי",
-    "source_url": "https://mavat.iplan.gov.il/SV4/1/5000932951/310",
-    "checked_at": "2026-11-01",
-    "note": "הבניין בתוך קו תכנית פינוי-בינוי תא/מק/4669 'התחדשות עירונית רמה–אדירים' (272 יח\"ד). התכנית בהפקדה מ-27.4.2026 ועדיין לא אושרה."
-   },
-   "image": "https://img.yad2.co.il/Pic/202610/09/2_2/o/y2_1pa_010369_20261009044112.jpeg"
-  },
-  {
-   "id": "kle",
-   "addr": "קהילת קליבלנד 6",
-   "hood": "נווה שרת",
-   "area": "ne",
-   "price": 5000,
-   "rooms": 3,
-   "sqm": "70",
-   "floor": "3 מתוך 4",
-   "ad": "ללא תיווך",
-   "posted": "12.10",
-   "cond": "מזגנים · חניה · ללא מעלית",
-   "notes": "כניסה 1.12",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/wi6hpi62",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.117269,
-   "lon": 34.843007,
-   "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
-   "coord_unverified": false,
-   "walk_m": 7992,
-   "walk_min": 100,
-   "line_m": 6329,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "rama15b",
+      "addr": "רמה 15",
+      "hood": "נווה שרת",
+      "area": "ne",
+      "price": 4800,
+      "rooms": 3,
+      "sqm": "65",
+      "floor": "2 מתוך 4",
+      "ad": "פרטי",
+      "posted": "9.10",
+      "cond": "מקלט בבניין",
+      "notes": "כניסה מיידית",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/gd2a1lsv",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.120679,
+      "lon": 34.841684,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 7983,
+      "walk_min": 104,
+      "line_m": 6425,
+      "first_seen": "2026-11-01",
+      "status": "removed",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 4800
+        }
+      ],
+      "building_check": {
+        "status": "פינוי-בינוי",
+        "source_url": "https://mavat.iplan.gov.il/SV4/1/5000932951/310",
+        "checked_at": "2026-11-01",
+        "note": "הבניין בתוך קו תכנית פינוי-בינוי תא/מק/4669 'התחדשות עירונית רמה–אדירים' (272 יח\"ד). התכנית בהפקדה מ-27.4.2026 ועדיין לא אושרה."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/09/2_2/o/y2_1pa_010369_20261009044112.jpeg",
+      "removed_reason": "מחוץ לאזור החיפוש (רחוק מדי)",
+      "removed_at": "2026-11-01"
+    },
     {
-     "date": "2026-11-01",
-     "price": 5000
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-11-01",
-    "note": "אין בקשת היתר או תכנית פינוי-בינוי פעילה לכתובת (רק תכנית גנוזה 4526). תכנית פינוי-בינוי מתחם הצנחנים (4370) כ-125 מ' מהבניין."
-   },
-   "image": "https://img.yad2.co.il/Pic/202610/12/2_2/o/y2_1pa_010021_20261012091224.jpeg"
-  },
-  {
-   "id": "yav",
-   "addr": "יבנה (מספר לא פורסם)",
-   "hood": "לב העיר",
-   "area": "center",
-   "price": 6900,
-   "rooms": 3,
-   "sqm": "85",
-   "floor": "קרקע מתוך 4",
-   "ad": "תיווך",
-   "posted": "1.6",
-   "cond": "מרפסת סגורה · מקלט",
-   "notes": "עורפית ושקטה",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/1d34lqde",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.065521,
-   "lon": 34.773095,
-   "coord_source": "הכתובת ללא מספר בית: קטע של רחוב יבנה לפי Nominatim (OpenStreetMap) – משוער",
-   "coord_unverified": true,
-   "walk_m": 3442,
-   "walk_min": 45,
-   "line_m": 2791,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "kle",
+      "addr": "קהילת קליבלנד 6",
+      "hood": "נווה שרת",
+      "area": "ne",
+      "price": 5000,
+      "rooms": 3,
+      "sqm": "70",
+      "floor": "3 מתוך 4",
+      "ad": "ללא תיווך",
+      "posted": "12.10",
+      "cond": "מזגנים · חניה · ללא מעלית",
+      "notes": "כניסה 1.12",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/wi6hpi62",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.117269,
+      "lon": 34.843007,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 7992,
+      "walk_min": 100,
+      "line_m": 6329,
+      "first_seen": "2026-11-01",
+      "status": "removed",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5000
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-11-01",
+        "note": "אין בקשת היתר או תכנית פינוי-בינוי פעילה לכתובת (רק תכנית גנוזה 4526). תכנית פינוי-בינוי מתחם הצנחנים (4370) כ-125 מ' מהבניין."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/12/2_2/o/y2_1pa_010021_20261012091224.jpeg",
+      "removed_reason": "מחוץ לאזור החיפוש (רחוק מדי)",
+      "removed_at": "2026-11-01"
+    },
     {
-     "date": "2026-11-01",
-     "price": 6900
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-11-01",
-    "note": "אף כתובת ברחוב יבנה אינה בתכנית התחדשות. מספר הבית לא פורסם, לכן בקשות היתר לבניין עצמו לא נבדקו."
-   },
-   "image": "https://img.yad2.co.il/Pic/202606/03/2_6/o/y2_11_sMSf9IR4pm_20260603.jpg"
-  },
-  {
-   "id": "maz",
-   "addr": "מזא\"ה ליד אלנבי (מספר לא פורסם)",
-   "hood": "לב העיר",
-   "area": "center",
-   "price": 6800,
-   "rooms": 3,
-   "sqm": "65",
-   "floor": "1 מתוך 3",
-   "ad": "תיווך",
-   "posted": "22.9",
-   "cond": "2 מרפסות · תקרות גבוהות",
-   "notes": "מתאימה לשותפים",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/toj7suo5",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.067211,
-   "lon": 34.772333,
-   "coord_source": "הכתובת ללא מספר בית: קצה רחוב מזא\"ה הקרוב לאלנבי (לפי המודעה), לפי Nominatim (OpenStreetMap) – משוער",
-   "coord_unverified": true,
-   "walk_m": 3176,
-   "walk_min": 42,
-   "line_m": 2652,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "yav",
+      "addr": "יבנה (מספר לא פורסם)",
+      "hood": "לב העיר",
+      "area": "center",
+      "price": 6900,
+      "rooms": 3,
+      "sqm": "85",
+      "floor": "קרקע מתוך 4",
+      "ad": "תיווך",
+      "posted": "1.6",
+      "cond": "מרפסת סגורה · מקלט",
+      "notes": "עורפית ושקטה",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/1d34lqde",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.065521,
+      "lon": 34.773095,
+      "coord_source": "הכתובת ללא מספר בית: קטע של רחוב יבנה לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3442,
+      "walk_min": 45,
+      "line_m": 2791,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6900
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-11-01",
+        "note": "אף כתובת ברחוב יבנה אינה בתכנית התחדשות. מספר הבית לא פורסם, לכן בקשות היתר לבניין עצמו לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202606/03/2_6/o/y2_11_sMSf9IR4pm_20260603.jpg"
+    },
     {
-     "date": "2026-11-01",
-     "price": 6800
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-11-01",
-    "note": "אף כתובת ברחוב מזא\"ה אינה בתכנית התחדשות. מספר הבית לא פורסם, לכן בקשות היתר לבניין עצמו לא נבדקו."
-   },
-   "image": "https://img.yad2.co.il/Pic/202609/22/2_6/o/y2_1pa_010219_20260922081555.jpeg"
-  },
-  {
-   "id": "bar",
-   "addr": "ברזילי פינת החשמל (מספר לא פורסם)",
-   "hood": "לב העיר",
-   "area": "center",
-   "price": 7000,
-   "rooms": 3,
-   "sqm": "65",
-   "floor": "קרקע מתוך 4",
-   "ad": "תיווך",
-   "posted": "7.10",
-   "cond": "משופצת · תקרות גבוהות",
-   "notes": "מתאימה לשותפים, כניסה 31.10",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/039x5hjr",
-   "site": "יד2",
-   "extra_url": "https://www.madlan.co.il/listings/aqQ7escDUQ2",
-   "lat": 32.061234,
-   "lon": 34.775559,
-   "coord_source": "הכתובת ללא מספר בית: פינת ברזילי–החשמל (לפי המודעה), לפי Nominatim (OpenStreetMap) – משוער",
-   "coord_unverified": true,
-   "walk_m": 3655,
-   "walk_min": 48,
-   "line_m": 3160,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "maz",
+      "addr": "מזא\"ה ליד אלנבי (מספר לא פורסם)",
+      "hood": "לב העיר",
+      "area": "center",
+      "price": 6800,
+      "rooms": 3,
+      "sqm": "65",
+      "floor": "1 מתוך 3",
+      "ad": "תיווך",
+      "posted": "22.9",
+      "cond": "2 מרפסות · תקרות גבוהות",
+      "notes": "מתאימה לשותפים",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/toj7suo5",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.067211,
+      "lon": 34.772333,
+      "coord_source": "הכתובת ללא מספר בית: קצה רחוב מזא\"ה הקרוב לאלנבי (לפי המודעה), לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3176,
+      "walk_min": 42,
+      "line_m": 2652,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6800
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-11-01",
+        "note": "אף כתובת ברחוב מזא\"ה אינה בתכנית התחדשות. מספר הבית לא פורסם, לכן בקשות היתר לבניין עצמו לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202609/22/2_6/o/y2_1pa_010219_20260922081555.jpeg"
+    },
     {
-     "date": "2026-11-01",
-     "price": 7000
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-11-01",
-    "note": "אף כתובת ברחוב ברזילי אינה בתכנית התחדשות. מספר הבית לא פורסם, לכן בקשות היתר לבניין עצמו לא נבדקו."
-   },
-   "image": "https://img.yad2.co.il/Pic/202609/16/2_6/o/y2_1_UKf_39UiCi_20260916.jpeg"
-  },
-  {
-   "id": "bar2",
-   "addr": "ברזילי, מתחם החשמל (מספר לא פורסם)",
-   "hood": "לב העיר",
-   "area": "center",
-   "price": 7000,
-   "rooms": 3,
-   "sqm": "60",
-   "floor": "1 מתוך 4",
-   "ad": "תיווך",
-   "posted": "לא ידוע",
-   "cond": "משופצת · פרקט · חניה",
-   "notes": "עורפית ושקטה, כניסה 1.12",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/g2e6vmwj",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.061234,
-   "lon": 34.775559,
-   "coord_source": "הכתובת ללא מספר בית: ברזילי ליד מתחם החשמל (פינת החשמל), לפי Nominatim (OpenStreetMap) – משוער",
-   "coord_unverified": true,
-   "walk_m": 3655,
-   "walk_min": 48,
-   "line_m": 3160,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "bar",
+      "addr": "ברזילי פינת החשמל (מספר לא פורסם)",
+      "hood": "לב העיר",
+      "area": "center",
+      "price": 7000,
+      "rooms": 3,
+      "sqm": "65",
+      "floor": "קרקע מתוך 4",
+      "ad": "תיווך",
+      "posted": "7.10",
+      "cond": "משופצת · תקרות גבוהות",
+      "notes": "מתאימה לשותפים, כניסה 31.10",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/039x5hjr",
+      "site": "יד2",
+      "extra_url": "https://www.madlan.co.il/listings/aqQ7escDUQ2",
+      "lat": 32.061234,
+      "lon": 34.775559,
+      "coord_source": "הכתובת ללא מספר בית: פינת ברזילי–החשמל (לפי המודעה), לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3655,
+      "walk_min": 48,
+      "line_m": 3160,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 7000
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-11-01",
+        "note": "אף כתובת ברחוב ברזילי אינה בתכנית התחדשות. מספר הבית לא פורסם, לכן בקשות היתר לבניין עצמו לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202609/16/2_6/o/y2_1_UKf_39UiCi_20260916.jpeg"
+    },
     {
-     "date": "2026-11-01",
-     "price": 7000
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-11-01",
-    "note": "אף כתובת ברחוב ברזילי אינה בתכנית התחדשות. מספר הבית לא פורסם, לכן בקשות היתר לבניין עצמו לא נבדקו."
-   },
-   "image": "https://img.yad2.co.il/Pic/202411/12/2_6/o/y2_1pa_010066_20241112134921.jpeg"
-  },
-  {
-   "id": "tsh",
-   "addr": "טשרניחובסקי 2",
-   "hood": "לב העיר",
-   "area": "center",
-   "price": 5500,
-   "rooms": 3,
-   "sqm": "100",
-   "floor": "1 מתוך 3",
-   "ad": "תיווך",
-   "posted": "29.10",
-   "cond": "מרפסת גדולה",
-   "notes": "המחיר כולל חשבונות. חדר שינה אחד בלי חלון ואחד בלי דלת",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/s83x3p3t",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.070831,
-   "lon": 34.770331,
-   "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
-   "coord_unverified": false,
-   "walk_m": 2905,
-   "walk_min": 39,
-   "line_m": 2403,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "bar2",
+      "addr": "ברזילי, מתחם החשמל (מספר לא פורסם)",
+      "hood": "לב העיר",
+      "area": "center",
+      "price": 7000,
+      "rooms": 3,
+      "sqm": "60",
+      "floor": "1 מתוך 4",
+      "ad": "תיווך",
+      "posted": "לא ידוע",
+      "cond": "משופצת · פרקט · חניה",
+      "notes": "עורפית ושקטה, כניסה 1.12",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/g2e6vmwj",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.061234,
+      "lon": 34.775559,
+      "coord_source": "הכתובת ללא מספר בית: ברזילי ליד מתחם החשמל (פינת החשמל), לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3655,
+      "walk_min": 48,
+      "line_m": 3160,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 7000
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-11-01",
+        "note": "אף כתובת ברחוב ברזילי אינה בתכנית התחדשות. מספר הבית לא פורסם, לכן בקשות היתר לבניין עצמו לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202411/12/2_6/o/y2_1pa_010066_20241112134921.jpeg"
+    },
     {
-     "date": "2026-11-01",
-     "price": 5500
-    }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/772",
-    "checked_at": "2026-11-01",
-    "note": "אין בקשות היתר או תכניות התחדשות לכתובת (GIS עירייה)."
-   },
-   "image": "https://img.yad2.co.il/Pic/202610/29/2_6/o/y2_1pa_010836_20261029161535.jpeg"
-  },
-  {
-   "id": "nch",
-   "addr": "נחמני פינת גולדברג (מספר לא פורסם)",
-   "hood": "לב העיר",
-   "area": "center",
-   "price": 6900,
-   "rooms": 3,
-   "sqm": "90",
-   "floor": "קרקע מתוך 3",
-   "ad": "תיווך",
-   "posted": "21.6",
-   "cond": "מרפסת · תקרות גבוהות · מטבח נפרד",
-   "notes": "מתאימה לשותפים",
-   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/pbhc22cx",
-   "site": "יד2",
-   "extra_url": null,
-   "lat": 32.065013,
-   "lon": 34.77845,
-   "coord_source": "הכתובת ללא מספר בית: פינת נחמני–גולדברג (לפי המודעה), לפי Nominatim (OpenStreetMap) – משוער",
-   "coord_unverified": true,
-   "walk_m": 3214,
-   "walk_min": 42,
-   "line_m": 2683,
-   "first_seen": "2026-11-01",
-   "status": "active",
-   "price_history": [
+      "id": "tsh",
+      "addr": "טשרניחובסקי 2",
+      "hood": "לב העיר",
+      "area": "center",
+      "price": 5500,
+      "rooms": 3,
+      "sqm": "100",
+      "floor": "1 מתוך 3",
+      "ad": "תיווך",
+      "posted": "29.10",
+      "cond": "מרפסת גדולה",
+      "notes": "המחיר כולל חשבונות. חדר שינה אחד בלי חלון ואחד בלי דלת",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/s83x3p3t",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.070831,
+      "lon": 34.770331,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 2905,
+      "walk_min": 39,
+      "line_m": 2403,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5500
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/772",
+        "checked_at": "2026-11-01",
+        "note": "אין בקשות היתר או תכניות התחדשות לכתובת (GIS עירייה)."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/29/2_6/o/y2_1pa_010836_20261029161535.jpeg"
+    },
     {
-     "date": "2026-11-01",
-     "price": 6900
+      "id": "nch",
+      "addr": "נחמני פינת גולדברג (מספר לא פורסם)",
+      "hood": "לב העיר",
+      "area": "center",
+      "price": 6900,
+      "rooms": 3,
+      "sqm": "90",
+      "floor": "קרקע מתוך 3",
+      "ad": "תיווך",
+      "posted": "21.6",
+      "cond": "מרפסת · תקרות גבוהות · מטבח נפרד",
+      "notes": "מתאימה לשותפים",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/pbhc22cx",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.065013,
+      "lon": 34.77845,
+      "coord_source": "הכתובת ללא מספר בית: פינת נחמני–גולדברג (לפי המודעה), לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3214,
+      "walk_min": 42,
+      "line_m": 2683,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6900
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-11-01",
+        "note": "אף כתובת ברחוב נחמני אינה בתכנית התחדשות. מספר הבית לא פורסם, לכן בקשות היתר לבניין עצמו לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202606/21/2_6/o/y2_1pa_010019_20260621191134.jpeg"
     }
-   ],
-   "building_check": {
-    "status": "לא נמצא",
-    "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
-    "checked_at": "2026-11-01",
-    "note": "אף כתובת ברחוב נחמני אינה בתכנית התחדשות. מספר הבית לא פורסם, לכן בקשות היתר לבניין עצמו לא נבדקו."
-   },
-   "image": "https://img.yad2.co.il/Pic/202606/21/2_6/o/y2_1pa_010019_20260621191134.jpeg"
-  }
- ]
+  ]
 }
