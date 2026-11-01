@@ -895,7 +895,7 @@
       "walk_min": 72,
       "line_m": 4444,
       "first_seen": "2026-11-01",
-      "status": "active",
+      "status": "removed",
       "price_history": [
         {
           "date": "2026-11-01",
@@ -908,7 +908,9 @@
         "checked_at": "2026-11-01",
         "note": "אין תכנית התחדשות או בקשת תמ\"א 38 לכתובת. בבניין הסמוך (29א) יש בקשה לשימוש חורג לגן ילדים."
       },
-      "image": "https://img.yad2.co.il/Pic/202606/28/2_2/o/y2_1pa_010219_20260628230832.jpeg"
+      "image": "https://img.yad2.co.il/Pic/202606/28/2_2/o/y2_1pa_010219_20260628230832.jpeg",
+      "removed_reason": "הליכה לבית הספר מעל 50 דקות",
+      "removed_at": "2026-11-01"
     },
     {
       "id": "kor",
