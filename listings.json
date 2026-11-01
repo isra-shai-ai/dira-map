@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-11-01T08:27:00+02:00",
-    "prev_updated_at": "2026-10-31T21:47:00+02:00",
-    "search": "3 חדרים עד 7,000 ₪ בצפון תל אביב, הצפון הישן ולב העיר",
+    "updated_at": "2026-11-01T09:03:00+02:00",
+    "prev_updated_at": "2026-11-01T08:27:00+02:00",
+    "search": "3 חדרים עד 7,000 ₪ בצפון תל אביב, הצפון הישן, לב העיר, רמת גן וגבעתיים (עד 50 דק׳ הליכה)",
     "school": {
       "name": "בית הספר",
       "lat": 32.08849,
@@ -102,6 +102,36 @@
         "n": 17,
         "basis": "מודעות פעילות (כולל אולי מודעות שבמפה)",
         "median": 5770
+      },
+      "רמת גן": {
+        "source": "Realta – חציון מחיר מבוקש במודעות 3 חד׳ פעילות (כל העיר)",
+        "url": "https://realta.co.il/he/ramat-gan/3-rooms/",
+        "fetched": "2026-11-01",
+        "n": 333,
+        "basis": "מודעות פעילות בכל העיר (כולל אולי מודעות שבמפה)",
+        "median": 6000,
+        "refs": [
+          {
+            "label": "Realta – ממוצע 3 חד׳",
+            "value": 6433,
+            "url": "https://realta.co.il/he/ramat-gan/3-rooms/"
+          }
+        ]
+      },
+      "גבעתיים": {
+        "source": "Realta – חציון מחיר מבוקש במודעות 3 חד׳ פעילות (כל העיר)",
+        "url": "https://realta.co.il/he/givatayim/3-rooms/",
+        "fetched": "2026-11-01",
+        "n": 108,
+        "basis": "מודעות פעילות בכל העיר (כולל אולי מודעות שבמפה)",
+        "median": 6500,
+        "refs": [
+          {
+            "label": "Realta – ממוצע 3 חד׳",
+            "value": 6964,
+            "url": "https://realta.co.il/he/givatayim/3-rooms/"
+          }
+        ]
       }
     },
     "market_rule": {
@@ -1475,6 +1505,1735 @@
         "note": "אף כתובת ברחוב נחמני אינה בתכנית התחדשות. מספר הבית לא פורסם, לכן בקשות היתר לבניין עצמו לא נבדקו."
       },
       "image": "https://img.yad2.co.il/Pic/202606/21/2_6/o/y2_1pa_010019_20260621191134.jpeg"
+    },
+    {
+      "id": "rg2",
+      "addr": "שלמה בן יוסף (מספר לא פורסם)",
+      "hood": "שכונת חשמונאים, מרכז העיר א",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 6900,
+      "rooms": 3,
+      "sqm": "100",
+      "floor": "1",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/ppzb3x90",
+      "site": "יד2",
+      "extra_url": "https://www.madlan.co.il/listings/DgtEJVO5x8N",
+      "lat": 32.082099,
+      "lon": 34.814055,
+      "coord_source": "הכתובת ללא מספר בית: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3614,
+      "walk_min": 48,
+      "line_m": 2825,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6900
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "מספר הבית לא פורסם, לכן לא ניתן לבדוק את הבניין. לא נמצאה תכנית פינוי-בינוי לכל הרחוב ברשימות התכניות."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/01/2_6/o/y2_1pa_010384_20261001133244.jpeg"
+    },
+    {
+      "id": "rg21",
+      "addr": "המעגל 38",
+      "hood": "שכונת חשמונאים, מרכז העיר א",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 5500,
+      "rooms": 3,
+      "sqm": "125",
+      "floor": "3",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "נכס עורפי",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/7i397ii8",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.080699,
+      "lon": 34.81337,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 3508,
+      "walk_min": 47,
+      "line_m": 2806,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5500
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://rgonline.co.il/real-estate/%D7%A4%D7%99%D7%A0%D7%95%D7%99-%D7%91%D7%99%D7%A0%D7%95%D7%99-%D7%91%D7%91%D7%99%D7%90%D7%9C%D7%99%D7%A7/",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית לכתובת. בסמוך מקודם פינוי-בינוי ביאליק 13 / המעגל 37–39.",
+        "nearby_plan": "ביאליק 13 / המעגל 37–39 (בקידום)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202605/18/2_2/o/y2_1_06082_20260518190816.jpeg"
+    },
+    {
+      "id": "rg23",
+      "addr": "המבדיל 5",
+      "hood": "שכונת גפן",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 5950,
+      "rooms": 3,
+      "sqm": "90",
+      "floor": "4",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "חניה · נוף פתוח לעיר · 2 מרפסות",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/tjrd3tkw",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.090891,
+      "lon": 34.816568,
+      "coord_source": "מספר הבית לא נמצא במפה: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3813,
+      "walk_min": 50,
+      "line_m": 2982,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5950
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/08/2_2/o/y2_1_04992_20261008201802.jpeg"
+    },
+    {
+      "id": "rg26",
+      "addr": "הרימון (מספר לא פורסם)",
+      "hood": "שכונת גפן",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 6200,
+      "rooms": 3,
+      "sqm": "75",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/8dk39rjy",
+      "site": "יד2",
+      "extra_url": "https://www.madlan.co.il/listings/YIE6kovvCkp",
+      "lat": 32.088062,
+      "lon": 34.809051,
+      "coord_source": "הכתובת ללא מספר בית: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 2809,
+      "walk_min": 37,
+      "line_m": 2263,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6200
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "מספר הבית לא פורסם, לכן לא ניתן לבדוק את הבניין. לא נמצאה תכנית פינוי-בינוי לכל הרחוב ברשימות התכניות."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/04/2_6/o/y2_1pa_010334_20261004115111.jpeg"
+    },
+    {
+      "id": "rg40",
+      "addr": "החשמונאים 7",
+      "hood": "שכונת חשמונאים, מרכז העיר א",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 6500,
+      "rooms": 3,
+      "sqm": "70",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/05tm9b2c",
+      "site": "יד2",
+      "extra_url": "https://www.madlan.co.il/listings/SCxdOjWVABE",
+      "lat": 32.083566,
+      "lon": 34.809552,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 3142,
+      "walk_min": 42,
+      "line_m": 2373,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6500
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/05/2_2/o/y2_1pa_010521_20261005125551.jpeg"
+    },
+    {
+      "id": "rg44",
+      "addr": "ביאליק (מספר לא פורסם)",
+      "hood": "שכונת יהלום, מרכז העיר ב",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 5500,
+      "rooms": 3,
+      "sqm": "100",
+      "floor": "3",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/x3z5zvxs",
+      "site": "יד2",
+      "extra_url": "https://www.madlan.co.il/listings/ACY9w84raXs",
+      "lat": 32.085624,
+      "lon": 34.810888,
+      "coord_source": "הכתובת ללא מספר בית: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3263,
+      "walk_min": 44,
+      "line_m": 2456,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5500
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "מספר הבית לא פורסם. ביאליק 99–103 בתכנית פינוי-בינוי מאושרת (רג/1677) – חשוב לברר את המספר.",
+        "nearby_plan": "רג/1677 ביאליק 99–103 (בתוקף)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/14/2_6/o/y2_2_HRk4OjT342_20261014.jpeg"
+    },
+    {
+      "id": "rg47",
+      "addr": "איתמר 18",
+      "hood": "חרוזים",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 5500,
+      "rooms": 3,
+      "sqm": "80",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/bzd0kcv5",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.089667,
+      "lon": 34.806931,
+      "coord_source": "מספר הבית לא נמצא במפה: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 2665,
+      "walk_min": 35,
+      "line_m": 2067,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5500
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/31/2_2/o/y2_2_09322_20261031112821.jpeg"
+    },
+    {
+      "id": "rg50",
+      "addr": "המעגל 35",
+      "hood": "שכונת חשמונאים, מרכז העיר א",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 5650,
+      "rooms": 3,
+      "sqm": "73",
+      "floor": "1",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/tyc6bfik",
+      "site": "יד2",
+      "extra_url": "https://www.madlan.co.il/listings/zHKSpwnY3TZ",
+      "lat": 32.080572,
+      "lon": 34.813682,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 3535,
+      "walk_min": 47,
+      "line_m": 2839,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5650
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://rgonline.co.il/real-estate/%D7%A4%D7%99%D7%A0%D7%95%D7%99-%D7%91%D7%99%D7%A0%D7%95%D7%99-%D7%91%D7%91%D7%99%D7%90%D7%9C%D7%99%D7%A7/",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית לכתובת. בסמוך מקודם פינוי-בינוי ביאליק 13 / המעגל 37–39.",
+        "nearby_plan": "ביאליק 13 / המעגל 37–39 (בקידום)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202609/28/2_2/o/y2_1pa_010728_20260928072938.jpeg"
+    },
+    {
+      "id": "rg51",
+      "addr": "גאולים 3",
+      "hood": "שכונת גפן",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 6800,
+      "rooms": 3,
+      "sqm": "65",
+      "floor": "1",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/jxqeg9k7",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.09044,
+      "lon": 34.814618,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 3546,
+      "walk_min": 47,
+      "line_m": 2795,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6800
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/30/2_2/o/y2_2_07423_20261030210839.jpeg"
+    },
+    {
+      "id": "rg52",
+      "addr": "ביאליק (מספר לא פורסם)",
+      "hood": "שכונת חשמונאים, מרכז העיר א",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 6000,
+      "rooms": 3,
+      "sqm": "80",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/t0zgkhzo",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.085624,
+      "lon": 34.810888,
+      "coord_source": "הכתובת ללא מספר בית: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3263,
+      "walk_min": 44,
+      "line_m": 2456,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6000
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "מספר הבית לא פורסם. ביאליק 99–103 בתכנית פינוי-בינוי מאושרת (רג/1677) – חשוב לברר את המספר.",
+        "nearby_plan": "רג/1677 ביאליק 99–103 (בתוקף)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/05/2_6/o/y2_4_Csl3aJlgWT_20261005.jpeg"
+    },
+    {
+      "id": "rg61",
+      "addr": "יוחנן 3",
+      "hood": "שכונת חשמונאים, מרכז העיר א",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 5750,
+      "rooms": 3,
+      "sqm": "60",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/bglnfxjv",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.08045,
+      "lon": 34.810621,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 3249,
+      "walk_min": 43,
+      "line_m": 2571,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5750
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/29/2_2/o/y2_1pa_010726_20261029194200.jpeg"
+    },
+    {
+      "id": "rg62",
+      "addr": "שפירא 3",
+      "hood": "שכונת הראשונים",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 5500,
+      "rooms": 3,
+      "sqm": "100",
+      "floor": "3",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/4m6011d8",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.081475,
+      "lon": 34.804958,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 2630,
+      "walk_min": 35,
+      "line_m": 2032,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5500
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "אין תכנית מאושרת או מופקדת לכתובת. \"מתחם שפירא\" במאגר הממשלתי בתכנון סטטוטורי מוקדם."
+      }
+    },
+    {
+      "id": "rg65",
+      "addr": "החשמונאים 16",
+      "hood": "שכונת חשמונאים, מרכז העיר א",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 6200,
+      "rooms": 3,
+      "sqm": "68",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/ab5438w2",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.082985,
+      "lon": 34.809582,
+      "coord_source": "מספר הבית לא נמצא במפה: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3082,
+      "walk_min": 41,
+      "line_m": 2392,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6200
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/29/2_2/o/y2_1pa_010470_20261029132731.jpeg"
+    },
+    {
+      "id": "rg67",
+      "addr": "דב פרידמן (מספר לא פורסם)",
+      "hood": "שכונת הראשונים",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 5000,
+      "rooms": 3,
+      "sqm": "70",
+      "floor": "3",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/ohf798ja",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.080749,
+      "lon": 34.803112,
+      "coord_source": "הכתובת ללא מספר בית: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 2538,
+      "walk_min": 34,
+      "line_m": 1908,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5000
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://www.netunim.co.il/nadlan/tichnun-atidi/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "מספר הבית לא פורסם. ברחוב מקודמת תכנית רג/1897 (שכונת הראשונים, בבדיקת תנאי סף, לא הופקדה)."
+      },
+      "image": "https://img.yad2.co.il/Pic/202607/01/2_6/o/y2_1pa_010926_20260701121902.jpeg"
+    },
+    {
+      "id": "rg80",
+      "addr": "ביאליק 53",
+      "hood": "שכונת חשמונאים, מרכז העיר א",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 6100,
+      "rooms": 3,
+      "sqm": "75",
+      "floor": "3",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "פרויקט חדש",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/s8f6vua6",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.084236,
+      "lon": 34.813569,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 3561,
+      "walk_min": 48,
+      "line_m": 2729,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6100
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/15/2_2/o/y2_1pa_010639_20261015125304.jpeg"
+    },
+    {
+      "id": "rg82",
+      "addr": "ביאליק (מספר לא פורסם)",
+      "hood": "שכונת חשמונאים, מרכז העיר א",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 6500,
+      "rooms": 3,
+      "sqm": "85",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/hqd0cuwt",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.085624,
+      "lon": 34.810888,
+      "coord_source": "הכתובת ללא מספר בית: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3263,
+      "walk_min": 44,
+      "line_m": 2456,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6500
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "מספר הבית לא פורסם. ביאליק 99–103 בתכנית פינוי-בינוי מאושרת (רג/1677) – חשוב לברר את המספר.",
+        "nearby_plan": "רג/1677 ביאליק 99–103 (בתוקף)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/12/2_6/o/y2_1pa_010927_20261012170525.jpeg"
+    },
+    {
+      "id": "rg84",
+      "addr": "ארלוזורוב 82",
+      "hood": "שכונת הראשונים",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 3850,
+      "rooms": 3,
+      "sqm": "100",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/r71e6v6r",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.080798,
+      "lon": 34.81204,
+      "coord_source": "מספר הבית לא נמצא במפה: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3299,
+      "walk_min": 44,
+      "line_m": 2684,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 3850
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/24/2_2/o/y2_1pa_010255_20261024205935.jpeg"
+    },
+    {
+      "id": "rg94",
+      "addr": "המעגל 11",
+      "hood": "שכונת חשמונאים, מרכז העיר א",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 5800,
+      "rooms": 3,
+      "sqm": "88",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/yzwqgnju",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.083325,
+      "lon": 34.812911,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 3593,
+      "walk_min": 48,
+      "line_m": 2688,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5800
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202602/07/2_2/o/y2_1pa_010301_20260207232146.jpeg"
+    },
+    {
+      "id": "rg95",
+      "addr": "ביאליק 105",
+      "hood": "חרוזים",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 6900,
+      "rooms": 3,
+      "sqm": "70",
+      "floor": "5",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/wb9mrll8",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.084986,
+      "lon": 34.812293,
+      "coord_source": "מספר הבית לא נמצא במפה: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3413,
+      "walk_min": 46,
+      "line_m": 2597,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6900
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "לא בתחום תכנית. בניין סמוך לתכניות פינוי-בינוי מאושרות רג/1677 ורג/1601/א (ביאליק 99–103).",
+        "nearby_plan": "רג/1677 (בתוקף)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/08/2_2/o/y2_1pa_010645_20261008152903.jpeg"
+    },
+    {
+      "id": "rg115",
+      "addr": "הגפן 9",
+      "hood": "שכונת גפן",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 7000,
+      "rooms": 3,
+      "sqm": "80",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/2g3bzezy",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.089256,
+      "lon": 34.811144,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 3076,
+      "walk_min": 41,
+      "line_m": 2461,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 7000
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "לא בתחום תכנית. ממול: הגפן 8–10 (תכנית מאושרת), ובסמוך רג/1884 חירות 10–16 / הגפן 13–15 (בהפקדה).",
+        "nearby_plan": "רג/1884 (בהפקדה)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/16/2_2/o/y2_1pa_010777_20261016175111.jpeg"
+    },
+    {
+      "id": "rg118",
+      "addr": "ביאליק 73",
+      "hood": "שכונת חשמונאים, מרכז העיר א",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 6700,
+      "rooms": 3,
+      "sqm": "100",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/b76lo2xf",
+      "site": "יד2",
+      "extra_url": "https://www.madlan.co.il/listings/JIgBYVkB3fj",
+      "lat": 32.085118,
+      "lon": 34.81137,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 3329,
+      "walk_min": 45,
+      "line_m": 2509,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6700
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/15/2_2/o/y2_1pa_010773_20261015180249.jpeg"
+    },
+    {
+      "id": "rg130",
+      "addr": "הדר 16",
+      "hood": "שכונת גפן",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 5100,
+      "rooms": 3,
+      "sqm": "65",
+      "floor": "3",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "פרויקט חדש",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/ta6uc2mb",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.08757,
+      "lon": 34.811958,
+      "coord_source": "מספר הבית לא נמצא במפה: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3130,
+      "walk_min": 41,
+      "line_m": 2538,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5100
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/06/2_2/o/y2_1pa_010672_20261006192843.jpeg"
+    },
+    {
+      "id": "rg132",
+      "addr": "ביאליק (מספר לא פורסם)",
+      "hood": "תל בנימין",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 4300,
+      "rooms": 3,
+      "sqm": "50",
+      "floor": "קרקע",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/tp413m3o",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.085624,
+      "lon": 34.810888,
+      "coord_source": "הכתובת ללא מספר בית: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3263,
+      "walk_min": 44,
+      "line_m": 2456,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 4300
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "מספר הבית לא פורסם. ביאליק 99–103 בתכנית פינוי-בינוי מאושרת (רג/1677) – חשוב לברר את המספר.",
+        "nearby_plan": "רג/1677 ביאליק 99–103 (בתוקף)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202606/17/2_6/o/y2_1pa_010265_20260617001953.jpeg"
+    },
+    {
+      "id": "gv146",
+      "addr": "כצנלסון 71",
+      "hood": "גבעתיים",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 6500,
+      "rooms": 3,
+      "sqm": "65",
+      "floor": "1",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/8vx3xdxd",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.075879,
+      "lon": 34.809341,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 3267,
+      "walk_min": 44,
+      "line_m": 2685,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6500
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://www.givatayim.muni.il/1metro-noga/",
+        "checked_at": "2026-11-01",
+        "note": "לא בתחום תכנית נגה (בצד האי-זוגי היא חלה על 51–65 בלבד), אבל התכנית המופקדת צמודה לבניין.",
+        "nearby_plan": "503-1323856 נגה (בהפקדה)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/12/2_6/o/y2_15_yxpyt77JJz_20261012.jpeg"
+    },
+    {
+      "id": "gv147",
+      "addr": "דוד קלעי (מספר לא פורסם)",
+      "hood": "בורוכוב",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 6000,
+      "rooms": 3,
+      "sqm": "82",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/6vw3i1md",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.077103,
+      "lon": 34.808792,
+      "coord_source": "הכתובת ללא מספר בית: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3117,
+      "walk_min": 42,
+      "line_m": 2571,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6000
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://www.givatayim.muni.il/735/",
+        "checked_at": "2026-11-01",
+        "note": "מספר הבית לא פורסם, לכן לא ניתן לבדוק את הבניין. לא נמצאה תכנית פינוי-בינוי לכל הרחוב ברשימות התכניות."
+      },
+      "image": "https://img.yad2.co.il/Pic/202608/04/2_6/o/y2_1pa_010805_20260804143540.jpeg"
+    },
+    {
+      "id": "gv153",
+      "addr": "כצנלסון 34",
+      "hood": "הל\"ה",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 5900,
+      "rooms": 3,
+      "sqm": "80",
+      "floor": "3",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "2 מרפסות · נוף פתוח לעיר",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/z5x3xizp",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.074996,
+      "lon": 34.805571,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 2909,
+      "walk_min": 39,
+      "line_m": 2448,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5900
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://www.givatayim.muni.il/735/",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202505/04/2_2/o/y2_1_05695_20250504174020.jpeg"
+    },
+    {
+      "id": "gv155",
+      "addr": "גורדון 27",
+      "hood": "בורוכוב",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 7000,
+      "rooms": 3,
+      "sqm": "70",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/5cohl253",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.077355,
+      "lon": 34.810341,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 3265,
+      "walk_min": 44,
+      "line_m": 2686,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 7000
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://www.givatayim.muni.il/1metro-noga/",
+        "checked_at": "2026-11-01",
+        "note": "לא בתחום תכנית נגה (גורדון 2–18 זוגי), אבל התכנית המופקדת קרובה.",
+        "nearby_plan": "503-1323856 נגה (בהפקדה)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202611/01/2_2/o/y2_1pa_010932_20261101083629.jpeg"
+    },
+    {
+      "id": "gv157",
+      "addr": "רמב\"ם 3",
+      "hood": "גבעת הרמבם",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 6200,
+      "rooms": 3,
+      "sqm": "60",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/p7xyy1ic",
+      "site": "יד2",
+      "extra_url": "https://www.madlan.co.il/listings/PcfXdz7VoSI",
+      "lat": 32.07056,
+      "lon": 34.807579,
+      "coord_source": "מספר הבית לא נמצא במפה: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3702,
+      "walk_min": 50,
+      "line_m": 2913,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6200
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://www.givatayim.muni.il/735/",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202609/16/2_6/o/y2_1pa_010373_20260916152953.jpeg"
+    },
+    {
+      "id": "gv158",
+      "addr": "עליית הנוער 9",
+      "hood": "בורוכוב",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 6500,
+      "rooms": 3,
+      "sqm": "75",
+      "floor": "1",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/91sisysw",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.076685,
+      "lon": 34.802336,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 2395,
+      "walk_min": 32,
+      "line_m": 2093,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6500
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://www.givatayim.muni.il/735/",
+        "checked_at": "2026-11-01",
+        "note": "אין תכנית מאושרת או מופקדת לכתובת. מתחם \"עליית הנוער צפון\" ברשימת המתחמים בשלב רעיוני בלבד."
+      },
+      "image": "https://img.yad2.co.il/Pic/202609/04/2_2/o/y2_1pa_010931_20260904061938.jpeg"
+    },
+    {
+      "id": "gv160",
+      "addr": "דוד רמז (מספר לא פורסם)",
+      "hood": "גבעת הרמבם",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 6300,
+      "rooms": 3,
+      "sqm": "75",
+      "floor": "1",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "חניה",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/0sbtibmg",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.066529,
+      "lon": 34.804549,
+      "coord_source": "הכתובת ללא מספר בית: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3744,
+      "walk_min": 50,
+      "line_m": 3056,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6300
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://www.givatayim.muni.il/735/",
+        "checked_at": "2026-11-01",
+        "note": "מספר הבית לא פורסם, לכן לא ניתן לבדוק את הבניין. לא נמצאה תכנית פינוי-בינוי לכל הרחוב ברשימות התכניות."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/28/2_6/o/y2_1pa_010545_20261028200316.jpeg"
+    },
+    {
+      "id": "gv161",
+      "addr": "כצנלסון 62",
+      "hood": "שינקין",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 6900,
+      "rooms": 3,
+      "sqm": "90",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/oc1xlmzr",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.075229,
+      "lon": 34.808892,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 3211,
+      "walk_min": 43,
+      "line_m": 2688,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6900
+        }
+      ],
+      "building_check": {
+        "status": "פינוי-בינוי",
+        "source_url": "https://www.givatayim.muni.il/1metro-noga/",
+        "checked_at": "2026-11-01",
+        "note": "הבניין בתחום תכנית 503-1323856 \"מרחב תחנת המטרו נגה\" (כצנלסון 42–112 זוגי). התכנית הופקדה (פורסמה להתנגדויות 30.4.2026) ועדיין לא אושרה.",
+        "nearby_plan": "503-1323856 נגה (בהפקדה)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/31/2_2/o/y2_1pa_010079_20261031154239.jpeg"
+    },
+    {
+      "id": "gv165",
+      "addr": "וייצמן (מספר לא פורסם)",
+      "hood": "בורוכוב",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 5500,
+      "rooms": 3,
+      "sqm": "83",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/fi8m8i70",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.076062,
+      "lon": 34.80896,
+      "coord_source": "הכתובת ללא מספר בית: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3204,
+      "walk_min": 43,
+      "line_m": 2644,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5500
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://www.givatayim.muni.il/735/",
+        "checked_at": "2026-11-01",
+        "note": "מספר הבית לא פורסם. ויצמן 2–20 בתחום תכנית נגה המופקדת, וויצמן 36–42 בתכנית גנסין-ויצמן-רמב\"ם (הופקדה בתנאים) – חשוב לברר את המספר.",
+        "nearby_plan": "נגה / גנסין-ויצמן-רמב\"ם (בהפקדה)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/22/2_6/o/y2_1_Bp8ADkfhSQ_20261022.jpeg"
+    },
+    {
+      "id": "gv166",
+      "addr": "הצנחנים 6",
+      "hood": "גבעת הרמבם",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 6600,
+      "rooms": 3,
+      "sqm": "90",
+      "floor": "1",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/f9tqupvf",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.071076,
+      "lon": 34.806032,
+      "coord_source": "מספר הבית לא נמצא במפה: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3516,
+      "walk_min": 47,
+      "line_m": 2768,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6600
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://www.givatayim.muni.il/735/",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202608/13/2_2/o/y2_1pa_010740_20260813104405.jpeg"
+    },
+    {
+      "id": "gv168",
+      "addr": "וייצמן (מספר לא פורסם)",
+      "hood": "גבעת הרמבם",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 5700,
+      "rooms": 3,
+      "sqm": "100",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/cji68vr1",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.076062,
+      "lon": 34.80896,
+      "coord_source": "הכתובת ללא מספר בית: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3204,
+      "walk_min": 43,
+      "line_m": 2644,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5700
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://www.givatayim.muni.il/735/",
+        "checked_at": "2026-11-01",
+        "note": "מספר הבית לא פורסם. ויצמן 2–20 בתחום תכנית נגה המופקדת, וויצמן 36–42 בתכנית גנסין-ויצמן-רמב\"ם (הופקדה בתנאים) – חשוב לברר את המספר.",
+        "nearby_plan": "נגה / גנסין-ויצמן-רמב\"ם (בהפקדה)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/08/2_6/o/y2_1pa_010490_20261008123825.jpeg"
+    },
+    {
+      "id": "gv169",
+      "addr": "כצנלסון (מספר לא פורסם)",
+      "hood": "קרית יוסף",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 5600,
+      "rooms": 3,
+      "sqm": "75",
+      "floor": "3",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/xmu3migs",
+      "site": "יד2",
+      "extra_url": "https://www.madlan.co.il/listings/qM1J0B7cINd",
+      "lat": 32.075201,
+      "lon": 34.80406,
+      "coord_source": "הכתובת ללא מספר בית: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 2752,
+      "walk_min": 37,
+      "line_m": 2323,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5600
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://www.givatayim.muni.il/735/",
+        "checked_at": "2026-11-01",
+        "note": "מספר הבית לא פורסם, לכן לא ניתן לבדוק את הבניין. לא נמצאה תכנית פינוי-בינוי לכל הרחוב ברשימות התכניות."
+      },
+      "image": "https://img.yad2.co.il/Pic/202608/27/2_6/o/o2_6_1_08353_20260827100321.jpg"
+    },
+    {
+      "id": "gv170",
+      "addr": "רמב\"ם 31",
+      "hood": "גבעת הרמבם",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 5700,
+      "rooms": 3,
+      "sqm": "85",
+      "floor": "1",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/jh8hywzd",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.07056,
+      "lon": 34.807579,
+      "coord_source": "מספר הבית לא נמצא במפה: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3702,
+      "walk_min": 50,
+      "line_m": 2913,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5700
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://www.givatayim.muni.il/735/",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202608/28/2_2/o/y2_1_06724_20260828143952.jpeg"
+    },
+    {
+      "id": "gv173",
+      "addr": "בורוכוב (מספר לא פורסם)",
+      "hood": "בורוכוב",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 5950,
+      "rooms": 3,
+      "sqm": "140",
+      "floor": "1",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/a3x8iahq",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.078577,
+      "lon": 34.806883,
+      "coord_source": "הכתובת ללא מספר בית: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 2779,
+      "walk_min": 37,
+      "line_m": 2335,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5950
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://www.givatayim.muni.il/735/",
+        "checked_at": "2026-11-01",
+        "note": "מספר הבית לא פורסם, לכן לא ניתן לבדוק את הבניין. לא נמצאה תכנית פינוי-בינוי לכל הרחוב ברשימות התכניות."
+      },
+      "image": "https://img.yad2.co.il/Pic/202609/07/2_6/o/y2_1_EMGTGMB23i_20260907.png"
+    },
+    {
+      "id": "gv174",
+      "addr": "כצנלסון 92",
+      "hood": "שינקין",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 6500,
+      "rooms": 3,
+      "sqm": "80",
+      "floor": "3",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/y2oy009b",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.075341,
+      "lon": 34.811394,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 3475,
+      "walk_min": 47,
+      "line_m": 2882,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6500
+        }
+      ],
+      "building_check": {
+        "status": "פינוי-בינוי",
+        "source_url": "https://www.givatayim.muni.il/1metro-noga/",
+        "checked_at": "2026-11-01",
+        "note": "הבניין בתחום תכנית 503-1323856 \"מרחב תחנת המטרו נגה\" (כצנלסון 42–112 זוגי). התכנית הופקדה (פורסמה להתנגדויות 30.4.2026) ועדיין לא אושרה.",
+        "nearby_plan": "503-1323856 נגה (בהפקדה)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/26/2_2/o/y2_2_07278_20261026231320.jpeg"
+    },
+    {
+      "id": "gv178",
+      "addr": "סמטת נחל 5",
+      "hood": "בורוכוב",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 6000,
+      "rooms": 3,
+      "sqm": "90",
+      "floor": "1",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/mhkhqxcp",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.078469,
+      "lon": 34.804735,
+      "coord_source": "מספר הבית לא נמצא במפה: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 2584,
+      "walk_min": 35,
+      "line_m": 2164,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6000
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://www.givatayim.muni.il/735/",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/17/2_2/o/y2_1pa_010022_20261017205456.jpeg"
+    },
+    {
+      "id": "gv179",
+      "addr": "ז'בוטינסקי 78",
+      "hood": "גבעת קוזלובסקי",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 6400,
+      "rooms": 3,
+      "sqm": "78",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/kafg1ai9",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.08734,
+      "lon": 34.813504,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 3574,
+      "walk_min": 48,
+      "line_m": 2685,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6400
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://www.givatayim.muni.il/735/",
+        "checked_at": "2026-11-01",
+        "note": "אין תכנית מאושרת או מופקדת לכתובת. מתחם \"ויצמן ז'בוטינסקי שינקין\" בשלב רעיוני בלבד."
+      },
+      "image": "https://img.yad2.co.il/Pic/202610/12/2_2/o/y2_1pa_010889_20261012223543.jpeg"
+    },
+    {
+      "id": "gv189",
+      "addr": "המבוא (מספר לא פורסם)",
+      "hood": "שינקין",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 6000,
+      "rooms": 3,
+      "sqm": "80",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/ra5uk269",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.074757,
+      "lon": 34.813446,
+      "coord_source": "הכתובת ללא מספר בית: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3762,
+      "walk_min": 50,
+      "line_m": 3081,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6000
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://www.givatayim.muni.il/735/",
+        "checked_at": "2026-11-01",
+        "note": "מספר הבית לא פורסם, לכן לא ניתן לבדוק את הבניין. לא נמצאה תכנית פינוי-בינוי לכל הרחוב ברשימות התכניות."
+      },
+      "image": "https://img.yad2.co.il/Pic/202609/23/2_6/o/y2_1_mqoDLCettU_20260923.jpg"
+    },
+    {
+      "id": "gv191",
+      "addr": "שיינקין (מספר לא פורסם)",
+      "hood": "שינקין",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 5200,
+      "rooms": 3,
+      "sqm": "68",
+      "floor": "2",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "פרויקט חדש",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/pl7gbtle",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.075475,
+      "lon": 34.8134,
+      "coord_source": "הכתובת ללא מספר בית: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 3702,
+      "walk_min": 50,
+      "line_m": 3039,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5200
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://www.givatayim.muni.il/1metro-noga/",
+        "checked_at": "2026-11-01",
+        "note": "מספר הבית לא פורסם. שינקין 1–49 (אי-זוגי) בתחום תכנית נגה המופקדת – חשוב לברר את המספר.",
+        "nearby_plan": "503-1323856 נגה (בהפקדה)"
+      },
+      "image": "https://img.yad2.co.il/Pic/202501/08/2_6/o/y2_1pa_010875_20250108160905.jpeg"
+    },
+    {
+      "id": "rg217",
+      "addr": "ז'בוטינסקי 22",
+      "hood": "שכונת הראשונים",
+      "city": "רמת גן",
+      "area": "rg",
+      "price": 5950,
+      "rooms": 3,
+      "sqm": "98",
+      "floor": "1",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.madlan.co.il/listings/KVmqAnS8DkR",
+      "site": "מדלן",
+      "extra_url": null,
+      "lat": 32.083372,
+      "lon": 34.80651,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 2707,
+      "walk_min": 36,
+      "line_m": 2101,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 5950
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      }
+    },
+    {
+      "id": "gv229",
+      "addr": "בלוך 9",
+      "hood": "בורוכוב",
+      "city": "גבעתיים",
+      "area": "rg",
+      "price": 6800,
+      "rooms": 3,
+      "sqm": "81",
+      "floor": "1",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "url": "https://www.madlan.co.il/listings/7Hj8tdJjhnu",
+      "site": "מדלן",
+      "extra_url": null,
+      "lat": 32.077179,
+      "lon": 34.812416,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 3689,
+      "walk_min": 49,
+      "line_m": 2870,
+      "first_seen": "2026-11-01",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-01",
+          "price": 6800
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://www.givatayim.muni.il/735/",
+        "checked_at": "2026-11-01",
+        "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      },
+      "image": "https://images2.madlan.co.il/t:nonce:v=5;resize:height=328;convert:type=webp/bulletins/1000098915-2e74281c-111c-48f0-b0e9-18612dc8efe0.jpg"
     }
   ]
 }
