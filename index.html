@@ -216,7 +216,13 @@ button.on{background:var(--acc);border-color:var(--acc);color:#fff}
   try { const rr = await fetch('rail.geojson', {cache:'no-store'}); rail = await rr.json(); } catch(e){ rail = null; }
   const RST = {operating:'פועל', under_construction:'בבנייה', planned:'מתוכנן'};
   const railSt = rail ? rail.features.filter(f => f.properties.kind === 'station') : [];
-  function nearRail(l){ let b = null, bd = 1e9; for (const f of railSt){ const c = f.geometry.coordinates, d = hav(l.lat, l.lon, c[1], c[0]); if (d < bd){ bd = d; b = f; } } return b ? {f:b, d:Math.round(bd/10)*10} : null; }
+  const rOp = f => (f.properties.lines || [f.properties]).some(x => x.status === 'operating');
+  function nearRail(l, op){ let b = null, bd = 1e9; for (const f of railSt){ if (rOp(f) !== op) continue; const c = f.geometry.coordinates, d = hav(l.lat, l.lon, c[1], c[0]); if (d < bd){ bd = d; b = f; } } return b ? {f:b, d:Math.round(bd/10)*10} : null; }
+  function railRow(l){ const a = nearRail(l, true), b = nearRail(l, false); if (!a && !b) return '';
+    const fut = f => (f.properties.lines || []).filter(x => x.status !== 'operating').map(x => x.name).join(' / ');
+    let s = a ? esc(a.f.properties.name)+' (הקו האדום, פועל) · '+km(a.d) : '';
+    if (b && (!a || b.d < a.d)) s += (s ? '<br>' : '')+'עתידית: '+esc(b.f.properties.name)+' ('+esc(fut(b.f))+', בבנייה) · '+km(b.d);
+    return s+' <span style="color:var(--mute)">בקו אווירי</span>'; }
   const play400 = {};
   if (kids) for (const l of all) play400[l.id] = kids.features.filter(f => f.properties.k === 'playground' && hav(l.lat, l.lon, f.geometry.coordinates[1], f.geometry.coordinates[0]) <= 400).length;
 
@@ -285,7 +291,7 @@ button.on{background:var(--acc);border-color:var(--acc);color:#fff}
         row('הערות', esc(l.notes||'—'))+
         row('לבית הספר', l.walk_min+' דק׳ הליכה ('+km(l.walk_m)+')')+
         (kids ? row('גני שעשועים', play400[l.id]+' במרחק עד 400 מ\'') : '')+
-        (railSt.length ? (n => n ? row('רכבת קלה', esc(n.f.properties.name)+' ('+esc(n.f.properties.line_name)+', '+RST[n.f.properties.status]+') · '+km(n.d)+' בקו אווירי') : '')(nearRail(l)) : '')+
+        (railSt.length ? (s => s ? row('רכבת קלה', s) : '')(railRow(l)) : '')+
         row('מפרסם', esc(l.ad))+
         row('פורסם', esc(l.posted))+
         (l.coord_unverified ? row('מיקום', 'משוער ('+esc(l.coord_source)+')') : '')+
@@ -386,13 +392,13 @@ button.on{background:var(--acc);border-color:var(--acc);color:#fff}
     if (on && rail && !railLayer){
       const C = {}; rail.features.forEach(f => { if (f.properties.kind === 'line') C[f.properties.line] = f.properties.color; });
       const pane = map.createPane('rail'); pane.style.zIndex = 350;
-      const yr = p => p.opening && p.status !== 'operating' ? '<br><span style="color:#666">פתיחה צפויה: '+esc(p.opening)+'</span>' : '';
+      const yr = p => (p.lines || [p]).map(x => '<br><span style="color:#666">'+esc(x.name || x.line_name)+' · '+RST[x.status]+(x.opening && x.status !== 'operating' ? ' · פתיחה צפויה: '+esc(x.opening) : '')+'</span>').join('');
       railLayer = L.geoJSON(rail, {pane:'rail',
         filter: f => f.properties.kind === 'line' || f.properties.kind === 'station',
         style: f => ({color:f.properties.color, weight:3, opacity:.55, dashArray:f.properties.status === 'operating' ? null : '6 6', interactive:false}),
-        pointToLayer: (f, ll) => { const op = f.properties.status === 'operating';
+        pointToLayer: (f, ll) => { const op = rOp(f);
           return L.circleMarker(ll, {pane:'rail', radius:op ? 4 : 3, color:C[f.properties.line] || '#888', weight:op ? 1.5 : 1, opacity:op ? .8 : .55, fillColor:'#fff', fillOpacity:op ? 1 : .4})
-            .bindPopup('<div dir="rtl" style="font-size:13px"><b>'+esc(f.properties.name)+'</b><br><span style="color:#666">'+esc(f.properties.line_name)+' · '+RST[f.properties.status]+'</span>'+yr(f.properties)+'</div>', {closeButton:false}); }
+            .bindPopup('<div dir="rtl" style="font-size:13px"><b>'+esc(f.properties.name)+'</b>'+yr(f.properties)+'</div>', {closeButton:false}); }
       });
     }
     if (!railLayer) { fRail.disabled = !rail; return; }
