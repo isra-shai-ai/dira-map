@@ -84,6 +84,8 @@ button.on{background:var(--acc);border-color:var(--acc);color:#fff}
 .pin .st{position:absolute;top:-3px;right:-3px;width:9px;height:9px;border-radius:50%;border:1.5px solid #fff}
 .sd{display:inline-block;width:8px;height:8px;border-radius:50%;margin-left:6px;vertical-align:1px}
 .pin.no{opacity:.5}
+.rlg{display:none;font-size:11px;color:var(--mute);align-items:center;gap:4px}
+#fRail.on+.rlg{display:inline-flex}
 .kid{width:18px;height:18px;border-radius:50%;background:#fff;border:1px solid #888;font-size:11px;line-height:16px;text-align:center;box-shadow:0 1px 2px rgba(0,0,0,.25)}
 #panel .bar2{display:flex;flex-wrap:wrap;gap:6px;padding:6px 10px;border-bottom:1px solid var(--line);align-items:center;font-size:13px}
 #panel .bar2 button,#panel .bar2 select{font-size:13px;padding:4px 8px}
@@ -130,6 +132,7 @@ button.on{background:var(--acc);border-color:var(--acc);color:#fff}
     <button id="fHideNo" class="on">הסתר לא רלוונטי</button>
     <select id="fStat"><option value="all">כל הסטטוסים</option><option value="none">ללא סטטוס</option><option value="int">מעניין</option><option value="contact">פניתי</option><option value="seen">ראיתי</option><option value="no">לא רלוונטי</option></select>
     <button id="fKids">🛝 שכבת ילדים</button>
+    <button id="fRail">רכבת קלה</button><span class="rlg"><svg width="16" height="4"><line x1="0" y1="2" x2="16" y2="2" stroke="#888" stroke-width="2"/></svg>פועל <svg width="16" height="4"><line x1="0" y1="2" x2="16" y2="2" stroke="#888" stroke-width="2" stroke-dasharray="4 3"/></svg>עתידי</span>
     <button id="btnW">⚙ משקלות</button>
   </div>
   <div id="wts">
@@ -209,6 +212,11 @@ button.on{background:var(--acc);border-color:var(--acc);color:#fff}
   try { const kr = await fetch('kids.geojson', {cache:'no-store'}); kids = await kr.json(); } catch(e){ kids = null; }
   const KI = {playground:['🛝','גן שעשועים'], park:['🌳','פארק / גינה'], community:['🏛','מרכז קהילתי'], kindergarten:['🧸','גן ילדים']};
   const hav = (a, b, c, e) => { const R = 6371000, r = Math.PI/180, x = (e - b) * r * Math.cos((a + c) / 2 * r), y = (c - a) * r; return Math.sqrt(x*x + y*y) * R; };
+  let rail = null, railLayer = null;
+  try { const rr = await fetch('rail.geojson', {cache:'no-store'}); rail = await rr.json(); } catch(e){ rail = null; }
+  const RST = {operating:'פועל', under_construction:'בבנייה', planned:'מתוכנן'};
+  const railSt = rail ? rail.features.filter(f => f.properties.kind === 'station') : [];
+  function nearRail(l){ let b = null, bd = 1e9; for (const f of railSt){ const c = f.geometry.coordinates, d = hav(l.lat, l.lon, c[1], c[0]); if (d < bd){ bd = d; b = f; } } return b ? {f:b, d:Math.round(bd/10)*10} : null; }
   const play400 = {};
   if (kids) for (const l of all) play400[l.id] = kids.features.filter(f => f.properties.k === 'playground' && hav(l.lat, l.lon, f.geometry.coordinates[1], f.geometry.coordinates[0]) <= 400).length;
 
@@ -277,6 +285,7 @@ button.on{background:var(--acc);border-color:var(--acc);color:#fff}
         row('הערות', esc(l.notes||'—'))+
         row('לבית הספר', l.walk_min+' דק׳ הליכה ('+km(l.walk_m)+')')+
         (kids ? row('גני שעשועים', play400[l.id]+' במרחק עד 400 מ\'') : '')+
+        (railSt.length ? (n => n ? row('רכבת קלה', esc(n.f.properties.name)+' ('+esc(n.f.properties.line_name)+', '+RST[n.f.properties.status]+') · '+km(n.d)+' בקו אווירי') : '')(nearRail(l)) : '')+
         row('מפרסם', esc(l.ad))+
         row('פורסם', esc(l.posted))+
         (l.coord_unverified ? row('מיקום', 'משוער ('+esc(l.coord_source)+')') : '')+
@@ -370,6 +379,26 @@ button.on{background:var(--acc);border-color:var(--acc);color:#fff}
     if (on) kidsLayer.addTo(map); else map.removeLayer(kidsLayer);
     fKids.classList.toggle('on', on);
   }
+  const fRail = $('fRail');
+  fRail.onclick = () => toggleRail();
+  function toggleRail(force){
+    const on = force ?? !(railLayer && map.hasLayer(railLayer));
+    if (on && rail && !railLayer){
+      const C = {}; rail.features.forEach(f => { if (f.properties.kind === 'line') C[f.properties.line] = f.properties.color; });
+      const pane = map.createPane('rail'); pane.style.zIndex = 350;
+      const yr = p => p.opening && p.status !== 'operating' ? '<br><span style="color:#666">פתיחה צפויה: '+esc(p.opening)+'</span>' : '';
+      railLayer = L.geoJSON(rail, {pane:'rail',
+        filter: f => f.properties.kind === 'line' || f.properties.kind === 'station',
+        style: f => ({color:f.properties.color, weight:3, opacity:.55, dashArray:f.properties.status === 'operating' ? null : '6 6', interactive:false}),
+        pointToLayer: (f, ll) => { const op = f.properties.status === 'operating';
+          return L.circleMarker(ll, {pane:'rail', radius:op ? 4 : 3, color:C[f.properties.line] || '#888', weight:op ? 1.5 : 1, opacity:op ? .8 : .55, fillColor:'#fff', fillOpacity:op ? 1 : .4})
+            .bindPopup('<div dir="rtl" style="font-size:13px"><b>'+esc(f.properties.name)+'</b><br><span style="color:#666">'+esc(f.properties.line_name)+' · '+RST[f.properties.status]+'</span>'+yr(f.properties)+'</div>', {closeButton:false}); }
+      });
+    }
+    if (!railLayer) { fRail.disabled = !rail; return; }
+    if (on) railLayer.addTo(map); else map.removeLayer(railLayer);
+    fRail.classList.toggle('on', on);
+  }
   /* weights */
   const wts = $('wts');
   $('btnW').onclick = () => { wts.classList.toggle('open'); $('btnW').classList.toggle('on', wts.classList.contains('open')); };
@@ -387,9 +416,10 @@ button.on{background:var(--acc);border-color:var(--acc);color:#fff}
   $('btnList').onclick = () => { card.classList.remove('open'); panel.classList.toggle('open'); };
   $('btnClose').onclick = () => panel.classList.remove('open');
   renderRows();
-  window.__dira = {select, go, order, map, all, score, market, setStat:(id,v)=>{ setStat(id,v); refreshIcons(); renderRows(); }, toggleKids};
+  window.__dira = {select, go, order, map, all, score, market, setStat:(id,v)=>{ setStat(id,v); refreshIcons(); renderRows(); }, toggleKids, toggleRail};
   const q = new URLSearchParams(location.search);
   if (q.get('kids')) toggleKids(true);
+  toggleRail(q.get('rail') !== '0');
   if (q.get('sel')) select(q.get('sel'), false);
   if (q.get('debug')) { const e=document.createElement('pre'); e.id='dbg'; e.textContent=JSON.stringify({size:map.getSize(),b:map.getBounds(),z:map.getZoom(),mapEl:document.getElementById('map').getBoundingClientRect()}); document.body.appendChild(e); }
   if (q.get('list')) panel.classList.add('open');
