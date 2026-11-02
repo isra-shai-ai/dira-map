@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-11-01T09:03:00+02:00",
-    "prev_updated_at": "2026-11-01T08:27:00+02:00",
+    "updated_at": "2026-11-02T08:10:40+02:00",
+    "prev_updated_at": "2026-11-01T09:03:00+02:00",
     "search": "3 חדרים עד 7,000 ₪ בצפון תל אביב, הצפון הישן, לב העיר, רמת גן וגבעתיים (עד 50 דק׳ הליכה)",
     "school": {
       "name": "בית הספר",
@@ -2218,7 +2218,7 @@
       "hood": "חרוזים",
       "city": "רמת גן",
       "area": "rg",
-      "price": 6900,
+      "price": 6600,
       "rooms": 3,
       "sqm": "70",
       "floor": "5",
@@ -2241,6 +2241,10 @@
         {
           "date": "2026-11-01",
           "price": 6900
+        },
+        {
+          "date": "2026-11-02",
+          "price": 6600
         }
       ],
       "building_check": {
@@ -3234,6 +3238,202 @@
         "note": "לא נמצאה תכנית פינוי-בינוי מאושרת או מופקדת לכתובת ברשימות התכניות הציבוריות. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
       },
       "image": "https://images2.madlan.co.il/t:nonce:v=5;resize:height=328;convert:type=webp/bulletins/1000098915-2e74281c-111c-48f0-b0e9-18612dc8efe0.jpg"
+    },
+    {
+      "id": "kap",
+      "addr": "אליעזר קפלן (מספר לא פורסם)",
+      "hood": "שרונה / קריית הממשלה",
+      "area": "center",
+      "price": 6900,
+      "rooms": 3,
+      "sqm": "65",
+      "floor": "קרקע",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "notes": "שיווק: Home-Place",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/458xh8kr",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.07348,
+      "lon": 34.782414,
+      "coord_source": "הכתובת ללא מספר בית: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 2010,
+      "walk_min": 27,
+      "line_m": 1687,
+      "first_seen": "2026-11-02",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-02",
+          "price": 6900
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/528",
+        "checked_at": "2026-11-02",
+        "note": "אין תכנית התחדשות עירונית ברדיוס 150 מ׳ ממרכז הרחוב. מספר הבית לא פורסם, לכן בקשות היתר לבניין עצמו לא נבדקו."
+      }
+    },
+    {
+      "id": "rg-arl6",
+      "addr": "ארלוזורוב 6",
+      "hood": "שכונת חשמונאים, מרכז העיר א",
+      "area": "rg",
+      "city": "רמת גן",
+      "price": 5600,
+      "rooms": 3,
+      "sqm": "64",
+      "floor": "3",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "notes": "",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/o0ljwh0i",
+      "site": "יד2",
+      "extra_url": "https://www.madlan.co.il/listings/J6eFQNBxbLW",
+      "lat": 32.079294,
+      "lon": 34.813989,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 3551,
+      "walk_min": 47,
+      "line_m": 2913,
+      "first_seen": "2026-11-02",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-02",
+          "price": 5600
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-02",
+        "note": "הכתובת לא מופיעה ברשימת התכניות. ברחוב ארלוזורוב יש תכנית פינוי-בינוי מאושרת (מתחם ארלוזורוב–שמחה–המתמיד, רג/1862) – לא ידוע אם הבניין כלול, כדאי לברר.",
+        "nearby_plan": "מתחם ארלוזורוב–שמחה–המתמיד (רג/1862, מאושרת)"
+      }
+    },
+    {
+      "id": "rg-arl1",
+      "addr": "ארלוזורוב 1",
+      "hood": "מורשה / חשמונאים",
+      "area": "rg",
+      "city": "רמת גן",
+      "price": 6900,
+      "rooms": 3,
+      "sqm": "100",
+      "floor": "קרקע (דירת גן)",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "דירת גן",
+      "notes": "תיווך",
+      "url": "https://www.madlan.co.il/listings/5By251ersHp",
+      "site": "מדלן",
+      "extra_url": null,
+      "lat": 32.079121,
+      "lon": 34.814897,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 3644,
+      "walk_min": 49,
+      "line_m": 3000,
+      "first_seen": "2026-11-02",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-02",
+          "price": 6900
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-02",
+        "note": "הכתובת לא מופיעה ברשימת התכניות. ברחוב ארלוזורוב יש תכנית פינוי-בינוי מאושרת (מתחם ארלוזורוב–שמחה–המתמיד, רג/1862) – לא ידוע אם הבניין כלול, כדאי לברר.",
+        "nearby_plan": "מתחם ארלוזורוב–שמחה–המתמיד (רג/1862, מאושרת)"
+      }
+    },
+    {
+      "id": "rg-ah34",
+      "addr": "דרך אבא הלל 34",
+      "hood": "גפן / חרוזים",
+      "area": "rg",
+      "city": "רמת גן",
+      "price": 5000,
+      "rooms": 3,
+      "sqm": "50",
+      "floor": "קרקע",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "notes": "",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/v5avr9zr",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.088313,
+      "lon": 34.807451,
+      "coord_source": "מיקום הכתובת לפי Nominatim (OpenStreetMap)",
+      "coord_unverified": false,
+      "walk_m": 2636,
+      "walk_min": 35,
+      "line_m": 2112,
+      "first_seen": "2026-11-02",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-02",
+          "price": 5000
+        }
+      ],
+      "building_check": {
+        "status": "לא נמצא",
+        "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+        "checked_at": "2026-11-02",
+        "note": "אבא הלל 34 לא מופיע ברשימת תכניות ההתחדשות (התכניות ברחוב הן במספרים 63–65 ו-104–140). בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+      }
+    },
+    {
+      "id": "gv-hpz",
+      "addr": "הפועל הצעיר (מספר לא פורסם)",
+      "hood": "קריית יוסף / בורוכוב",
+      "area": "rg",
+      "city": "גבעתיים",
+      "price": 6800,
+      "rooms": 3,
+      "sqm": "80",
+      "floor": "1",
+      "ad": "לא ידוע",
+      "posted": "לא ידוע",
+      "cond": "לא צוין",
+      "notes": "",
+      "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/0grjri02",
+      "site": "יד2",
+      "extra_url": null,
+      "lat": 32.076559,
+      "lon": 34.803916,
+      "coord_source": "הכתובת ללא מספר בית: מרכז הרחוב לפי Nominatim (OpenStreetMap) – משוער",
+      "coord_unverified": true,
+      "walk_m": 2572,
+      "walk_min": 34,
+      "line_m": 2219,
+      "first_seen": "2026-11-02",
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-11-02",
+          "price": 6800
+        }
+      ],
+      "building_check": {
+        "status": "לא נבדק",
+        "source_url": "https://www.givatayim.muni.il/735/",
+        "checked_at": "2026-11-02",
+        "note": "מספר הבית לא פורסם, לכן לא ניתן לבדוק את הבניין."
+      }
     }
   ]
 }
