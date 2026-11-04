@@ -1,7 +1,7 @@
 {
  "meta": {
-  "updated_at": "2026-11-03T08:11:05+02:00",
-  "prev_updated_at": "2026-11-02T08:10:40+02:00",
+  "updated_at": "2026-11-04T08:10:41+02:00",
+  "prev_updated_at": "2026-11-03T08:11:05+02:00",
   "search": "3 חדרים עד 7,000 ₪ בצפון תל אביב, הצפון הישן, לב העיר, רמת גן וגבעתיים (עד 50 דק׳ הליכה)",
   "school": {
    "name": "בית הספר",
@@ -3557,6 +3557,87 @@
     {
      "date": "2026-11-03",
      "price": 6800
+    }
+   ]
+  },
+  {
+   "rooms": 3,
+   "ad": "לא צוין",
+   "posted": "2026-11-02",
+   "site": "יד2",
+   "extra_url": null,
+   "first_seen": "2026-11-04",
+   "status": "active",
+   "id": "rg-hrt52",
+   "addr": "חרות 52",
+   "hood": "גפן",
+   "area": "rg",
+   "city": "רמת גן",
+   "price": 6200,
+   "sqm": "75",
+   "floor": "2 מתוך 2",
+   "cond": "במצב שמור",
+   "notes": "ללא חניה. כניסה 1.12.26. קרוב לרק\"ל ביאליק",
+   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/n822xx1r",
+   "lat": 32.091566,
+   "lon": 34.815697,
+   "coord_source": "כתובת מלאה (חרות 52) לפי Nominatim (OpenStreetMap)",
+   "coord_unverified": false,
+   "walk_m": 3630,
+   "walk_min": 48,
+   "line_m": 2908,
+   "building_check": {
+    "status": "לא נמצא",
+    "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/ramat-gan",
+    "checked_at": "2026-11-04",
+    "note": "חרות 52 לא מופיע ברשימת התכניות ברמת גן. בקשות היתר/תמ\"א 38 לבניין לא נבדקו.",
+    "nearby_plan": "מתחם 59 (חרות 37–47, אבא הלל 104–112), התחדשות עירונית בהפקדה"
+   },
+   "image": "https://img.yad2.co.il/Pic/202611/02/2_2/o/y2_1pa_010278_20261102220126.jpeg",
+   "price_history": [
+    {
+     "date": "2026-11-04",
+     "price": 6200
+    }
+   ]
+  },
+  {
+   "rooms": 3,
+   "ad": "לא צוין",
+   "posted": "2026-11-02",
+   "site": "יד2",
+   "extra_url": null,
+   "first_seen": "2026-11-04",
+   "status": "active",
+   "id": "gv-tash",
+   "addr": "התע\"ש (מספר לא פורסם)",
+   "hood": "הל\"ה",
+   "area": "rg",
+   "city": "גבעתיים",
+   "price": 7000,
+   "sqm": "80",
+   "floor": "2 מתוך 3",
+   "cond": "במצב שמור · חניה",
+   "notes": "קרוב לרק\"ל. כניסה מיידית. סה\"כ חודשי 7,750 ₪ עם ועד",
+   "url": "https://www.yad2.co.il/realestate/item/tel-aviv-area/ojmxxl00",
+   "lat": 32.074579,
+   "lon": 34.804344,
+   "coord_source": "מרכז רחוב התע\"ש בגבעתיים לפי Nominatim (OpenStreetMap); מספר הבית לא פורסם – משוער",
+   "coord_unverified": true,
+   "walk_m": 2852,
+   "walk_min": 38,
+   "line_m": 2388,
+   "building_check": {
+    "status": "לא נמצא",
+    "source_url": "https://xn--5dbhbnbbb4ce7a.xn--4dbrk0ce/tochniyot/givatayim",
+    "checked_at": "2026-11-04",
+    "note": "רחוב התע\"ש לא מופיע ברשימת התכניות בגבעתיים. בקשות היתר/תמ\"א 38 לבניין לא נבדקו."
+   },
+   "image": "https://img.yad2.co.il/Pic/202611/02/2_6/o/y2_1pa_010011_20261102153305.jpeg",
+   "price_history": [
+    {
+     "date": "2026-11-04",
+     "price": 7000
     }
    ]
   }
